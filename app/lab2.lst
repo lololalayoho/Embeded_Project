@@ -1,0 +1,549 @@
+GAS LISTING C:\Users\82104\AppData\Local\Temp/ccGtFBZg.s 			page 1
+
+
+   1               		.file	"lab2.c"
+   2               	__SREG__ = 0x3f
+   3               	__SP_H__ = 0x3e
+   4               	__SP_L__ = 0x3d
+   5               	__CCP__  = 0x34
+   6               	__tmp_reg__ = 0
+   7               	__zero_reg__ = 1
+   8               		.text
+   9               	.global	ReadTemperature
+  10               		.type	ReadTemperature, @function
+  11               	ReadTemperature:
+  12               	/* prologue: function */
+  13               	/* frame size = 0 */
+  14 0000 84EA      		ldi r24,lo8(-92)
+  15 0002 8093 7400 		sts 116,r24
+  16               	.L2:
+  17 0006 8091 7400 		lds r24,116
+  18 000a 87FF      		sbrs r24,7
+  19 000c 00C0      		rjmp .L2
+  20 000e 89E9      		ldi r24,lo8(-103)
+  21 0010 8093 7300 		sts 115,r24
+  22 0014 84E8      		ldi r24,lo8(-124)
+  23 0016 8093 7400 		sts 116,r24
+  24               	.L3:
+  25 001a 8091 7400 		lds r24,116
+  26 001e 87FF      		sbrs r24,7
+  27 0020 00C0      		rjmp .L3
+  28 0022 84EC      		ldi r24,lo8(-60)
+  29 0024 8093 7400 		sts 116,r24
+  30               	.L4:
+  31 0028 8091 7400 		lds r24,116
+  32 002c 87FF      		sbrs r24,7
+  33 002e 00C0      		rjmp .L4
+  34 0030 9091 7300 		lds r25,115
+  35 0034 84E8      		ldi r24,lo8(-124)
+  36 0036 8093 7400 		sts 116,r24
+  37               	.L5:
+  38 003a 8091 7400 		lds r24,116
+  39 003e 87FF      		sbrs r24,7
+  40 0040 00C0      		rjmp .L5
+  41 0042 8091 7300 		lds r24,115
+  42 0046 392F      		mov r19,r25
+  43 0048 20E0      		ldi r18,lo8(0)
+  44 004a 90E0      		ldi r25,lo8(0)
+  45 004c 282B      		or r18,r24
+  46 004e 392B      		or r19,r25
+  47 0050 84E9      		ldi r24,lo8(-108)
+  48 0052 8093 7400 		sts 116,r24
+  49 0056 232F      		mov r18,r19
+  50 0058 330F      		lsl r19
+  51 005a 330B      		sbc r19,r19
+  52 005c 2132      		cpi r18,33
+  53 005e 3105      		cpc r19,__zero_reg__
+  54 0060 04F4      		brge .L14
+  55 0062 87B7      		in r24,87-32
+  56 0064 8F7B      		andi r24,lo8(-65)
+  57 0066 87BF      		out 87-32,r24
+GAS LISTING C:\Users\82104\AppData\Local\Temp/ccGtFBZg.s 			page 2
+
+
+  58 0068 C901      		movw r24,r18
+  59               	/* epilogue start */
+  60 006a 0895      		ret
+  61               	.L14:
+  62 006c 87B7      		in r24,87-32
+  63 006e 8064      		ori r24,lo8(64)
+  64 0070 87BF      		out 87-32,r24
+  65 0072 C901      		movw r24,r18
+  66 0074 0895      		ret
+  67               		.size	ReadTemperature, .-ReadTemperature
+  68               	.global	write_twi_1byte_nopreset
+  69               		.type	write_twi_1byte_nopreset, @function
+  70               	write_twi_1byte_nopreset:
+  71               	/* prologue: function */
+  72               	/* frame size = 0 */
+  73 0076 982F      		mov r25,r24
+  74 0078 84EA      		ldi r24,lo8(-92)
+  75 007a 8093 7400 		sts 116,r24
+  76               	.L30:
+  77 007e 8091 7400 		lds r24,116
+  78 0082 87FF      		sbrs r24,7
+  79 0084 00C0      		rjmp .L30
+  80 0086 8091 7100 		lds r24,113
+  81 008a 887F      		andi r24,lo8(-8)
+  82 008c 8830      		cpi r24,lo8(8)
+  83 008e 01F0      		breq .L17
+  84 0090 8091 7100 		lds r24,113
+  85 0094 887F      		andi r24,lo8(-8)
+  86 0096 8031      		cpi r24,lo8(16)
+  87 0098 01F4      		brne .L30
+  88               	.L17:
+  89 009a 88E9      		ldi r24,lo8(-104)
+  90 009c 8093 7300 		sts 115,r24
+  91 00a0 84E8      		ldi r24,lo8(-124)
+  92 00a2 8093 7400 		sts 116,r24
+  93               	.L31:
+  94 00a6 8091 7400 		lds r24,116
+  95 00aa 87FF      		sbrs r24,7
+  96 00ac 00C0      		rjmp .L31
+  97 00ae 8091 7100 		lds r24,113
+  98 00b2 887F      		andi r24,lo8(-8)
+  99 00b4 8831      		cpi r24,lo8(24)
+ 100 00b6 01F4      		brne .L31
+ 101 00b8 9093 7300 		sts 115,r25
+ 102 00bc 84E8      		ldi r24,lo8(-124)
+ 103 00be 8093 7400 		sts 116,r24
+ 104               	.L32:
+ 105 00c2 8091 7400 		lds r24,116
+ 106 00c6 87FF      		sbrs r24,7
+ 107 00c8 00C0      		rjmp .L32
+ 108 00ca 8091 7100 		lds r24,113
+ 109 00ce 887F      		andi r24,lo8(-8)
+ 110 00d0 8832      		cpi r24,lo8(40)
+ 111 00d2 01F4      		brne .L32
+ 112 00d4 6093 7300 		sts 115,r22
+ 113 00d8 84E8      		ldi r24,lo8(-124)
+ 114 00da 8093 7400 		sts 116,r24
+GAS LISTING C:\Users\82104\AppData\Local\Temp/ccGtFBZg.s 			page 3
+
+
+ 115               	.L33:
+ 116 00de 8091 7400 		lds r24,116
+ 117 00e2 87FF      		sbrs r24,7
+ 118 00e4 00C0      		rjmp .L33
+ 119 00e6 8091 7100 		lds r24,113
+ 120 00ea 887F      		andi r24,lo8(-8)
+ 121 00ec 8832      		cpi r24,lo8(40)
+ 122 00ee 01F4      		brne .L33
+ 123 00f0 84E9      		ldi r24,lo8(-108)
+ 124 00f2 8093 7400 		sts 116,r24
+ 125               	/* epilogue start */
+ 126 00f6 0895      		ret
+ 127               		.size	write_twi_1byte_nopreset, .-write_twi_1byte_nopreset
+ 128               	.global	write_twi_0byte_nopreset
+ 129               		.type	write_twi_0byte_nopreset, @function
+ 130               	write_twi_0byte_nopreset:
+ 131               	/* prologue: function */
+ 132               	/* frame size = 0 */
+ 133 00f8 982F      		mov r25,r24
+ 134 00fa 84EA      		ldi r24,lo8(-92)
+ 135 00fc 8093 7400 		sts 116,r24
+ 136               	.L46:
+ 137 0100 8091 7400 		lds r24,116
+ 138 0104 87FF      		sbrs r24,7
+ 139 0106 00C0      		rjmp .L46
+ 140 0108 8091 7100 		lds r24,113
+ 141 010c 887F      		andi r24,lo8(-8)
+ 142 010e 8830      		cpi r24,lo8(8)
+ 143 0110 01F0      		breq .L36
+ 144 0112 8091 7100 		lds r24,113
+ 145 0116 887F      		andi r24,lo8(-8)
+ 146 0118 8031      		cpi r24,lo8(16)
+ 147 011a 01F4      		brne .L46
+ 148               	.L36:
+ 149 011c 88E9      		ldi r24,lo8(-104)
+ 150 011e 8093 7300 		sts 115,r24
+ 151 0122 84E8      		ldi r24,lo8(-124)
+ 152 0124 8093 7400 		sts 116,r24
+ 153               	.L47:
+ 154 0128 8091 7400 		lds r24,116
+ 155 012c 87FF      		sbrs r24,7
+ 156 012e 00C0      		rjmp .L47
+ 157 0130 8091 7100 		lds r24,113
+ 158 0134 887F      		andi r24,lo8(-8)
+ 159 0136 8831      		cpi r24,lo8(24)
+ 160 0138 01F4      		brne .L47
+ 161 013a 9093 7300 		sts 115,r25
+ 162 013e 84E8      		ldi r24,lo8(-124)
+ 163 0140 8093 7400 		sts 116,r24
+ 164               	.L48:
+ 165 0144 8091 7400 		lds r24,116
+ 166 0148 87FF      		sbrs r24,7
+ 167 014a 00C0      		rjmp .L48
+ 168 014c 8091 7100 		lds r24,113
+ 169 0150 887F      		andi r24,lo8(-8)
+ 170 0152 8832      		cpi r24,lo8(40)
+ 171 0154 01F4      		brne .L48
+GAS LISTING C:\Users\82104\AppData\Local\Temp/ccGtFBZg.s 			page 4
+
+
+ 172 0156 84E9      		ldi r24,lo8(-108)
+ 173 0158 8093 7400 		sts 116,r24
+ 174               	/* epilogue start */
+ 175 015c 0895      		ret
+ 176               		.size	write_twi_0byte_nopreset, .-write_twi_0byte_nopreset
+ 177               	.global	InitI2C
+ 178               		.type	InitI2C, @function
+ 179               	InitI2C:
+ 180               	/* prologue: function */
+ 181               	/* frame size = 0 */
+ 182 015e 83E0      		ldi r24,lo8(3)
+ 183 0160 82BB      		out 50-32,r24
+ 184 0162 80B5      		in r24,64-32
+ 185 0164 8B7F      		andi r24,lo8(-5)
+ 186 0166 80BD      		out 64-32,r24
+ 187 0168 1092 7100 		sts 113,__zero_reg__
+ 188 016c 80E2      		ldi r24,lo8(32)
+ 189 016e 8093 7000 		sts 112,r24
+ 190 0172 84E4      		ldi r24,lo8(68)
+ 191 0174 8093 7400 		sts 116,r24
+ 192               	/* epilogue start */
+ 193 0178 0895      		ret
+ 194               		.size	InitI2C, .-InitI2C
+ 195               	.global	FndDisplayTask
+ 196               		.type	FndDisplayTask, @function
+ 197               	FndDisplayTask:
+ 198 017a 8F92      		push r8
+ 199 017c 9F92      		push r9
+ 200 017e AF92      		push r10
+ 201 0180 BF92      		push r11
+ 202 0182 CF92      		push r12
+ 203 0184 DF92      		push r13
+ 204 0186 EF92      		push r14
+ 205 0188 FF92      		push r15
+ 206 018a 0F93      		push r16
+ 207 018c 1F93      		push r17
+ 208 018e DF93      		push r29
+ 209 0190 CF93      		push r28
+ 210 0192 CDB7      		in r28,__SP_L__
+ 211 0194 DEB7      		in r29,__SP_H__
+ 212 0196 6497      		sbiw r28,20
+ 213 0198 0FB6      		in __tmp_reg__,__SREG__
+ 214 019a F894      		cli
+ 215 019c DEBF      		out __SP_H__,r29
+ 216 019e 0FBE      		out __SREG__,__tmp_reg__
+ 217 01a0 CDBF      		out __SP_L__,r28
+ 218               	/* prologue: function */
+ 219               	/* frame size = 20 */
+ 220 01a2 32E0      		ldi r19,lo8(2)
+ 221 01a4 E32E      		mov r14,r19
+ 222 01a6 F12C      		mov r15,__zero_reg__
+ 223 01a8 EC0E      		add r14,r28
+ 224 01aa FD1E      		adc r15,r29
+ 225 01ac D701      		movw r26,r14
+ 226 01ae E0E0      		ldi r30,lo8(C.9.1665)
+ 227 01b0 F0E0      		ldi r31,hi8(C.9.1665)
+ 228 01b2 83E1      		ldi r24,lo8(19)
+GAS LISTING C:\Users\82104\AppData\Local\Temp/ccGtFBZg.s 			page 5
+
+
+ 229               	.L52:
+ 230 01b4 0190      		ld r0,Z+
+ 231 01b6 0D92      		st X+,r0
+ 232 01b8 8150      		subi r24,lo8(-(-1))
+ 233 01ba 01F4      		brne .L52
+ 234 01bc 8FEF      		ldi r24,lo8(-1)
+ 235 01be 84BB      		out 52-32,r24
+ 236 01c0 8FE0      		ldi r24,lo8(15)
+ 237 01c2 8093 6400 		sts 100,r24
+ 238 01c6 5E01      		movw r10,r28
+ 239 01c8 0894      		sec
+ 240 01ca A11C      		adc r10,__zero_reg__
+ 241 01cc B11C      		adc r11,__zero_reg__
+ 242 01ce 8824      		clr r8
+ 243 01d0 8394      		inc r8
+ 244 01d2 20E4      		ldi r18,lo8(8000)
+ 245 01d4 C22E      		mov r12,r18
+ 246 01d6 2FE1      		ldi r18,hi8(8000)
+ 247 01d8 D22E      		mov r13,r18
+ 248 01da 92E0      		ldi r25,lo8(2)
+ 249 01dc 992E      		mov r9,r25
+ 250               	.L53:
+ 251 01de 8091 0000 		lds r24,Eflag
+ 252 01e2 9091 0000 		lds r25,(Eflag)+1
+ 253 01e6 6FE0      		ldi r22,lo8(15)
+ 254 01e8 42E8      		ldi r20,lo8(-126)
+ 255 01ea 20E0      		ldi r18,lo8(0)
+ 256 01ec 30E0      		ldi r19,hi8(0)
+ 257 01ee 8501      		movw r16,r10
+ 258 01f0 0E94 0000 		call OSFlagPend
+ 259 01f4 2091 0000 		lds r18,FndNum
+ 260 01f8 822F      		mov r24,r18
+ 261 01fa 6AE0      		ldi r22,lo8(10)
+ 262 01fc 0E94 0000 		call __udivmodqi4
+ 263 0200 F701      		movw r30,r14
+ 264 0202 E90F      		add r30,r25
+ 265 0204 F11D      		adc r31,__zero_reg__
+ 266 0206 8081      		ld r24,Z
+ 267 0208 85BB      		out 53-32,r24
+ 268 020a 8092 6500 		sts 101,r8
+ 269 020e C601      		movw r24,r12
+ 270               	/* #APP */
+ 271               	 ;  105 "c:/winavr-20100110/lib/gcc/../../avr/include/util/delay_basic.h" 1
+ 272 0210 0197      		1: sbiw r24,1
+ 273 0212 01F4      		brne 1b
+ 274               	 ;  0 "" 2
+ 275               	/* #NOAPP */
+ 276 0214 822F      		mov r24,r18
+ 277 0216 0E94 0000 		call __udivmodqi4
+ 278 021a F701      		movw r30,r14
+ 279 021c E80F      		add r30,r24
+ 280 021e F11D      		adc r31,__zero_reg__
+ 281 0220 8081      		ld r24,Z
+ 282 0222 85BB      		out 53-32,r24
+ 283 0224 9092 6500 		sts 101,r9
+ 284 0228 C601      		movw r24,r12
+ 285               	/* #APP */
+GAS LISTING C:\Users\82104\AppData\Local\Temp/ccGtFBZg.s 			page 6
+
+
+ 286               	 ;  105 "c:/winavr-20100110/lib/gcc/../../avr/include/util/delay_basic.h" 1
+ 287 022a 0197      		1: sbiw r24,1
+ 288 022c 01F4      		brne 1b
+ 289               	 ;  0 "" 2
+ 290               	/* #NOAPP */
+ 291 022e 00C0      		rjmp .L53
+ 292               		.size	FndDisplayTask, .-FndDisplayTask
+ 293               	.global	FndTask
+ 294               		.type	FndTask, @function
+ 295               	FndTask:
+ 296 0230 0F93      		push r16
+ 297 0232 1F93      		push r17
+ 298 0234 DF93      		push r29
+ 299 0236 CF93      		push r28
+ 300 0238 0F92      		push __tmp_reg__
+ 301 023a CDB7      		in r28,__SP_L__
+ 302 023c DEB7      		in r29,__SP_H__
+ 303               	/* prologue: function */
+ 304               	/* frame size = 1 */
+ 305 023e 8E01      		movw r16,r28
+ 306 0240 0F5F      		subi r16,lo8(-(1))
+ 307 0242 1F4F      		sbci r17,hi8(-(1))
+ 308               	.L57:
+ 309               	/* #APP */
+ 310               	 ;  80 "lab2.c" 1
+ 311 0244 F894      		cli
+ 312               	 ;  0 "" 2
+ 313               	/* #NOAPP */
+ 314 0246 8091 0000 		lds r24,Mbox
+ 315 024a 9091 0000 		lds r25,(Mbox)+1
+ 316 024e 60E0      		ldi r22,lo8(0)
+ 317 0250 70E0      		ldi r23,hi8(0)
+ 318 0252 A801      		movw r20,r16
+ 319 0254 0E94 0000 		call OSMboxPend
+ 320 0258 FC01      		movw r30,r24
+ 321 025a 8081      		ld r24,Z
+ 322 025c 8093 0000 		sts FndNum,r24
+ 323 0260 8091 0000 		lds r24,Eflag
+ 324 0264 9091 0000 		lds r25,(Eflag)+1
+ 325 0268 6FE0      		ldi r22,lo8(15)
+ 326 026a 41E0      		ldi r20,lo8(1)
+ 327 026c 9801      		movw r18,r16
+ 328 026e 0E94 0000 		call OSFlagPost
+ 329               	/* #APP */
+ 330               	 ;  83 "lab2.c" 1
+ 331 0272 7894      		sei
+ 332               	 ;  0 "" 2
+ 333               	/* #NOAPP */
+ 334 0274 82E3      		ldi r24,lo8(50)
+ 335 0276 90E0      		ldi r25,hi8(50)
+ 336 0278 0E94 0000 		call OSTimeDly
+ 337 027c 00C0      		rjmp .L57
+ 338               		.size	FndTask, .-FndTask
+ 339               	.global	TemperatureTask
+ 340               		.type	TemperatureTask, @function
+ 341               	TemperatureTask:
+ 342 027e 0F93      		push r16
+GAS LISTING C:\Users\82104\AppData\Local\Temp/ccGtFBZg.s 			page 7
+
+
+ 343 0280 1F93      		push r17
+ 344 0282 DF93      		push r29
+ 345 0284 CF93      		push r28
+ 346 0286 00D0      		rcall .
+ 347 0288 CDB7      		in r28,__SP_L__
+ 348 028a DEB7      		in r29,__SP_H__
+ 349               	/* prologue: function */
+ 350               	/* frame size = 2 */
+ 351 028c 0E94 0000 		call InitI2C
+ 352 0290 81E0      		ldi r24,lo8(1)
+ 353 0292 60E0      		ldi r22,lo8(0)
+ 354 0294 0E94 0000 		call write_twi_1byte_nopreset
+ 355 0298 80E0      		ldi r24,lo8(0)
+ 356 029a 0E94 0000 		call write_twi_0byte_nopreset
+ 357 029e 8E01      		movw r16,r28
+ 358 02a0 0F5F      		subi r16,lo8(-(1))
+ 359 02a2 1F4F      		sbci r17,hi8(-(1))
+ 360               	.L60:
+ 361               	/* #APP */
+ 362               	 ;  65 "lab2.c" 1
+ 363 02a4 F894      		cli
+ 364               	 ;  0 "" 2
+ 365               	/* #NOAPP */
+ 366 02a6 0E94 0000 		call ReadTemperature
+ 367 02aa 9A83      		std Y+2,r25
+ 368 02ac 8983      		std Y+1,r24
+ 369               	/* #APP */
+ 370               	 ;  67 "lab2.c" 1
+ 371 02ae 7894      		sei
+ 372               	 ;  0 "" 2
+ 373               	/* #NOAPP */
+ 374 02b0 8091 0000 		lds r24,Mbox
+ 375 02b4 9091 0000 		lds r25,(Mbox)+1
+ 376 02b8 B801      		movw r22,r16
+ 377 02ba 0E94 0000 		call OSMboxPost
+ 378 02be 82E3      		ldi r24,lo8(50)
+ 379 02c0 90E0      		ldi r25,hi8(50)
+ 380 02c2 0E94 0000 		call OSTimeDly
+ 381 02c6 00C0      		rjmp .L60
+ 382               		.size	TemperatureTask, .-TemperatureTask
+ 383               	.global	main
+ 384               		.type	main, @function
+ 385               	main:
+ 386 02c8 DF93      		push r29
+ 387 02ca CF93      		push r28
+ 388 02cc 0F92      		push __tmp_reg__
+ 389 02ce CDB7      		in r28,__SP_L__
+ 390 02d0 DEB7      		in r29,__SP_H__
+ 391               	/* prologue: function */
+ 392               	/* frame size = 1 */
+ 393 02d2 0E94 0000 		call OSInit
+ 394               	/* #APP */
+ 395               	 ;  28 "lab2.c" 1
+ 396 02d6 F894      		cli
+ 397               	 ;  0 "" 2
+ 398               	/* #NOAPP */
+ 399 02d8 87E0      		ldi r24,lo8(7)
+GAS LISTING C:\Users\82104\AppData\Local\Temp/ccGtFBZg.s 			page 8
+
+
+ 400 02da 83BF      		out 83-32,r24
+ 401 02dc 81E0      		ldi r24,lo8(1)
+ 402 02de 87BF      		out 87-32,r24
+ 403 02e0 84E6      		ldi r24,lo8(100)
+ 404 02e2 82BF      		out 82-32,r24
+ 405               	/* #APP */
+ 406               	 ;  32 "lab2.c" 1
+ 407 02e4 7894      		sei
+ 408               	 ;  0 "" 2
+ 409               	/* #NOAPP */
+ 410 02e6 80E0      		ldi r24,lo8(0)
+ 411 02e8 90E0      		ldi r25,hi8(0)
+ 412 02ea 0E94 0000 		call OSMboxCreate
+ 413 02ee 9093 0000 		sts (Mbox)+1,r25
+ 414 02f2 8093 0000 		sts Mbox,r24
+ 415 02f6 80E0      		ldi r24,lo8(0)
+ 416 02f8 BE01      		movw r22,r28
+ 417 02fa 6F5F      		subi r22,lo8(-(1))
+ 418 02fc 7F4F      		sbci r23,hi8(-(1))
+ 419 02fe 0E94 0000 		call OSFlagCreate
+ 420 0302 9093 0000 		sts (Eflag)+1,r25
+ 421 0306 8093 0000 		sts Eflag,r24
+ 422 030a 80E0      		ldi r24,lo8(gs(TemperatureTask))
+ 423 030c 90E0      		ldi r25,hi8(gs(TemperatureTask))
+ 424 030e 60E0      		ldi r22,lo8(0)
+ 425 0310 70E0      		ldi r23,hi8(0)
+ 426 0312 40E0      		ldi r20,lo8(TaskStk+127)
+ 427 0314 50E0      		ldi r21,hi8(TaskStk+127)
+ 428 0316 20E0      		ldi r18,lo8(0)
+ 429 0318 0E94 0000 		call OSTaskCreate
+ 430 031c 80E0      		ldi r24,lo8(gs(FndTask))
+ 431 031e 90E0      		ldi r25,hi8(gs(FndTask))
+ 432 0320 60E0      		ldi r22,lo8(0)
+ 433 0322 70E0      		ldi r23,hi8(0)
+ 434 0324 40E0      		ldi r20,lo8(TaskStk+255)
+ 435 0326 50E0      		ldi r21,hi8(TaskStk+255)
+ 436 0328 21E0      		ldi r18,lo8(1)
+ 437 032a 0E94 0000 		call OSTaskCreate
+ 438 032e 80E0      		ldi r24,lo8(gs(FndDisplayTask))
+ 439 0330 90E0      		ldi r25,hi8(gs(FndDisplayTask))
+ 440 0332 60E0      		ldi r22,lo8(0)
+ 441 0334 70E0      		ldi r23,hi8(0)
+ 442 0336 40E0      		ldi r20,lo8(TaskStk+383)
+ 443 0338 50E0      		ldi r21,hi8(TaskStk+383)
+ 444 033a 22E0      		ldi r18,lo8(2)
+ 445 033c 0E94 0000 		call OSTaskCreate
+ 446 0340 0E94 0000 		call OSStart
+ 447 0344 80E0      		ldi r24,lo8(0)
+ 448 0346 90E0      		ldi r25,hi8(0)
+ 449               	/* epilogue start */
+ 450 0348 0F90      		pop __tmp_reg__
+ 451 034a CF91      		pop r28
+ 452 034c DF91      		pop r29
+ 453 034e 0895      		ret
+ 454               		.size	main, .-main
+ 455               		.data
+ 456               		.type	C.9.1665, @object
+GAS LISTING C:\Users\82104\AppData\Local\Temp/ccGtFBZg.s 			page 9
+
+
+ 457               		.size	C.9.1665, 19
+ 458               	C.9.1665:
+ 459 0000 3F        		.byte	63
+ 460 0001 06        		.byte	6
+ 461 0002 5B        		.byte	91
+ 462 0003 4F        		.byte	79
+ 463 0004 66        		.byte	102
+ 464 0005 6D        		.byte	109
+ 465 0006 7D        		.byte	125
+ 466 0007 27        		.byte	39
+ 467 0008 7F        		.byte	127
+ 468 0009 6F        		.byte	111
+ 469 000a 77        		.byte	119
+ 470 000b 7C        		.byte	124
+ 471 000c 39        		.byte	57
+ 472 000d 5E        		.byte	94
+ 473 000e 79        		.byte	121
+ 474 000f 71        		.byte	113
+ 475 0010 80        		.byte	-128
+ 476 0011 40        		.byte	64
+ 477 0012 08        		.byte	8
+ 478               		.comm TaskStk,384,1
+ 479               		.comm Mbox,2,1
+ 480               		.comm Eflag,2,1
+ 481               		.comm FndNum,1,1
+ 482               	.global __do_copy_data
+ 483               	.global __do_clear_bss
+GAS LISTING C:\Users\82104\AppData\Local\Temp/ccGtFBZg.s 			page 10
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 lab2.c
+C:\Users\82104\AppData\Local\Temp/ccGtFBZg.s:2      *ABS*:0000003f __SREG__
+C:\Users\82104\AppData\Local\Temp/ccGtFBZg.s:3      *ABS*:0000003e __SP_H__
+C:\Users\82104\AppData\Local\Temp/ccGtFBZg.s:4      *ABS*:0000003d __SP_L__
+C:\Users\82104\AppData\Local\Temp/ccGtFBZg.s:5      *ABS*:00000034 __CCP__
+C:\Users\82104\AppData\Local\Temp/ccGtFBZg.s:6      *ABS*:00000000 __tmp_reg__
+C:\Users\82104\AppData\Local\Temp/ccGtFBZg.s:7      *ABS*:00000001 __zero_reg__
+C:\Users\82104\AppData\Local\Temp/ccGtFBZg.s:11     .text:00000000 ReadTemperature
+C:\Users\82104\AppData\Local\Temp/ccGtFBZg.s:70     .text:00000076 write_twi_1byte_nopreset
+C:\Users\82104\AppData\Local\Temp/ccGtFBZg.s:130    .text:000000f8 write_twi_0byte_nopreset
+C:\Users\82104\AppData\Local\Temp/ccGtFBZg.s:179    .text:0000015e InitI2C
+C:\Users\82104\AppData\Local\Temp/ccGtFBZg.s:197    .text:0000017a FndDisplayTask
+C:\Users\82104\AppData\Local\Temp/ccGtFBZg.s:458    .data:00000000 C.9.1665
+                            *COM*:00000002 Eflag
+                            *COM*:00000001 FndNum
+C:\Users\82104\AppData\Local\Temp/ccGtFBZg.s:295    .text:00000230 FndTask
+                            *COM*:00000002 Mbox
+C:\Users\82104\AppData\Local\Temp/ccGtFBZg.s:341    .text:0000027e TemperatureTask
+C:\Users\82104\AppData\Local\Temp/ccGtFBZg.s:385    .text:000002c8 main
+                            *COM*:00000180 TaskStk
+
+UNDEFINED SYMBOLS
+OSFlagPend
+__udivmodqi4
+OSMboxPend
+OSFlagPost
+OSTimeDly
+OSMboxPost
+OSInit
+OSMboxCreate
+OSFlagCreate
+OSTaskCreate
+OSStart
+__do_copy_data
+__do_clear_bss
