@@ -1,4 +1,4 @@
-GAS LISTING C:\Users\82104\AppData\Local\Temp/ccpr1O2j.s 			page 1
+GAS LISTING C:\Users\82104\AppData\Local\Temp/cc36OEJY.s 			page 1
 
 
    1               		.file	"lab2.c"
@@ -16,794 +16,1318 @@ GAS LISTING C:\Users\82104\AppData\Local\Temp/ccpr1O2j.s 			page 1
   13               	/* frame size = 0 */
   14 0000 8FEF      		ldi r24,lo8(-1)
   15 0002 84BB      		out 52-32,r24
-  16 0004 8093 6400 		sts 100,r24
-  17 0008 83E0      		ldi r24,lo8(3)
-  18 000a 82BB      		out 50-32,r24
-  19 000c 80EC      		ldi r24,lo8(-64)
-  20 000e 8093 7000 		sts 112,r24
-  21 0012 E1E7      		ldi r30,lo8(113)
-  22 0014 F0E0      		ldi r31,hi8(113)
-  23 0016 8081      		ld r24,Z
-  24 0018 8C7F      		andi r24,lo8(-4)
-  25 001a 8083      		st Z,r24
-  26               	/* epilogue start */
-  27 001c 0895      		ret
-  28               		.size	InitI2C, .-InitI2C
-  29               	.global	write_twi_1byte_nopreset
-  30               		.type	write_twi_1byte_nopreset, @function
-  31               	write_twi_1byte_nopreset:
-  32               	/* prologue: function */
-  33               	/* frame size = 0 */
-  34 001e 982F      		mov r25,r24
-  35 0020 84EA      		ldi r24,lo8(-92)
-  36 0022 8093 7400 		sts 116,r24
-  37               	.L18:
-  38 0026 8091 7400 		lds r24,116
-  39 002a 87FF      		sbrs r24,7
-  40 002c 00C0      		rjmp .L18
-  41 002e 8091 7100 		lds r24,113
-  42 0032 887F      		andi r24,lo8(-8)
-  43 0034 8830      		cpi r24,lo8(8)
-  44 0036 01F0      		breq .L5
-  45 0038 8091 7100 		lds r24,113
-  46 003c 887F      		andi r24,lo8(-8)
-  47 003e 8031      		cpi r24,lo8(16)
-  48 0040 01F4      		brne .L18
-  49               	.L5:
-  50 0042 88E9      		ldi r24,lo8(-104)
-  51 0044 8093 7300 		sts 115,r24
-  52 0048 84E8      		ldi r24,lo8(-124)
-  53 004a 8093 7400 		sts 116,r24
-  54               	.L19:
-  55 004e 8091 7400 		lds r24,116
-  56 0052 87FF      		sbrs r24,7
-  57 0054 00C0      		rjmp .L19
-GAS LISTING C:\Users\82104\AppData\Local\Temp/ccpr1O2j.s 			page 2
+  16 0004 8FE0      		ldi r24,lo8(15)
+  17 0006 8093 6400 		sts 100,r24
+  18 000a 83E0      		ldi r24,lo8(3)
+  19 000c 82BB      		out 50-32,r24
+  20 000e 80B5      		in r24,64-32
+  21 0010 8B7F      		andi r24,lo8(-5)
+  22 0012 80BD      		out 64-32,r24
+  23 0014 1092 7100 		sts 113,__zero_reg__
+  24 0018 80E2      		ldi r24,lo8(32)
+  25 001a 8093 7000 		sts 112,r24
+  26 001e 84E4      		ldi r24,lo8(68)
+  27 0020 8093 7400 		sts 116,r24
+  28               	/* epilogue start */
+  29 0024 0895      		ret
+  30               		.size	InitI2C, .-InitI2C
+  31               	.global	write_twi_1byte_nopreset
+  32               		.type	write_twi_1byte_nopreset, @function
+  33               	write_twi_1byte_nopreset:
+  34               	/* prologue: function */
+  35               	/* frame size = 0 */
+  36 0026 982F      		mov r25,r24
+  37 0028 84EA      		ldi r24,lo8(-92)
+  38 002a 8093 7400 		sts 116,r24
+  39               	.L18:
+  40 002e 8091 7400 		lds r24,116
+  41 0032 87FF      		sbrs r24,7
+  42 0034 00C0      		rjmp .L18
+  43 0036 8091 7100 		lds r24,113
+  44 003a 887F      		andi r24,lo8(-8)
+  45 003c 8830      		cpi r24,lo8(8)
+  46 003e 01F0      		breq .L5
+  47 0040 8091 7100 		lds r24,113
+  48 0044 887F      		andi r24,lo8(-8)
+  49 0046 8031      		cpi r24,lo8(16)
+  50 0048 01F4      		brne .L18
+  51               	.L5:
+  52 004a 88E9      		ldi r24,lo8(-104)
+  53 004c 8093 7300 		sts 115,r24
+  54 0050 84E8      		ldi r24,lo8(-124)
+  55 0052 8093 7400 		sts 116,r24
+  56               	.L19:
+  57 0056 8091 7400 		lds r24,116
+GAS LISTING C:\Users\82104\AppData\Local\Temp/cc36OEJY.s 			page 2
 
 
-  58 0056 8091 7100 		lds r24,113
-  59 005a 887F      		andi r24,lo8(-8)
-  60 005c 8831      		cpi r24,lo8(24)
-  61 005e 01F4      		brne .L19
-  62 0060 9093 7300 		sts 115,r25
-  63 0064 84E8      		ldi r24,lo8(-124)
-  64 0066 8093 7400 		sts 116,r24
-  65               	.L20:
-  66 006a 8091 7400 		lds r24,116
-  67 006e 87FF      		sbrs r24,7
-  68 0070 00C0      		rjmp .L20
-  69 0072 8091 7100 		lds r24,113
-  70 0076 887F      		andi r24,lo8(-8)
-  71 0078 8832      		cpi r24,lo8(40)
-  72 007a 01F4      		brne .L20
-  73 007c 6093 7300 		sts 115,r22
-  74 0080 84E8      		ldi r24,lo8(-124)
-  75 0082 8093 7400 		sts 116,r24
-  76               	.L21:
-  77 0086 8091 7400 		lds r24,116
-  78 008a 87FF      		sbrs r24,7
-  79 008c 00C0      		rjmp .L21
-  80 008e 8091 7100 		lds r24,113
-  81 0092 887F      		andi r24,lo8(-8)
-  82 0094 8832      		cpi r24,lo8(40)
-  83 0096 01F4      		brne .L21
-  84 0098 84E9      		ldi r24,lo8(-108)
-  85 009a 8093 7400 		sts 116,r24
-  86               	/* epilogue start */
-  87 009e 0895      		ret
-  88               		.size	write_twi_1byte_nopreset, .-write_twi_1byte_nopreset
-  89               	.global	write_twi_0byte_nopreset
-  90               		.type	write_twi_0byte_nopreset, @function
-  91               	write_twi_0byte_nopreset:
-  92               	/* prologue: function */
-  93               	/* frame size = 0 */
-  94 00a0 982F      		mov r25,r24
-  95 00a2 84EA      		ldi r24,lo8(-92)
-  96 00a4 8093 7400 		sts 116,r24
-  97               	.L35:
-  98 00a8 8091 7400 		lds r24,116
-  99 00ac 87FF      		sbrs r24,7
- 100 00ae 00C0      		rjmp .L35
- 101 00b0 8091 7100 		lds r24,113
- 102 00b4 887F      		andi r24,lo8(-8)
- 103 00b6 8830      		cpi r24,lo8(8)
- 104 00b8 01F0      		breq .L25
- 105 00ba 8091 7100 		lds r24,113
- 106 00be 887F      		andi r24,lo8(-8)
- 107 00c0 8031      		cpi r24,lo8(16)
- 108 00c2 01F4      		brne .L35
- 109               	.L25:
- 110 00c4 88E9      		ldi r24,lo8(-104)
- 111 00c6 8093 7300 		sts 115,r24
- 112 00ca 84E8      		ldi r24,lo8(-124)
- 113 00cc 8093 7400 		sts 116,r24
- 114               	.L36:
-GAS LISTING C:\Users\82104\AppData\Local\Temp/ccpr1O2j.s 			page 3
+  58 005a 87FF      		sbrs r24,7
+  59 005c 00C0      		rjmp .L19
+  60 005e 8091 7100 		lds r24,113
+  61 0062 887F      		andi r24,lo8(-8)
+  62 0064 8831      		cpi r24,lo8(24)
+  63 0066 01F4      		brne .L19
+  64 0068 9093 7300 		sts 115,r25
+  65 006c 84E8      		ldi r24,lo8(-124)
+  66 006e 8093 7400 		sts 116,r24
+  67               	.L20:
+  68 0072 8091 7400 		lds r24,116
+  69 0076 87FF      		sbrs r24,7
+  70 0078 00C0      		rjmp .L20
+  71 007a 8091 7100 		lds r24,113
+  72 007e 887F      		andi r24,lo8(-8)
+  73 0080 8832      		cpi r24,lo8(40)
+  74 0082 01F4      		brne .L20
+  75 0084 6093 7300 		sts 115,r22
+  76 0088 84E8      		ldi r24,lo8(-124)
+  77 008a 8093 7400 		sts 116,r24
+  78               	.L21:
+  79 008e 8091 7400 		lds r24,116
+  80 0092 87FF      		sbrs r24,7
+  81 0094 00C0      		rjmp .L21
+  82 0096 8091 7100 		lds r24,113
+  83 009a 887F      		andi r24,lo8(-8)
+  84 009c 8832      		cpi r24,lo8(40)
+  85 009e 01F4      		brne .L21
+  86 00a0 84E9      		ldi r24,lo8(-108)
+  87 00a2 8093 7400 		sts 116,r24
+  88               	/* epilogue start */
+  89 00a6 0895      		ret
+  90               		.size	write_twi_1byte_nopreset, .-write_twi_1byte_nopreset
+  91               	.global	write_twi_0byte_nopreset
+  92               		.type	write_twi_0byte_nopreset, @function
+  93               	write_twi_0byte_nopreset:
+  94               	/* prologue: function */
+  95               	/* frame size = 0 */
+  96 00a8 982F      		mov r25,r24
+  97 00aa 84EA      		ldi r24,lo8(-92)
+  98 00ac 8093 7400 		sts 116,r24
+  99               	.L35:
+ 100 00b0 8091 7400 		lds r24,116
+ 101 00b4 87FF      		sbrs r24,7
+ 102 00b6 00C0      		rjmp .L35
+ 103 00b8 8091 7100 		lds r24,113
+ 104 00bc 887F      		andi r24,lo8(-8)
+ 105 00be 8830      		cpi r24,lo8(8)
+ 106 00c0 01F0      		breq .L25
+ 107 00c2 8091 7100 		lds r24,113
+ 108 00c6 887F      		andi r24,lo8(-8)
+ 109 00c8 8031      		cpi r24,lo8(16)
+ 110 00ca 01F4      		brne .L35
+ 111               	.L25:
+ 112 00cc 88E9      		ldi r24,lo8(-104)
+ 113 00ce 8093 7300 		sts 115,r24
+ 114 00d2 84E8      		ldi r24,lo8(-124)
+GAS LISTING C:\Users\82104\AppData\Local\Temp/cc36OEJY.s 			page 3
 
 
- 115 00d0 8091 7400 		lds r24,116
- 116 00d4 87FF      		sbrs r24,7
- 117 00d6 00C0      		rjmp .L36
- 118 00d8 8091 7100 		lds r24,113
- 119 00dc 887F      		andi r24,lo8(-8)
- 120 00de 8831      		cpi r24,lo8(24)
- 121 00e0 01F4      		brne .L36
- 122 00e2 9093 7300 		sts 115,r25
- 123 00e6 84E8      		ldi r24,lo8(-124)
- 124 00e8 8093 7400 		sts 116,r24
- 125               	.L37:
- 126 00ec 8091 7400 		lds r24,116
- 127 00f0 87FF      		sbrs r24,7
- 128 00f2 00C0      		rjmp .L37
- 129 00f4 8091 7100 		lds r24,113
- 130 00f8 887F      		andi r24,lo8(-8)
- 131 00fa 8832      		cpi r24,lo8(40)
- 132 00fc 01F4      		brne .L37
- 133 00fe 84E9      		ldi r24,lo8(-108)
- 134 0100 8093 7400 		sts 116,r24
- 135               	/* epilogue start */
- 136 0104 0895      		ret
- 137               		.size	write_twi_0byte_nopreset, .-write_twi_0byte_nopreset
- 138               	.global	read_twi_2byte_preset
- 139               		.type	read_twi_2byte_preset, @function
- 140               	read_twi_2byte_preset:
- 141               	/* prologue: function */
- 142               	/* frame size = 0 */
- 143 0106 84EA      		ldi r24,lo8(-92)
- 144 0108 8093 7400 		sts 116,r24
- 145               	.L53:
- 146 010c 8091 7400 		lds r24,116
- 147 0110 87FF      		sbrs r24,7
- 148 0112 00C0      		rjmp .L53
- 149 0114 8091 7100 		lds r24,113
- 150 0118 887F      		andi r24,lo8(-8)
- 151 011a 8830      		cpi r24,lo8(8)
- 152 011c 01F0      		breq .L40
- 153 011e 8091 7100 		lds r24,113
- 154 0122 887F      		andi r24,lo8(-8)
- 155 0124 8031      		cpi r24,lo8(16)
- 156 0126 01F4      		brne .L53
- 157               	.L40:
- 158 0128 89E9      		ldi r24,lo8(-103)
- 159 012a 8093 7300 		sts 115,r24
- 160 012e 84E8      		ldi r24,lo8(-124)
- 161 0130 8093 7400 		sts 116,r24
- 162               	.L54:
- 163 0134 8091 7400 		lds r24,116
- 164 0138 87FF      		sbrs r24,7
- 165 013a 00C0      		rjmp .L54
- 166 013c 8091 7100 		lds r24,113
- 167 0140 887F      		andi r24,lo8(-8)
- 168 0142 8034      		cpi r24,lo8(64)
- 169 0144 01F4      		brne .L54
- 170 0146 84EC      		ldi r24,lo8(-60)
- 171 0148 8093 7400 		sts 116,r24
-GAS LISTING C:\Users\82104\AppData\Local\Temp/ccpr1O2j.s 			page 4
+ 115 00d4 8093 7400 		sts 116,r24
+ 116               	.L36:
+ 117 00d8 8091 7400 		lds r24,116
+ 118 00dc 87FF      		sbrs r24,7
+ 119 00de 00C0      		rjmp .L36
+ 120 00e0 8091 7100 		lds r24,113
+ 121 00e4 887F      		andi r24,lo8(-8)
+ 122 00e6 8831      		cpi r24,lo8(24)
+ 123 00e8 01F4      		brne .L36
+ 124 00ea 9093 7300 		sts 115,r25
+ 125 00ee 84E8      		ldi r24,lo8(-124)
+ 126 00f0 8093 7400 		sts 116,r24
+ 127               	.L37:
+ 128 00f4 8091 7400 		lds r24,116
+ 129 00f8 87FF      		sbrs r24,7
+ 130 00fa 00C0      		rjmp .L37
+ 131 00fc 8091 7100 		lds r24,113
+ 132 0100 887F      		andi r24,lo8(-8)
+ 133 0102 8832      		cpi r24,lo8(40)
+ 134 0104 01F4      		brne .L37
+ 135 0106 84E9      		ldi r24,lo8(-108)
+ 136 0108 8093 7400 		sts 116,r24
+ 137               	/* epilogue start */
+ 138 010c 0895      		ret
+ 139               		.size	write_twi_0byte_nopreset, .-write_twi_0byte_nopreset
+ 140               	.global	read_twi_2byte_preset
+ 141               		.type	read_twi_2byte_preset, @function
+ 142               	read_twi_2byte_preset:
+ 143               	/* prologue: function */
+ 144               	/* frame size = 0 */
+ 145 010e 84EA      		ldi r24,lo8(-92)
+ 146 0110 8093 7400 		sts 116,r24
+ 147               	.L53:
+ 148 0114 8091 7400 		lds r24,116
+ 149 0118 87FF      		sbrs r24,7
+ 150 011a 00C0      		rjmp .L53
+ 151 011c 8091 7100 		lds r24,113
+ 152 0120 887F      		andi r24,lo8(-8)
+ 153 0122 8830      		cpi r24,lo8(8)
+ 154 0124 01F0      		breq .L40
+ 155 0126 8091 7100 		lds r24,113
+ 156 012a 887F      		andi r24,lo8(-8)
+ 157 012c 8031      		cpi r24,lo8(16)
+ 158 012e 01F4      		brne .L53
+ 159               	.L40:
+ 160 0130 89E9      		ldi r24,lo8(-103)
+ 161 0132 8093 7300 		sts 115,r24
+ 162 0136 84E8      		ldi r24,lo8(-124)
+ 163 0138 8093 7400 		sts 116,r24
+ 164               	.L54:
+ 165 013c 8091 7400 		lds r24,116
+ 166 0140 87FF      		sbrs r24,7
+ 167 0142 00C0      		rjmp .L54
+ 168 0144 8091 7100 		lds r24,113
+ 169 0148 887F      		andi r24,lo8(-8)
+ 170 014a 8034      		cpi r24,lo8(64)
+ 171 014c 01F4      		brne .L54
+GAS LISTING C:\Users\82104\AppData\Local\Temp/cc36OEJY.s 			page 4
 
 
- 172               	.L55:
- 173 014c 8091 7400 		lds r24,116
- 174 0150 87FF      		sbrs r24,7
- 175 0152 00C0      		rjmp .L55
- 176 0154 8091 7100 		lds r24,113
- 177 0158 887F      		andi r24,lo8(-8)
- 178 015a 8035      		cpi r24,lo8(80)
- 179 015c 01F4      		brne .L55
- 180 015e 3091 7300 		lds r19,115
- 181 0162 84EC      		ldi r24,lo8(-60)
- 182 0164 8093 7400 		sts 116,r24
- 183               	.L56:
- 184 0168 8091 7400 		lds r24,116
- 185 016c 87FF      		sbrs r24,7
- 186 016e 00C0      		rjmp .L56
- 187 0170 8091 7100 		lds r24,113
- 188 0174 887F      		andi r24,lo8(-8)
- 189 0176 8035      		cpi r24,lo8(80)
- 190 0178 01F4      		brne .L56
- 191 017a 2091 7300 		lds r18,115
- 192 017e 84E9      		ldi r24,lo8(-108)
- 193 0180 8093 7400 		sts 116,r24
- 194 0184 932F      		mov r25,r19
- 195 0186 80E0      		ldi r24,lo8(0)
- 196 0188 30E0      		ldi r19,lo8(0)
- 197 018a 282B      		or r18,r24
- 198 018c 392B      		or r19,r25
- 199 018e C901      		movw r24,r18
- 200               	/* epilogue start */
- 201 0190 0895      		ret
- 202               		.size	read_twi_2byte_preset, .-read_twi_2byte_preset
- 203               	.global	DisplayTemp
- 204               		.type	DisplayTemp, @function
- 205               	DisplayTemp:
- 206 0192 6F92      		push r6
- 207 0194 7F92      		push r7
- 208 0196 8F92      		push r8
- 209 0198 9F92      		push r9
- 210 019a AF92      		push r10
- 211 019c BF92      		push r11
- 212 019e CF92      		push r12
- 213 01a0 DF92      		push r13
- 214 01a2 EF92      		push r14
- 215 01a4 FF92      		push r15
- 216 01a6 0F93      		push r16
- 217 01a8 1F93      		push r17
- 218 01aa DF93      		push r29
- 219 01ac CF93      		push r28
- 220 01ae CDB7      		in r28,__SP_L__
- 221 01b0 DEB7      		in r29,__SP_H__
- 222 01b2 6497      		sbiw r28,20
- 223 01b4 0FB6      		in __tmp_reg__,__SREG__
- 224 01b6 F894      		cli
- 225 01b8 DEBF      		out __SP_H__,r29
- 226 01ba 0FBE      		out __SREG__,__tmp_reg__
- 227 01bc CDBF      		out __SP_L__,r28
- 228               	/* prologue: function */
-GAS LISTING C:\Users\82104\AppData\Local\Temp/ccpr1O2j.s 			page 5
+ 172 014e 84EC      		ldi r24,lo8(-60)
+ 173 0150 8093 7400 		sts 116,r24
+ 174               	.L55:
+ 175 0154 8091 7400 		lds r24,116
+ 176 0158 87FF      		sbrs r24,7
+ 177 015a 00C0      		rjmp .L55
+ 178 015c 8091 7100 		lds r24,113
+ 179 0160 887F      		andi r24,lo8(-8)
+ 180 0162 8035      		cpi r24,lo8(80)
+ 181 0164 01F4      		brne .L55
+ 182 0166 3091 7300 		lds r19,115
+ 183 016a 84EC      		ldi r24,lo8(-60)
+ 184 016c 8093 7400 		sts 116,r24
+ 185               	.L56:
+ 186 0170 8091 7400 		lds r24,116
+ 187 0174 87FF      		sbrs r24,7
+ 188 0176 00C0      		rjmp .L56
+ 189 0178 8091 7100 		lds r24,113
+ 190 017c 887F      		andi r24,lo8(-8)
+ 191 017e 8035      		cpi r24,lo8(80)
+ 192 0180 01F4      		brne .L56
+ 193 0182 2091 7300 		lds r18,115
+ 194 0186 84E9      		ldi r24,lo8(-108)
+ 195 0188 8093 7400 		sts 116,r24
+ 196 018c 932F      		mov r25,r19
+ 197 018e 80E0      		ldi r24,lo8(0)
+ 198 0190 30E0      		ldi r19,lo8(0)
+ 199 0192 282B      		or r18,r24
+ 200 0194 392B      		or r19,r25
+ 201 0196 C901      		movw r24,r18
+ 202               	/* epilogue start */
+ 203 0198 0895      		ret
+ 204               		.size	read_twi_2byte_preset, .-read_twi_2byte_preset
+ 205               	.global	DisplayTemp
+ 206               		.type	DisplayTemp, @function
+ 207               	DisplayTemp:
+ 208 019a 6F92      		push r6
+ 209 019c 7F92      		push r7
+ 210 019e 8F92      		push r8
+ 211 01a0 9F92      		push r9
+ 212 01a2 AF92      		push r10
+ 213 01a4 BF92      		push r11
+ 214 01a6 CF92      		push r12
+ 215 01a8 DF92      		push r13
+ 216 01aa EF92      		push r14
+ 217 01ac FF92      		push r15
+ 218 01ae 0F93      		push r16
+ 219 01b0 1F93      		push r17
+ 220 01b2 DF93      		push r29
+ 221 01b4 CF93      		push r28
+ 222 01b6 CDB7      		in r28,__SP_L__
+ 223 01b8 DEB7      		in r29,__SP_H__
+ 224 01ba 6497      		sbiw r28,20
+ 225 01bc 0FB6      		in __tmp_reg__,__SREG__
+ 226 01be F894      		cli
+ 227 01c0 DEBF      		out __SP_H__,r29
+ 228 01c2 0FBE      		out __SREG__,__tmp_reg__
+GAS LISTING C:\Users\82104\AppData\Local\Temp/cc36OEJY.s 			page 5
 
 
- 229               	/* frame size = 20 */
- 230 01be AC01      		movw r20,r24
- 231 01c0 65E0      		ldi r22,lo8(5)
- 232 01c2 E62E      		mov r14,r22
- 233 01c4 F12C      		mov r15,__zero_reg__
- 234 01c6 EC0E      		add r14,r28
- 235 01c8 FD1E      		adc r15,r29
- 236 01ca D701      		movw r26,r14
- 237 01cc E0E0      		ldi r30,lo8(C.0.1645)
- 238 01ce F0E0      		ldi r31,hi8(C.0.1645)
- 239 01d0 8CE0      		ldi r24,lo8(12)
- 240               	.L58:
- 241 01d2 0190      		ld r0,Z+
- 242 01d4 0D92      		st X+,r0
- 243 01d6 8150      		subi r24,lo8(-(-1))
- 244 01d8 01F4      		brne .L58
- 245 01da 81E0      		ldi r24,lo8(1)
- 246 01dc 8983      		std Y+1,r24
- 247 01de 82E0      		ldi r24,lo8(2)
- 248 01e0 8A83      		std Y+2,r24
- 249 01e2 84E0      		ldi r24,lo8(4)
- 250 01e4 8B83      		std Y+3,r24
- 251 01e6 88E0      		ldi r24,lo8(8)
- 252 01e8 8C83      		std Y+4,r24
- 253 01ea CC24      		clr r12
- 254 01ec C394      		inc r12
- 255 01ee A0E0      		ldi r26,lo8(0)
- 256 01f0 B0E0      		ldi r27,hi8(0)
- 257 01f2 30E4      		ldi r19,lo8(8000)
- 258 01f4 A32E      		mov r10,r19
- 259 01f6 3FE1      		ldi r19,hi8(8000)
- 260 01f8 B32E      		mov r11,r19
- 261 01fa 21E1      		ldi r18,lo8(17)
- 262 01fc 622E      		mov r6,r18
- 263 01fe 712C      		mov r7,__zero_reg__
- 264 0200 6C0E      		add r6,r28
- 265 0202 7D1E      		adc r7,r29
- 266 0204 4E01      		movw r8,r28
- 267 0206 0894      		sec
- 268 0208 811C      		adc r8,__zero_reg__
- 269 020a 911C      		adc r9,__zero_reg__
- 270               	.L65:
- 271 020c 57FD      		sbrc r21,7
- 272 020e 00C0      		rjmp .L59
- 273 0210 9BE0      		ldi r25,lo8(11)
- 274 0212 D92E      		mov r13,r25
- 275               	.L60:
- 276 0214 CA01      		movw r24,r20
- 277 0216 8070      		andi r24,lo8(32512)
- 278 0218 9F77      		andi r25,hi8(32512)
- 279 021a 292F      		mov r18,r25
- 280 021c 47FD      		sbrc r20,7
- 281 021e 00C0      		rjmp .L61
- 282 0220 00E0      		ldi r16,lo8(0)
- 283 0222 E0E0      		ldi r30,lo8(0)
- 284 0224 F0E0      		ldi r31,hi8(0)
- 285               	.L62:
-GAS LISTING C:\Users\82104\AppData\Local\Temp/ccpr1O2j.s 			page 6
+ 229 01c4 CDBF      		out __SP_L__,r28
+ 230               	/* prologue: function */
+ 231               	/* frame size = 20 */
+ 232 01c6 AC01      		movw r20,r24
+ 233 01c8 65E0      		ldi r22,lo8(5)
+ 234 01ca E62E      		mov r14,r22
+ 235 01cc F12C      		mov r15,__zero_reg__
+ 236 01ce EC0E      		add r14,r28
+ 237 01d0 FD1E      		adc r15,r29
+ 238 01d2 D701      		movw r26,r14
+ 239 01d4 E0E0      		ldi r30,lo8(C.0.1647)
+ 240 01d6 F0E0      		ldi r31,hi8(C.0.1647)
+ 241 01d8 8CE0      		ldi r24,lo8(12)
+ 242               	.L58:
+ 243 01da 0190      		ld r0,Z+
+ 244 01dc 0D92      		st X+,r0
+ 245 01de 8150      		subi r24,lo8(-(-1))
+ 246 01e0 01F4      		brne .L58
+ 247 01e2 81E0      		ldi r24,lo8(1)
+ 248 01e4 8983      		std Y+1,r24
+ 249 01e6 82E0      		ldi r24,lo8(2)
+ 250 01e8 8A83      		std Y+2,r24
+ 251 01ea 84E0      		ldi r24,lo8(4)
+ 252 01ec 8B83      		std Y+3,r24
+ 253 01ee 88E0      		ldi r24,lo8(8)
+ 254 01f0 8C83      		std Y+4,r24
+ 255 01f2 CC24      		clr r12
+ 256 01f4 C394      		inc r12
+ 257 01f6 A0E0      		ldi r26,lo8(0)
+ 258 01f8 B0E0      		ldi r27,hi8(0)
+ 259 01fa 30E4      		ldi r19,lo8(8000)
+ 260 01fc A32E      		mov r10,r19
+ 261 01fe 3FE1      		ldi r19,hi8(8000)
+ 262 0200 B32E      		mov r11,r19
+ 263 0202 21E1      		ldi r18,lo8(17)
+ 264 0204 622E      		mov r6,r18
+ 265 0206 712C      		mov r7,__zero_reg__
+ 266 0208 6C0E      		add r6,r28
+ 267 020a 7D1E      		adc r7,r29
+ 268 020c 4E01      		movw r8,r28
+ 269 020e 0894      		sec
+ 270 0210 811C      		adc r8,__zero_reg__
+ 271 0212 911C      		adc r9,__zero_reg__
+ 272               	.L65:
+ 273 0214 57FD      		sbrc r21,7
+ 274 0216 00C0      		rjmp .L59
+ 275 0218 9BE0      		ldi r25,lo8(11)
+ 276 021a D92E      		mov r13,r25
+ 277               	.L60:
+ 278 021c CA01      		movw r24,r20
+ 279 021e 8070      		andi r24,lo8(32512)
+ 280 0220 9F77      		andi r25,hi8(32512)
+ 281 0222 292F      		mov r18,r25
+ 282 0224 47FD      		sbrc r20,7
+ 283 0226 00C0      		rjmp .L61
+ 284 0228 00E0      		ldi r16,lo8(0)
+ 285 022a E0E0      		ldi r30,lo8(0)
+GAS LISTING C:\Users\82104\AppData\Local\Temp/cc36OEJY.s 			page 6
 
 
- 286 0226 822F      		mov r24,r18
- 287 0228 6AE0      		ldi r22,lo8(10)
- 288 022a 0E94 0000 		call __udivmodqi4
- 289 022e 0E94 0000 		call __udivmodqi4
- 290 0232 192F      		mov r17,r25
- 291 0234 822F      		mov r24,r18
- 292 0236 0E94 0000 		call __udivmodqi4
- 293 023a EE0D      		add r30,r14
- 294 023c FF1D      		adc r31,r15
- 295 023e 8081      		ld r24,Z
- 296 0240 85BB      		out 53-32,r24
- 297 0242 C092 6500 		sts 101,r12
- 298 0246 20E0      		ldi r18,lo8(0)
- 299 0248 30E0      		ldi r19,hi8(0)
- 300               	.L71:
- 301 024a F501      		movw r30,r10
- 302               	/* #APP */
- 303               	 ;  105 "c:/winavr-20100110/lib/gcc/../../avr/include/util/delay_basic.h" 1
- 304 024c 3197      		1: sbiw r30,1
- 305 024e 01F4      		brne 1b
- 306               	 ;  0 "" 2
- 307               	/* #NOAPP */
- 308 0250 2F5F      		subi r18,lo8(-(1))
- 309 0252 3F4F      		sbci r19,hi8(-(1))
- 310 0254 2430      		cpi r18,4
- 311 0256 3105      		cpc r19,__zero_reg__
- 312 0258 04F4      		brge .L72
- 313 025a 098B      		std Y+17,r16
- 314 025c 9A8B      		std Y+18,r25
- 315 025e 1B8B      		std Y+19,r17
- 316 0260 DC8A      		std Y+20,r13
- 317 0262 F301      		movw r30,r6
- 318 0264 E20F      		add r30,r18
- 319 0266 F31F      		adc r31,r19
- 320 0268 8081      		ld r24,Z
- 321 026a F701      		movw r30,r14
- 322 026c E80F      		add r30,r24
- 323 026e F11D      		adc r31,__zero_reg__
- 324 0270 8081      		ld r24,Z
- 325 0272 85BB      		out 53-32,r24
- 326 0274 F401      		movw r30,r8
- 327 0276 E20F      		add r30,r18
- 328 0278 F31F      		adc r31,r19
- 329 027a 8081      		ld r24,Z
- 330 027c 8093 6500 		sts 101,r24
- 331 0280 2130      		cpi r18,1
- 332 0282 3105      		cpc r19,__zero_reg__
- 333 0284 01F4      		brne .L71
- 334 0286 AF9A      		sbi 53-32,7
- 335 0288 00C0      		rjmp .L71
- 336               	.L72:
- 337 028a 1196      		adiw r26,1
- 338 028c A436      		cpi r26,100
- 339 028e B105      		cpc r27,__zero_reg__
- 340 0290 01F0      		breq .+2
- 341 0292 00C0      		rjmp .L65
- 342               	/* epilogue start */
-GAS LISTING C:\Users\82104\AppData\Local\Temp/ccpr1O2j.s 			page 7
+ 286 022c F0E0      		ldi r31,hi8(0)
+ 287               	.L62:
+ 288 022e 822F      		mov r24,r18
+ 289 0230 6AE0      		ldi r22,lo8(10)
+ 290 0232 0E94 0000 		call __udivmodqi4
+ 291 0236 0E94 0000 		call __udivmodqi4
+ 292 023a 192F      		mov r17,r25
+ 293 023c 822F      		mov r24,r18
+ 294 023e 0E94 0000 		call __udivmodqi4
+ 295 0242 EE0D      		add r30,r14
+ 296 0244 FF1D      		adc r31,r15
+ 297 0246 8081      		ld r24,Z
+ 298 0248 85BB      		out 53-32,r24
+ 299 024a C092 6500 		sts 101,r12
+ 300 024e 20E0      		ldi r18,lo8(0)
+ 301 0250 30E0      		ldi r19,hi8(0)
+ 302               	.L71:
+ 303 0252 F501      		movw r30,r10
+ 304               	/* #APP */
+ 305               	 ;  105 "c:/winavr-20100110/lib/gcc/../../avr/include/util/delay_basic.h" 1
+ 306 0254 3197      		1: sbiw r30,1
+ 307 0256 01F4      		brne 1b
+ 308               	 ;  0 "" 2
+ 309               	/* #NOAPP */
+ 310 0258 2F5F      		subi r18,lo8(-(1))
+ 311 025a 3F4F      		sbci r19,hi8(-(1))
+ 312 025c 2430      		cpi r18,4
+ 313 025e 3105      		cpc r19,__zero_reg__
+ 314 0260 04F4      		brge .L72
+ 315 0262 098B      		std Y+17,r16
+ 316 0264 9A8B      		std Y+18,r25
+ 317 0266 1B8B      		std Y+19,r17
+ 318 0268 DC8A      		std Y+20,r13
+ 319 026a F301      		movw r30,r6
+ 320 026c E20F      		add r30,r18
+ 321 026e F31F      		adc r31,r19
+ 322 0270 8081      		ld r24,Z
+ 323 0272 F701      		movw r30,r14
+ 324 0274 E80F      		add r30,r24
+ 325 0276 F11D      		adc r31,__zero_reg__
+ 326 0278 8081      		ld r24,Z
+ 327 027a 85BB      		out 53-32,r24
+ 328 027c F401      		movw r30,r8
+ 329 027e E20F      		add r30,r18
+ 330 0280 F31F      		adc r31,r19
+ 331 0282 8081      		ld r24,Z
+ 332 0284 8093 6500 		sts 101,r24
+ 333 0288 2130      		cpi r18,1
+ 334 028a 3105      		cpc r19,__zero_reg__
+ 335 028c 01F4      		brne .L71
+ 336 028e AF9A      		sbi 53-32,7
+ 337 0290 00C0      		rjmp .L71
+ 338               	.L72:
+ 339 0292 1196      		adiw r26,1
+ 340 0294 A436      		cpi r26,100
+ 341 0296 B105      		cpc r27,__zero_reg__
+ 342 0298 01F0      		breq .+2
+GAS LISTING C:\Users\82104\AppData\Local\Temp/cc36OEJY.s 			page 7
 
 
- 343 0294 6496      		adiw r28,20
- 344 0296 0FB6      		in __tmp_reg__,__SREG__
- 345 0298 F894      		cli
- 346 029a DEBF      		out __SP_H__,r29
- 347 029c 0FBE      		out __SREG__,__tmp_reg__
- 348 029e CDBF      		out __SP_L__,r28
- 349 02a0 CF91      		pop r28
- 350 02a2 DF91      		pop r29
- 351 02a4 1F91      		pop r17
- 352 02a6 0F91      		pop r16
- 353 02a8 FF90      		pop r15
- 354 02aa EF90      		pop r14
- 355 02ac DF90      		pop r13
- 356 02ae CF90      		pop r12
- 357 02b0 BF90      		pop r11
- 358 02b2 AF90      		pop r10
- 359 02b4 9F90      		pop r9
- 360 02b6 8F90      		pop r8
- 361 02b8 7F90      		pop r7
- 362 02ba 6F90      		pop r6
- 363 02bc 0895      		ret
- 364               	.L61:
- 365 02be 05E0      		ldi r16,lo8(5)
- 366 02c0 E5E0      		ldi r30,lo8(5)
- 367 02c2 F0E0      		ldi r31,hi8(5)
- 368 02c4 00C0      		rjmp .L62
- 369               	.L59:
- 370 02c6 8AE0      		ldi r24,lo8(10)
- 371 02c8 D82E      		mov r13,r24
- 372 02ca 4095      		com r20
- 373 02cc 5095      		com r21
- 374 02ce 4150      		subi r20,lo8(-(-1))
- 375 02d0 5040      		sbci r21,hi8(-(-1))
- 376 02d2 00C0      		rjmp .L60
- 377               		.size	DisplayTemp, .-DisplayTemp
- 378               	.global	init_adc
- 379               		.type	init_adc, @function
- 380               	init_adc:
- 381               	/* prologue: function */
- 382               	/* frame size = 0 */
- 383 02d4 17B8      		out 39-32,__zero_reg__
- 384 02d6 87E8      		ldi r24,lo8(-121)
- 385 02d8 86B9      		out 38-32,r24
- 386               	/* epilogue start */
- 387 02da 0895      		ret
- 388               		.size	init_adc, .-init_adc
- 389               	.global	read_adc
- 390               		.type	read_adc, @function
- 391               	read_adc:
- 392               	/* prologue: function */
- 393               	/* frame size = 0 */
- 394 02dc 369A      		sbi 38-32,6
- 395               	.L76:
- 396 02de 349B      		sbis 38-32,4
- 397 02e0 00C0      		rjmp .L76
- 398 02e2 24B1      		in r18,36-32
- 399 02e4 45B1      		in r20,37-32
-GAS LISTING C:\Users\82104\AppData\Local\Temp/ccpr1O2j.s 			page 8
+ 343 029a 00C0      		rjmp .L65
+ 344               	/* epilogue start */
+ 345 029c 6496      		adiw r28,20
+ 346 029e 0FB6      		in __tmp_reg__,__SREG__
+ 347 02a0 F894      		cli
+ 348 02a2 DEBF      		out __SP_H__,r29
+ 349 02a4 0FBE      		out __SREG__,__tmp_reg__
+ 350 02a6 CDBF      		out __SP_L__,r28
+ 351 02a8 CF91      		pop r28
+ 352 02aa DF91      		pop r29
+ 353 02ac 1F91      		pop r17
+ 354 02ae 0F91      		pop r16
+ 355 02b0 FF90      		pop r15
+ 356 02b2 EF90      		pop r14
+ 357 02b4 DF90      		pop r13
+ 358 02b6 CF90      		pop r12
+ 359 02b8 BF90      		pop r11
+ 360 02ba AF90      		pop r10
+ 361 02bc 9F90      		pop r9
+ 362 02be 8F90      		pop r8
+ 363 02c0 7F90      		pop r7
+ 364 02c2 6F90      		pop r6
+ 365 02c4 0895      		ret
+ 366               	.L61:
+ 367 02c6 05E0      		ldi r16,lo8(5)
+ 368 02c8 E5E0      		ldi r30,lo8(5)
+ 369 02ca F0E0      		ldi r31,hi8(5)
+ 370 02cc 00C0      		rjmp .L62
+ 371               	.L59:
+ 372 02ce 8AE0      		ldi r24,lo8(10)
+ 373 02d0 D82E      		mov r13,r24
+ 374 02d2 4095      		com r20
+ 375 02d4 5095      		com r21
+ 376 02d6 4150      		subi r20,lo8(-(-1))
+ 377 02d8 5040      		sbci r21,hi8(-(-1))
+ 378 02da 00C0      		rjmp .L60
+ 379               		.size	DisplayTemp, .-DisplayTemp
+ 380               	.global	init_adc
+ 381               		.type	init_adc, @function
+ 382               	init_adc:
+ 383               	/* prologue: function */
+ 384               	/* frame size = 0 */
+ 385 02dc 17B8      		out 39-32,__zero_reg__
+ 386 02de 87E8      		ldi r24,lo8(-121)
+ 387 02e0 86B9      		out 38-32,r24
+ 388               	/* epilogue start */
+ 389 02e2 0895      		ret
+ 390               		.size	init_adc, .-init_adc
+ 391               	.global	read_adc
+ 392               		.type	read_adc, @function
+ 393               	read_adc:
+ 394               	/* prologue: function */
+ 395               	/* frame size = 0 */
+ 396 02e4 369A      		sbi 38-32,6
+ 397               	.L76:
+ 398 02e6 349B      		sbis 38-32,4
+ 399 02e8 00C0      		rjmp .L76
+GAS LISTING C:\Users\82104\AppData\Local\Temp/cc36OEJY.s 			page 8
 
 
- 400 02e6 942F      		mov r25,r20
- 401 02e8 80E0      		ldi r24,lo8(0)
- 402 02ea 30E0      		ldi r19,lo8(0)
- 403 02ec 282B      		or r18,r24
- 404 02ee 392B      		or r19,r25
- 405 02f0 C901      		movw r24,r18
- 406               	/* epilogue start */
- 407 02f2 0895      		ret
- 408               		.size	read_adc, .-read_adc
- 409               	.global	show_adc
- 410               		.type	show_adc, @function
- 411               	show_adc:
- 412               	/* prologue: function */
- 413               	/* frame size = 0 */
- 414 02f4 883C      		cpi r24,200
- 415 02f6 9105      		cpc r25,__zero_reg__
- 416 02f8 00F0      		brlo .L83
- 417 02fa 1BBA      		out 59-32,__zero_reg__
- 418 02fc 0895      		ret
- 419               	.L83:
- 420 02fe 8FEF      		ldi r24,lo8(-1)
- 421 0300 8BBB      		out 59-32,r24
- 422 0302 0895      		ret
- 423               		.size	show_adc, .-show_adc
- 424               	.global	__vector_5
- 425               		.type	__vector_5, @function
- 426               	__vector_5:
- 427 0304 1F92      		push __zero_reg__
- 428 0306 0F92      		push r0
- 429 0308 0FB6      		in r0,__SREG__
- 430 030a 0F92      		push r0
- 431 030c 1124      		clr __zero_reg__
- 432 030e 8F93      		push r24
- 433 0310 9F93      		push r25
- 434               	/* prologue: Signal */
- 435               	/* frame size = 0 */
- 436 0312 81E0      		ldi r24,lo8(1)
- 437 0314 90E0      		ldi r25,hi8(1)
- 438 0316 9093 0000 		sts (signal)+1,r25
- 439 031a 8093 0000 		sts signal,r24
- 440 031e 80E4      		ldi r24,lo8(-25536)
- 441 0320 9CE9      		ldi r25,hi8(-25536)
- 442               	/* #APP */
- 443               	 ;  105 "c:/winavr-20100110/lib/gcc/../../avr/include/util/delay_basic.h" 1
- 444 0322 0197      		1: sbiw r24,1
- 445 0324 01F4      		brne 1b
- 446               	 ;  0 "" 2
- 447               	/* epilogue start */
- 448               	/* #NOAPP */
- 449 0326 9F91      		pop r25
- 450 0328 8F91      		pop r24
- 451 032a 0F90      		pop r0
- 452 032c 0FBE      		out __SREG__,r0
- 453 032e 0F90      		pop r0
- 454 0330 1F90      		pop __zero_reg__
- 455 0332 1895      		reti
- 456               		.size	__vector_5, .-__vector_5
-GAS LISTING C:\Users\82104\AppData\Local\Temp/ccpr1O2j.s 			page 9
+ 400 02ea 24B1      		in r18,36-32
+ 401 02ec 45B1      		in r20,37-32
+ 402 02ee 942F      		mov r25,r20
+ 403 02f0 80E0      		ldi r24,lo8(0)
+ 404 02f2 30E0      		ldi r19,lo8(0)
+ 405 02f4 282B      		or r18,r24
+ 406 02f6 392B      		or r19,r25
+ 407 02f8 C901      		movw r24,r18
+ 408               	/* epilogue start */
+ 409 02fa 0895      		ret
+ 410               		.size	read_adc, .-read_adc
+ 411               	.global	show_adc
+ 412               		.type	show_adc, @function
+ 413               	show_adc:
+ 414               	/* prologue: function */
+ 415               	/* frame size = 0 */
+ 416 02fc 883C      		cpi r24,200
+ 417 02fe 9105      		cpc r25,__zero_reg__
+ 418 0300 00F0      		brlo .L83
+ 419 0302 1BBA      		out 59-32,__zero_reg__
+ 420 0304 0895      		ret
+ 421               	.L83:
+ 422 0306 8FEF      		ldi r24,lo8(-1)
+ 423 0308 8BBB      		out 59-32,r24
+ 424 030a 0895      		ret
+ 425               		.size	show_adc, .-show_adc
+ 426               	.global	__vector_5
+ 427               		.type	__vector_5, @function
+ 428               	__vector_5:
+ 429 030c 1F92      		push __zero_reg__
+ 430 030e 0F92      		push r0
+ 431 0310 0FB6      		in r0,__SREG__
+ 432 0312 0F92      		push r0
+ 433 0314 1124      		clr __zero_reg__
+ 434 0316 8F93      		push r24
+ 435 0318 9F93      		push r25
+ 436               	/* prologue: Signal */
+ 437               	/* frame size = 0 */
+ 438 031a 81E0      		ldi r24,lo8(1)
+ 439 031c 90E0      		ldi r25,hi8(1)
+ 440 031e 9093 0000 		sts (signal)+1,r25
+ 441 0322 8093 0000 		sts signal,r24
+ 442 0326 80E4      		ldi r24,lo8(-25536)
+ 443 0328 9CE9      		ldi r25,hi8(-25536)
+ 444               	/* #APP */
+ 445               	 ;  105 "c:/winavr-20100110/lib/gcc/../../avr/include/util/delay_basic.h" 1
+ 446 032a 0197      		1: sbiw r24,1
+ 447 032c 01F4      		brne 1b
+ 448               	 ;  0 "" 2
+ 449               	/* epilogue start */
+ 450               	/* #NOAPP */
+ 451 032e 9F91      		pop r25
+ 452 0330 8F91      		pop r24
+ 453 0332 0F90      		pop r0
+ 454 0334 0FBE      		out __SREG__,r0
+ 455 0336 0F90      		pop r0
+ 456 0338 1F90      		pop __zero_reg__
+GAS LISTING C:\Users\82104\AppData\Local\Temp/cc36OEJY.s 			page 9
 
 
- 457               	.global	__vector_6
- 458               		.type	__vector_6, @function
- 459               	__vector_6:
- 460 0334 1F92      		push __zero_reg__
- 461 0336 0F92      		push r0
- 462 0338 0FB6      		in r0,__SREG__
- 463 033a 0F92      		push r0
- 464 033c 1124      		clr __zero_reg__
- 465 033e 8F93      		push r24
- 466 0340 9F93      		push r25
- 467               	/* prologue: Signal */
- 468               	/* frame size = 0 */
- 469 0342 1092 0000 		sts (signal)+1,__zero_reg__
- 470 0346 1092 0000 		sts signal,__zero_reg__
- 471 034a 80E4      		ldi r24,lo8(-25536)
- 472 034c 9CE9      		ldi r25,hi8(-25536)
- 473               	/* #APP */
- 474               	 ;  105 "c:/winavr-20100110/lib/gcc/../../avr/include/util/delay_basic.h" 1
- 475 034e 0197      		1: sbiw r24,1
- 476 0350 01F4      		brne 1b
- 477               	 ;  0 "" 2
- 478               	/* epilogue start */
- 479               	/* #NOAPP */
- 480 0352 9F91      		pop r25
- 481 0354 8F91      		pop r24
- 482 0356 0F90      		pop r0
- 483 0358 0FBE      		out __SREG__,r0
- 484 035a 0F90      		pop r0
- 485 035c 1F90      		pop __zero_reg__
- 486 035e 1895      		reti
- 487               		.size	__vector_6, .-__vector_6
- 488               	.global	TemperatureTask
- 489               		.type	TemperatureTask, @function
- 490               	TemperatureTask:
- 491 0360 EF92      		push r14
- 492 0362 FF92      		push r15
- 493 0364 0F93      		push r16
- 494 0366 1F93      		push r17
- 495 0368 DF93      		push r29
- 496 036a CF93      		push r28
- 497 036c 0F92      		push __tmp_reg__
- 498 036e CDB7      		in r28,__SP_L__
- 499 0370 DEB7      		in r29,__SP_H__
- 500               	/* prologue: function */
- 501               	/* frame size = 1 */
- 502 0372 81E0      		ldi r24,lo8(1)
- 503 0374 60E0      		ldi r22,lo8(0)
- 504 0376 0E94 0000 		call write_twi_1byte_nopreset
- 505 037a 80E0      		ldi r24,lo8(0)
- 506 037c 0E94 0000 		call write_twi_0byte_nopreset
- 507 0380 7E01      		movw r14,r28
- 508 0382 0894      		sec
- 509 0384 E11C      		adc r14,__zero_reg__
- 510 0386 F11C      		adc r15,__zero_reg__
- 511               	.L89:
- 512 0388 8091 0000 		lds r24,Eflag
- 513 038c 9091 0000 		lds r25,(Eflag)+1
-GAS LISTING C:\Users\82104\AppData\Local\Temp/ccpr1O2j.s 			page 10
+ 457 033a 1895      		reti
+ 458               		.size	__vector_5, .-__vector_5
+ 459               	.global	__vector_6
+ 460               		.type	__vector_6, @function
+ 461               	__vector_6:
+ 462 033c 1F92      		push __zero_reg__
+ 463 033e 0F92      		push r0
+ 464 0340 0FB6      		in r0,__SREG__
+ 465 0342 0F92      		push r0
+ 466 0344 1124      		clr __zero_reg__
+ 467 0346 8F93      		push r24
+ 468 0348 9F93      		push r25
+ 469               	/* prologue: Signal */
+ 470               	/* frame size = 0 */
+ 471 034a 1092 0000 		sts (signal)+1,__zero_reg__
+ 472 034e 1092 0000 		sts signal,__zero_reg__
+ 473 0352 80E4      		ldi r24,lo8(-25536)
+ 474 0354 9CE9      		ldi r25,hi8(-25536)
+ 475               	/* #APP */
+ 476               	 ;  105 "c:/winavr-20100110/lib/gcc/../../avr/include/util/delay_basic.h" 1
+ 477 0356 0197      		1: sbiw r24,1
+ 478 0358 01F4      		brne 1b
+ 479               	 ;  0 "" 2
+ 480               	/* epilogue start */
+ 481               	/* #NOAPP */
+ 482 035a 9F91      		pop r25
+ 483 035c 8F91      		pop r24
+ 484 035e 0F90      		pop r0
+ 485 0360 0FBE      		out __SREG__,r0
+ 486 0362 0F90      		pop r0
+ 487 0364 1F90      		pop __zero_reg__
+ 488 0366 1895      		reti
+ 489               		.size	__vector_6, .-__vector_6
+ 490               	.global	__vector_10
+ 491               		.type	__vector_10, @function
+ 492               	__vector_10:
+ 493 0368 1F92      		push __zero_reg__
+ 494 036a 0F92      		push r0
+ 495 036c 0FB6      		in r0,__SREG__
+ 496 036e 0F92      		push r0
+ 497 0370 0BB6      		in r0,91-32
+ 498 0372 0F92      		push r0
+ 499 0374 1124      		clr __zero_reg__
+ 500 0376 8F93      		push r24
+ 501 0378 9F93      		push r25
+ 502 037a EF93      		push r30
+ 503 037c FF93      		push r31
+ 504               	/* prologue: Signal */
+ 505               	/* frame size = 0 */
+ 506 037e 8091 0000 		lds r24,state
+ 507 0382 9091 0000 		lds r25,(state)+1
+ 508 0386 0197      		sbiw r24,1
+ 509 0388 01F0      		breq .L92
+ 510 038a 8FEF      		ldi r24,lo8(-1)
+ 511 038c 88BB      		out 56-32,r24
+ 512 038e 81E0      		ldi r24,lo8(1)
+ 513 0390 90E0      		ldi r25,hi8(1)
+GAS LISTING C:\Users\82104\AppData\Local\Temp/cc36OEJY.s 			page 10
 
 
- 514 0390 61E0      		ldi r22,lo8(1)
- 515 0392 42E8      		ldi r20,lo8(-126)
- 516 0394 20E0      		ldi r18,lo8(0)
- 517 0396 30E0      		ldi r19,hi8(0)
- 518 0398 8701      		movw r16,r14
- 519 039a 0E94 0000 		call OSFlagPend
- 520 039e 0E94 0000 		call read_twi_2byte_preset
- 521 03a2 0E94 0000 		call DisplayTemp
- 522 03a6 00C0      		rjmp .L89
- 523               		.size	TemperatureTask, .-TemperatureTask
- 524               	.global	cdsTask
- 525               		.type	cdsTask, @function
- 526               	cdsTask:
- 527 03a8 DF92      		push r13
- 528 03aa EF92      		push r14
- 529 03ac FF92      		push r15
- 530 03ae 0F93      		push r16
- 531 03b0 1F93      		push r17
- 532 03b2 DF93      		push r29
- 533 03b4 CF93      		push r28
- 534 03b6 0F92      		push __tmp_reg__
- 535 03b8 CDB7      		in r28,__SP_L__
- 536 03ba DEB7      		in r29,__SP_H__
- 537               	/* prologue: function */
- 538               	/* frame size = 1 */
- 539 03bc 8FEF      		ldi r24,lo8(-1)
- 540 03be 8ABB      		out 58-32,r24
- 541 03c0 7E01      		movw r14,r28
- 542 03c2 0894      		sec
- 543 03c4 E11C      		adc r14,__zero_reg__
- 544 03c6 F11C      		adc r15,__zero_reg__
- 545 03c8 DD24      		clr r13
- 546 03ca DA94      		dec r13
- 547               	.L95:
- 548 03cc 8091 0000 		lds r24,Eflag
- 549 03d0 9091 0000 		lds r25,(Eflag)+1
- 550 03d4 62E0      		ldi r22,lo8(2)
- 551 03d6 42E8      		ldi r20,lo8(-126)
- 552 03d8 20E0      		ldi r18,lo8(0)
- 553 03da 30E0      		ldi r19,hi8(0)
- 554 03dc 8701      		movw r16,r14
- 555 03de 0E94 0000 		call OSFlagPend
- 556 03e2 0E94 0000 		call read_adc
- 557 03e6 883C      		cpi r24,lo8(-56)
- 558 03e8 00F4      		brsh .L92
- 559 03ea DBBA      		out 59-32,r13
- 560 03ec 00C0      		rjmp .L95
- 561               	.L92:
- 562 03ee 1BBA      		out 59-32,__zero_reg__
- 563 03f0 00C0      		rjmp .L95
- 564               		.size	cdsTask, .-cdsTask
- 565               	.global	manageTask
- 566               		.type	manageTask, @function
- 567               	manageTask:
- 568 03f2 0F93      		push r16
- 569 03f4 1F93      		push r17
- 570 03f6 DF93      		push r29
-GAS LISTING C:\Users\82104\AppData\Local\Temp/ccpr1O2j.s 			page 11
+ 514 0392 9093 0000 		sts (state)+1,r25
+ 515 0396 8093 0000 		sts state,r24
+ 516               	.L90:
+ 517 039a E091 0000 		lds r30,mel_idx
+ 518 039e F091 0000 		lds r31,(mel_idx)+1
+ 519 03a2 E050      		subi r30,lo8(-(melody))
+ 520 03a4 F040      		sbci r31,hi8(-(melody))
+ 521 03a6 8081      		ld r24,Z
+ 522 03a8 82BF      		out 82-32,r24
+ 523               	/* epilogue start */
+ 524 03aa FF91      		pop r31
+ 525 03ac EF91      		pop r30
+ 526 03ae 9F91      		pop r25
+ 527 03b0 8F91      		pop r24
+ 528 03b2 0F90      		pop r0
+ 529 03b4 0BBE      		out 91-32,r0
+ 530 03b6 0F90      		pop r0
+ 531 03b8 0FBE      		out __SREG__,r0
+ 532 03ba 0F90      		pop r0
+ 533 03bc 1F90      		pop __zero_reg__
+ 534 03be 1895      		reti
+ 535               	.L92:
+ 536 03c0 18BA      		out 56-32,__zero_reg__
+ 537 03c2 1092 0000 		sts (state)+1,__zero_reg__
+ 538 03c6 1092 0000 		sts state,__zero_reg__
+ 539 03ca 00C0      		rjmp .L90
+ 540               		.size	__vector_10, .-__vector_10
+ 541               	.global	calculate
+ 542               		.type	calculate, @function
+ 543               	calculate:
+ 544 03cc EF92      		push r14
+ 545 03ce FF92      		push r15
+ 546 03d0 0F93      		push r16
+ 547 03d2 1F93      		push r17
+ 548               	/* prologue: function */
+ 549               	/* frame size = 0 */
+ 550 03d4 9C01      		movw r18,r24
+ 551 03d6 97FD      		sbrc r25,7
+ 552 03d8 00C0      		rjmp .L94
+ 553 03da 8BE0      		ldi r24,lo8(11)
+ 554 03dc 8093 0000 		sts num+3,r24
+ 555 03e0 A901      		movw r20,r18
+ 556               	.L95:
+ 557 03e2 9A01      		movw r18,r20
+ 558 03e4 2070      		andi r18,lo8(32512)
+ 559 03e6 3F77      		andi r19,hi8(32512)
+ 560 03e8 3093 0000 		sts value_int,r19
+ 561 03ec 4093 0000 		sts value_deci,r20
+ 562 03f0 832F      		mov r24,r19
+ 563 03f2 6AE0      		ldi r22,lo8(10)
+ 564 03f4 0E94 0000 		call __udivmodqi4
+ 565 03f8 0E94 0000 		call __udivmodqi4
+ 566 03fc E92F      		mov r30,r25
+ 567 03fe 9093 0000 		sts num+2,r25
+ 568 0402 832F      		mov r24,r19
+ 569 0404 0E94 0000 		call __udivmodqi4
+ 570 0408 9093 0000 		sts num+1,r25
+GAS LISTING C:\Users\82104\AppData\Local\Temp/cc36OEJY.s 			page 11
 
 
- 571 03f8 CF93      		push r28
- 572 03fa 0F92      		push __tmp_reg__
- 573 03fc CDB7      		in r28,__SP_L__
- 574 03fe DEB7      		in r29,__SP_H__
- 575               	/* prologue: function */
- 576               	/* frame size = 1 */
- 577 0400 8FEF      		ldi r24,lo8(-1)
- 578 0402 84BB      		out 52-32,r24
- 579 0404 8FE0      		ldi r24,lo8(15)
- 580 0406 8093 6400 		sts 100,r24
- 581 040a 8FEC      		ldi r24,lo8(-49)
- 582 040c 82B9      		out 34-32,r24
- 583 040e 8AE0      		ldi r24,lo8(10)
- 584 0410 8ABF      		out 90-32,r24
- 585 0412 80E3      		ldi r24,lo8(48)
- 586 0414 89BF      		out 89-32,r24
- 587 0416 8FB7      		in r24,__SREG__
- 588 0418 8068      		ori r24,lo8(-128)
- 589 041a 8FBF      		out __SREG__,r24
- 590 041c 8E01      		movw r16,r28
- 591 041e 0F5F      		subi r16,lo8(-(1))
- 592 0420 1F4F      		sbci r17,hi8(-(1))
- 593 0422 00C0      		rjmp .L99
- 594               	.L98:
- 595 0424 82E3      		ldi r24,lo8(50)
- 596 0426 90E0      		ldi r25,hi8(50)
- 597 0428 0E94 0000 		call OSTimeDly
- 598               	.L99:
- 599 042c 8091 0000 		lds r24,signal
- 600 0430 9091 0000 		lds r25,(signal)+1
- 601 0434 0197      		sbiw r24,1
- 602 0436 01F0      		breq .L101
- 603               	.L97:
- 604 0438 8091 0000 		lds r24,signal
- 605 043c 9091 0000 		lds r25,(signal)+1
- 606 0440 892B      		or r24,r25
- 607 0442 01F4      		brne .L98
- 608 0444 8091 0000 		lds r24,Eflag
- 609 0448 9091 0000 		lds r25,(Eflag)+1
- 610 044c 62E0      		ldi r22,lo8(2)
- 611 044e 41E0      		ldi r20,lo8(1)
- 612 0450 9801      		movw r18,r16
- 613 0452 0E94 0000 		call OSFlagPost
- 614 0456 00C0      		rjmp .L98
- 615               	.L101:
- 616 0458 8091 0000 		lds r24,Eflag
- 617 045c 9091 0000 		lds r25,(Eflag)+1
- 618 0460 61E0      		ldi r22,lo8(1)
- 619 0462 41E0      		ldi r20,lo8(1)
- 620 0464 9801      		movw r18,r16
- 621 0466 0E94 0000 		call OSFlagPost
- 622 046a 00C0      		rjmp .L97
- 623               		.size	manageTask, .-manageTask
- 624               	.global	main
- 625               		.type	main, @function
- 626               	main:
- 627 046c DF93      		push r29
-GAS LISTING C:\Users\82104\AppData\Local\Temp/ccpr1O2j.s 			page 12
+ 571 040c 47FD      		sbrc r20,7
+ 572 040e 00C0      		rjmp .L96
+ 573 0410 80E0      		ldi r24,lo8(0)
+ 574 0412 0F2E      		mov __tmp_reg__,r31
+ 575 0414 FAE9      		ldi r31,lo8(0xc099999a)
+ 576 0416 EF2E      		mov r14,r31
+ 577 0418 F9E9      		ldi r31,hi8(0xc099999a)
+ 578 041a FF2E      		mov r15,r31
+ 579 041c F9E9      		ldi r31,hlo8(0xc099999a)
+ 580 041e 0F2F      		mov r16,r31
+ 581 0420 F0EC      		ldi r31,hhi8(0xc099999a)
+ 582 0422 1F2F      		mov r17,r31
+ 583 0424 F02D      		mov r31,__tmp_reg__
+ 584               	.L97:
+ 585 0426 8093 0000 		sts num,r24
+ 586 042a 692F      		mov r22,r25
+ 587 042c 70E0      		ldi r23,lo8(0)
+ 588 042e 6051      		subi r22,lo8(-(-528))
+ 589 0430 7240      		sbci r23,hi8(-(-528))
+ 590 0432 2AE0      		ldi r18,lo8(10)
+ 591 0434 E29F      		mul r30,r18
+ 592 0436 9001      		movw r18,r0
+ 593 0438 1124      		clr r1
+ 594 043a 620F      		add r22,r18
+ 595 043c 731F      		adc r23,r19
+ 596 043e 8827      		clr r24
+ 597 0440 77FD      		sbrc r23,7
+ 598 0442 8095      		com r24
+ 599 0444 982F      		mov r25,r24
+ 600 0446 0E94 0000 		call __floatsisf
+ 601 044a 9B01      		movw r18,r22
+ 602 044c AC01      		movw r20,r24
+ 603 044e C801      		movw r24,r16
+ 604 0450 B701      		movw r22,r14
+ 605 0452 0E94 0000 		call __addsf3
+ 606               	/* epilogue start */
+ 607 0456 1F91      		pop r17
+ 608 0458 0F91      		pop r16
+ 609 045a FF90      		pop r15
+ 610 045c EF90      		pop r14
+ 611 045e 0895      		ret
+ 612               	.L94:
+ 613 0460 8AE0      		ldi r24,lo8(10)
+ 614 0462 8093 0000 		sts num+3,r24
+ 615 0466 A901      		movw r20,r18
+ 616 0468 4095      		com r20
+ 617 046a 5095      		com r21
+ 618 046c 4150      		subi r20,lo8(-(-1))
+ 619 046e 5040      		sbci r21,hi8(-(-1))
+ 620 0470 00C0      		rjmp .L95
+ 621               	.L96:
+ 622 0472 85E0      		ldi r24,lo8(5)
+ 623 0474 0F2E      		mov __tmp_reg__,r31
+ 624 0476 FAE9      		ldi r31,lo8(0xc089999a)
+ 625 0478 EF2E      		mov r14,r31
+ 626 047a F9E9      		ldi r31,hi8(0xc089999a)
+ 627 047c FF2E      		mov r15,r31
+GAS LISTING C:\Users\82104\AppData\Local\Temp/cc36OEJY.s 			page 12
 
 
- 628 046e CF93      		push r28
- 629 0470 0F92      		push __tmp_reg__
- 630 0472 CDB7      		in r28,__SP_L__
- 631 0474 DEB7      		in r29,__SP_H__
- 632               	/* prologue: function */
- 633               	/* frame size = 1 */
- 634 0476 0E94 0000 		call OSInit
- 635               	/* #APP */
- 636               	 ;  37 "lab2.c" 1
- 637 047a F894      		cli
- 638               	 ;  0 "" 2
- 639               	/* #NOAPP */
- 640 047c 87E0      		ldi r24,lo8(7)
- 641 047e 83BF      		out 83-32,r24
- 642 0480 81E0      		ldi r24,lo8(1)
- 643 0482 87BF      		out 87-32,r24
- 644 0484 84E6      		ldi r24,lo8(100)
- 645 0486 82BF      		out 82-32,r24
- 646               	/* #APP */
- 647               	 ;  41 "lab2.c" 1
- 648 0488 7894      		sei
- 649               	 ;  0 "" 2
- 650               	/* #NOAPP */
- 651 048a 80E0      		ldi r24,lo8(0)
- 652 048c 90E0      		ldi r25,hi8(0)
- 653 048e 0E94 0000 		call OSMboxCreate
- 654 0492 9093 0000 		sts (Mbox)+1,r25
- 655 0496 8093 0000 		sts Mbox,r24
- 656 049a 80E0      		ldi r24,lo8(0)
- 657 049c BE01      		movw r22,r28
- 658 049e 6F5F      		subi r22,lo8(-(1))
- 659 04a0 7F4F      		sbci r23,hi8(-(1))
- 660 04a2 0E94 0000 		call OSFlagCreate
- 661 04a6 9093 0000 		sts (Eflag)+1,r25
- 662 04aa 8093 0000 		sts Eflag,r24
- 663 04ae 17B8      		out 39-32,__zero_reg__
- 664 04b0 87E8      		ldi r24,lo8(-121)
- 665 04b2 86B9      		out 38-32,r24
- 666 04b4 0E94 0000 		call InitI2C
- 667 04b8 80E0      		ldi r24,lo8(gs(manageTask))
- 668 04ba 90E0      		ldi r25,hi8(gs(manageTask))
- 669 04bc 60E0      		ldi r22,lo8(0)
- 670 04be 70E0      		ldi r23,hi8(0)
- 671 04c0 40E0      		ldi r20,lo8(TaskStk+127)
- 672 04c2 50E0      		ldi r21,hi8(TaskStk+127)
- 673 04c4 20E0      		ldi r18,lo8(0)
- 674 04c6 0E94 0000 		call OSTaskCreate
- 675 04ca 80E0      		ldi r24,lo8(gs(TemperatureTask))
- 676 04cc 90E0      		ldi r25,hi8(gs(TemperatureTask))
- 677 04ce 60E0      		ldi r22,lo8(0)
- 678 04d0 70E0      		ldi r23,hi8(0)
- 679 04d2 40E0      		ldi r20,lo8(TaskStk+255)
- 680 04d4 50E0      		ldi r21,hi8(TaskStk+255)
- 681 04d6 21E0      		ldi r18,lo8(1)
- 682 04d8 0E94 0000 		call OSTaskCreate
- 683 04dc 80E0      		ldi r24,lo8(gs(cdsTask))
- 684 04de 90E0      		ldi r25,hi8(gs(cdsTask))
-GAS LISTING C:\Users\82104\AppData\Local\Temp/ccpr1O2j.s 			page 13
+ 628 047e F9E8      		ldi r31,hlo8(0xc089999a)
+ 629 0480 0F2F      		mov r16,r31
+ 630 0482 F0EC      		ldi r31,hhi8(0xc089999a)
+ 631 0484 1F2F      		mov r17,r31
+ 632 0486 F02D      		mov r31,__tmp_reg__
+ 633 0488 00C0      		rjmp .L97
+ 634               		.size	calculate, .-calculate
+ 635               	.global	FireEmergence
+ 636               		.type	FireEmergence, @function
+ 637               	FireEmergence:
+ 638 048a AF92      		push r10
+ 639 048c BF92      		push r11
+ 640 048e DF92      		push r13
+ 641 0490 EF92      		push r14
+ 642 0492 FF92      		push r15
+ 643 0494 0F93      		push r16
+ 644 0496 1F93      		push r17
+ 645 0498 DF93      		push r29
+ 646 049a CF93      		push r28
+ 647 049c 0F92      		push __tmp_reg__
+ 648 049e CDB7      		in r28,__SP_L__
+ 649 04a0 DEB7      		in r29,__SP_H__
+ 650               	/* prologue: function */
+ 651               	/* frame size = 1 */
+ 652 04a2 8FEF      		ldi r24,lo8(-1)
+ 653 04a4 8ABB      		out 58-32,r24
+ 654 04a6 80E1      		ldi r24,lo8(16)
+ 655 04a8 87BB      		out 55-32,r24
+ 656 04aa 83E0      		ldi r24,lo8(3)
+ 657 04ac 85BD      		out 69-32,r24
+ 658 04ae 8FEC      		ldi r24,lo8(-49)
+ 659 04b0 82B9      		out 34-32,r24
+ 660 04b2 8AE0      		ldi r24,lo8(10)
+ 661 04b4 8ABF      		out 90-32,r24
+ 662 04b6 80E3      		ldi r24,lo8(48)
+ 663 04b8 89BF      		out 89-32,r24
+ 664 04ba E091 0000 		lds r30,mel_idx
+ 665 04be F091 0000 		lds r31,(mel_idx)+1
+ 666 04c2 E050      		subi r30,lo8(-(melody))
+ 667 04c4 F040      		sbci r31,hi8(-(melody))
+ 668 04c6 8081      		ld r24,Z
+ 669 04c8 84BD      		out 68-32,r24
+ 670               	/* #APP */
+ 671               	 ;  214 "lab2.c" 1
+ 672 04ca 7894      		sei
+ 673               	 ;  0 "" 2
+ 674               	/* #NOAPP */
+ 675 04cc 5E01      		movw r10,r28
+ 676 04ce 0894      		sec
+ 677 04d0 A11C      		adc r10,__zero_reg__
+ 678 04d2 B11C      		adc r11,__zero_reg__
+ 679 04d4 E0E4      		ldi r30,lo8(64)
+ 680 04d6 DE2E      		mov r13,r30
+ 681 04d8 70E9      		ldi r23,lo8(400)
+ 682 04da E72E      		mov r14,r23
+ 683 04dc 71E0      		ldi r23,hi8(400)
+ 684 04de F72E      		mov r15,r23
+GAS LISTING C:\Users\82104\AppData\Local\Temp/cc36OEJY.s 			page 13
 
 
- 685 04e0 60E0      		ldi r22,lo8(0)
- 686 04e2 70E0      		ldi r23,hi8(0)
- 687 04e4 40E0      		ldi r20,lo8(TaskStk+383)
- 688 04e6 50E0      		ldi r21,hi8(TaskStk+383)
- 689 04e8 22E0      		ldi r18,lo8(2)
- 690 04ea 0E94 0000 		call OSTaskCreate
- 691 04ee 0E94 0000 		call OSStart
- 692 04f2 80E0      		ldi r24,lo8(0)
- 693 04f4 90E0      		ldi r25,hi8(0)
- 694               	/* epilogue start */
- 695 04f6 0F90      		pop __tmp_reg__
- 696 04f8 CF91      		pop r28
- 697 04fa DF91      		pop r29
- 698 04fc 0895      		ret
- 699               		.size	main, .-main
- 700               	.global	signal
- 701               	.global	signal
- 702               		.section .bss
- 703               		.type	signal, @object
- 704               		.size	signal, 2
- 705               	signal:
- 706 0000 0000      		.skip 2,0
- 707               		.data
- 708               		.type	C.0.1645, @object
- 709               		.size	C.0.1645, 12
- 710               	C.0.1645:
- 711 0000 3F        		.byte	63
- 712 0001 06        		.byte	6
- 713 0002 5B        		.byte	91
- 714 0003 4F        		.byte	79
- 715 0004 66        		.byte	102
- 716 0005 6D        		.byte	109
- 717 0006 7C        		.byte	124
- 718 0007 07        		.byte	7
- 719 0008 7F        		.byte	127
- 720 0009 67        		.byte	103
- 721 000a 40        		.byte	64
- 722 000b 00        		.byte	0
- 723               		.comm TaskStk,384,1
- 724               		.comm Mbox,2,1
- 725               		.comm Eflag,2,1
- 726               	.global __do_copy_data
- 727               	.global __do_clear_bss
-GAS LISTING C:\Users\82104\AppData\Local\Temp/ccpr1O2j.s 			page 14
+ 685               	.L105:
+ 686 04e0 8091 0000 		lds r24,checkTemperflag
+ 687 04e4 9091 0000 		lds r25,(checkTemperflag)+1
+ 688 04e8 6FEF      		ldi r22,lo8(-1)
+ 689 04ea 42E8      		ldi r20,lo8(-126)
+ 690 04ec 20E0      		ldi r18,lo8(0)
+ 691 04ee 30E0      		ldi r19,hi8(0)
+ 692 04f0 8501      		movw r16,r10
+ 693 04f2 0E94 0000 		call OSFlagPend
+ 694 04f6 40E0      		ldi r20,lo8(0)
+ 695               	.L104:
+ 696 04f8 8091 0000 		lds r24,signal
+ 697 04fc 9091 0000 		lds r25,(signal)+1
+ 698 0500 0197      		sbiw r24,1
+ 699 0502 01F4      		brne .L100
+ 700 0504 8BB3      		in r24,59-32
+ 701 0506 8095      		com r24
+ 702 0508 8BBB      		out 59-32,r24
+ 703 050a D7BE      		out 87-32,r13
+ 704 050c 20E5      		ldi r18,lo8(-15536)
+ 705 050e 33EC      		ldi r19,hi8(-15536)
+ 706               	.L101:
+ 707 0510 C701      		movw r24,r14
+ 708               	/* #APP */
+ 709               	 ;  105 "c:/winavr-20100110/lib/gcc/../../avr/include/util/delay_basic.h" 1
+ 710 0512 0197      		1: sbiw r24,1
+ 711 0514 01F4      		brne 1b
+ 712               	 ;  0 "" 2
+ 713               	/* #NOAPP */
+ 714 0516 2150      		subi r18,lo8(-(-1))
+ 715 0518 3040      		sbci r19,hi8(-(-1))
+ 716 051a 01F4      		brne .L101
+ 717 051c 8091 0000 		lds r24,mel_idx
+ 718 0520 9091 0000 		lds r25,(mel_idx)+1
+ 719 0524 0196      		adiw r24,1
+ 720 0526 9093 0000 		sts (mel_idx)+1,r25
+ 721 052a 8093 0000 		sts mel_idx,r24
+ 722 052e 8091 0000 		lds r24,mel_idx
+ 723 0532 9091 0000 		lds r25,(mel_idx)+1
+ 724 0536 0297      		sbiw r24,2
+ 725 0538 01F0      		breq .L109
+ 726               	.L102:
+ 727 053a 4F5F      		subi r20,lo8(-(1))
+ 728 053c 483C      		cpi r20,lo8(-56)
+ 729 053e 01F4      		brne .L104
+ 730               	.L103:
+ 731 0540 81E0      		ldi r24,lo8(1)
+ 732 0542 90E0      		ldi r25,hi8(1)
+ 733 0544 0E94 0000 		call OSTimeDly
+ 734 0548 00C0      		rjmp .L105
+ 735               	.L109:
+ 736 054a 1092 0000 		sts (mel_idx)+1,__zero_reg__
+ 737 054e 1092 0000 		sts mel_idx,__zero_reg__
+ 738 0552 00C0      		rjmp .L102
+ 739               	.L100:
+ 740 0554 1BBA      		out 59-32,__zero_reg__
+ 741 0556 17BE      		out 87-32,__zero_reg__
+GAS LISTING C:\Users\82104\AppData\Local\Temp/cc36OEJY.s 			page 14
+
+
+ 742 0558 00C0      		rjmp .L103
+ 743               		.size	FireEmergence, .-FireEmergence
+ 744               	.global	cdsTask
+ 745               		.type	cdsTask, @function
+ 746               	cdsTask:
+ 747 055a DF92      		push r13
+ 748 055c EF92      		push r14
+ 749 055e FF92      		push r15
+ 750 0560 0F93      		push r16
+ 751 0562 1F93      		push r17
+ 752 0564 DF93      		push r29
+ 753 0566 CF93      		push r28
+ 754 0568 0F92      		push __tmp_reg__
+ 755 056a CDB7      		in r28,__SP_L__
+ 756 056c DEB7      		in r29,__SP_H__
+ 757               	/* prologue: function */
+ 758               	/* frame size = 1 */
+ 759 056e 8FEF      		ldi r24,lo8(-1)
+ 760 0570 8ABB      		out 58-32,r24
+ 761 0572 84BB      		out 52-32,r24
+ 762 0574 8FE0      		ldi r24,lo8(15)
+ 763 0576 8093 6400 		sts 100,r24
+ 764 057a 17B8      		out 39-32,__zero_reg__
+ 765 057c 87E8      		ldi r24,lo8(-121)
+ 766 057e 86B9      		out 38-32,r24
+ 767 0580 7E01      		movw r14,r28
+ 768 0582 0894      		sec
+ 769 0584 E11C      		adc r14,__zero_reg__
+ 770 0586 F11C      		adc r15,__zero_reg__
+ 771 0588 DD24      		clr r13
+ 772 058a DA94      		dec r13
+ 773 058c 00C0      		rjmp .L113
+ 774               	.L115:
+ 775 058e DBBA      		out 59-32,r13
+ 776               	.L112:
+ 777 0590 81E0      		ldi r24,lo8(1)
+ 778 0592 90E0      		ldi r25,hi8(1)
+ 779 0594 0E94 0000 		call OSTimeDly
+ 780               	.L113:
+ 781 0598 8091 0000 		lds r24,manageflag
+ 782 059c 9091 0000 		lds r25,(manageflag)+1
+ 783 05a0 62E0      		ldi r22,lo8(2)
+ 784 05a2 42E8      		ldi r20,lo8(-126)
+ 785 05a4 20E0      		ldi r18,lo8(0)
+ 786 05a6 30E0      		ldi r19,hi8(0)
+ 787 05a8 8701      		movw r16,r14
+ 788 05aa 0E94 0000 		call OSFlagPend
+ 789 05ae 0E94 0000 		call read_adc
+ 790 05b2 883C      		cpi r24,lo8(-56)
+ 791 05b4 00F0      		brlo .L115
+ 792 05b6 1BBA      		out 59-32,__zero_reg__
+ 793 05b8 00C0      		rjmp .L112
+ 794               		.size	cdsTask, .-cdsTask
+ 795               	.global	checkTemper
+ 796               		.type	checkTemper, @function
+ 797               	checkTemper:
+ 798 05ba 0F93      		push r16
+GAS LISTING C:\Users\82104\AppData\Local\Temp/cc36OEJY.s 			page 15
+
+
+ 799 05bc 1F93      		push r17
+ 800 05be DF93      		push r29
+ 801 05c0 CF93      		push r28
+ 802 05c2 0F92      		push __tmp_reg__
+ 803 05c4 CDB7      		in r28,__SP_L__
+ 804 05c6 DEB7      		in r29,__SP_H__
+ 805               	/* prologue: function */
+ 806               	/* frame size = 1 */
+ 807 05c8 8FEF      		ldi r24,lo8(-1)
+ 808 05ca 8ABB      		out 58-32,r24
+ 809 05cc 8E01      		movw r16,r28
+ 810 05ce 0F5F      		subi r16,lo8(-(1))
+ 811 05d0 1F4F      		sbci r17,hi8(-(1))
+ 812 05d2 00C0      		rjmp .L119
+ 813               	.L117:
+ 814 05d4 81E0      		ldi r24,lo8(1)
+ 815 05d6 90E0      		ldi r25,hi8(1)
+ 816 05d8 0E94 0000 		call OSTimeDly
+ 817               	.L119:
+ 818 05dc 8091 0000 		lds r24,index
+ 819 05e0 9091 0000 		lds r25,(index)+1
+ 820 05e4 97FD      		sbrc r25,7
+ 821 05e6 00C0      		rjmp .L117
+ 822 05e8 8091 0000 		lds r24,signal
+ 823 05ec 9091 0000 		lds r25,(signal)+1
+ 824 05f0 0197      		sbiw r24,1
+ 825 05f2 01F4      		brne .L117
+ 826 05f4 8091 0000 		lds r24,checktemperbox
+ 827 05f8 9091 0000 		lds r25,(checktemperbox)+1
+ 828 05fc 60E0      		ldi r22,lo8(0)
+ 829 05fe 70E0      		ldi r23,hi8(0)
+ 830 0600 A801      		movw r20,r16
+ 831 0602 0E94 0000 		call OSMboxPend
+ 832 0606 FC01      		movw r30,r24
+ 833 0608 0190      		ld __tmp_reg__,Z+
+ 834 060a F081      		ld r31,Z
+ 835 060c E02D      		mov r30,__tmp_reg__
+ 836 060e 8FEF      		ldi r24,hi8(-1)
+ 837 0610 EF3F      		cpi r30,lo8(-1)
+ 838 0612 F807      		cpc r31,r24
+ 839 0614 01F0      		breq .L121
+ 840 0616 E050      		subi r30,lo8(-(myMapTbl))
+ 841 0618 F040      		sbci r31,hi8(-(myMapTbl))
+ 842 061a 8081      		ld r24,Z
+ 843 061c 8BBB      		out 59-32,r24
+ 844 061e 00C0      		rjmp .L117
+ 845               	.L121:
+ 846 0620 1BBA      		out 59-32,__zero_reg__
+ 847 0622 00C0      		rjmp .L117
+ 848               		.size	checkTemper, .-checkTemper
+ 849               	.global	manageTask
+ 850               		.type	manageTask, @function
+ 851               	manageTask:
+ 852 0624 EF92      		push r14
+ 853 0626 FF92      		push r15
+ 854 0628 0F93      		push r16
+ 855 062a 1F93      		push r17
+GAS LISTING C:\Users\82104\AppData\Local\Temp/cc36OEJY.s 			page 16
+
+
+ 856 062c DF93      		push r29
+ 857 062e CF93      		push r28
+ 858 0630 0F92      		push __tmp_reg__
+ 859 0632 CDB7      		in r28,__SP_L__
+ 860 0634 DEB7      		in r29,__SP_H__
+ 861               	/* prologue: function */
+ 862               	/* frame size = 1 */
+ 863 0636 8FEF      		ldi r24,lo8(-1)
+ 864 0638 84BB      		out 52-32,r24
+ 865 063a 8FE0      		ldi r24,lo8(15)
+ 866 063c 8093 6400 		sts 100,r24
+ 867 0640 8FEC      		ldi r24,lo8(-49)
+ 868 0642 82B9      		out 34-32,r24
+ 869 0644 8AE0      		ldi r24,lo8(10)
+ 870 0646 8ABF      		out 90-32,r24
+ 871 0648 80E3      		ldi r24,lo8(48)
+ 872 064a 89BF      		out 89-32,r24
+ 873 064c 8FB7      		in r24,__SREG__
+ 874 064e 8068      		ori r24,lo8(-128)
+ 875 0650 8FBF      		out __SREG__,r24
+ 876 0652 8E01      		movw r16,r28
+ 877 0654 0F5F      		subi r16,lo8(-(1))
+ 878 0656 1F4F      		sbci r17,hi8(-(1))
+ 879 0658 EE24      		clr r14
+ 880 065a EA94      		dec r14
+ 881 065c FE2C      		mov r15,r14
+ 882 065e 00C0      		rjmp .L125
+ 883               	.L124:
+ 884 0660 81E0      		ldi r24,lo8(1)
+ 885 0662 90E0      		ldi r25,hi8(1)
+ 886 0664 0E94 0000 		call OSTimeDly
+ 887               	.L125:
+ 888 0668 8091 0000 		lds r24,signal
+ 889 066c 9091 0000 		lds r25,(signal)+1
+ 890 0670 0197      		sbiw r24,1
+ 891 0672 01F0      		breq .L127
+ 892               	.L123:
+ 893 0674 8091 0000 		lds r24,signal
+ 894 0678 9091 0000 		lds r25,(signal)+1
+ 895 067c 892B      		or r24,r25
+ 896 067e 01F4      		brne .L124
+ 897 0680 F092 0000 		sts (index)+1,r15
+ 898 0684 E092 0000 		sts index,r14
+ 899 0688 8091 0000 		lds r24,manageflag
+ 900 068c 9091 0000 		lds r25,(manageflag)+1
+ 901 0690 62E0      		ldi r22,lo8(2)
+ 902 0692 41E0      		ldi r20,lo8(1)
+ 903 0694 9801      		movw r18,r16
+ 904 0696 0E94 0000 		call OSFlagPost
+ 905 069a 00C0      		rjmp .L124
+ 906               	.L127:
+ 907 069c 8091 0000 		lds r24,manageflag
+ 908 06a0 9091 0000 		lds r25,(manageflag)+1
+ 909 06a4 61E0      		ldi r22,lo8(1)
+ 910 06a6 41E0      		ldi r20,lo8(1)
+ 911 06a8 9801      		movw r18,r16
+ 912 06aa 0E94 0000 		call OSFlagPost
+GAS LISTING C:\Users\82104\AppData\Local\Temp/cc36OEJY.s 			page 17
+
+
+ 913 06ae 00C0      		rjmp .L123
+ 914               		.size	manageTask, .-manageTask
+ 915               	.global	TemperatureTask
+ 916               		.type	TemperatureTask, @function
+ 917               	TemperatureTask:
+ 918 06b0 6F92      		push r6
+ 919 06b2 7F92      		push r7
+ 920 06b4 8F92      		push r8
+ 921 06b6 9F92      		push r9
+ 922 06b8 AF92      		push r10
+ 923 06ba BF92      		push r11
+ 924 06bc CF92      		push r12
+ 925 06be DF92      		push r13
+ 926 06c0 EF92      		push r14
+ 927 06c2 FF92      		push r15
+ 928 06c4 0F93      		push r16
+ 929 06c6 1F93      		push r17
+ 930 06c8 DF93      		push r29
+ 931 06ca CF93      		push r28
+ 932 06cc 0F92      		push __tmp_reg__
+ 933 06ce CDB7      		in r28,__SP_L__
+ 934 06d0 DEB7      		in r29,__SP_H__
+ 935               	/* prologue: function */
+ 936               	/* frame size = 1 */
+ 937 06d2 8FEF      		ldi r24,lo8(-1)
+ 938 06d4 8ABB      		out 58-32,r24
+ 939 06d6 0E94 0000 		call InitI2C
+ 940 06da 81E0      		ldi r24,lo8(1)
+ 941 06dc 60E0      		ldi r22,lo8(0)
+ 942 06de 0E94 0000 		call write_twi_1byte_nopreset
+ 943 06e2 80E0      		ldi r24,lo8(0)
+ 944 06e4 0E94 0000 		call write_twi_0byte_nopreset
+ 945 06e8 3E01      		movw r6,r28
+ 946 06ea 0894      		sec
+ 947 06ec 611C      		adc r6,__zero_reg__
+ 948 06ee 711C      		adc r7,__zero_reg__
+ 949               	.L139:
+ 950 06f0 8091 0000 		lds r24,manageflag
+ 951 06f4 9091 0000 		lds r25,(manageflag)+1
+ 952 06f8 61E0      		ldi r22,lo8(1)
+ 953 06fa 42E8      		ldi r20,lo8(-126)
+ 954 06fc 20E0      		ldi r18,lo8(0)
+ 955 06fe 30E0      		ldi r19,hi8(0)
+ 956 0700 8301      		movw r16,r6
+ 957 0702 0E94 0000 		call OSFlagPend
+ 958 0706 0E94 0000 		call read_twi_2byte_preset
+ 959 070a 4C01      		movw r8,r24
+ 960 070c 0E94 0000 		call DisplayTemp
+ 961 0710 8091 0000 		lds r24,index
+ 962 0714 9091 0000 		lds r25,(index)+1
+ 963 0718 8F5F      		subi r24,lo8(-1)
+ 964 071a 9F4F      		sbci r25,hi8(-1)
+ 965 071c 01F4      		brne .+2
+ 966 071e 00C0      		rjmp .L140
+ 967 0720 C401      		movw r24,r8
+ 968 0722 0E94 0000 		call calculate
+ 969 0726 5B01      		movw r10,r22
+GAS LISTING C:\Users\82104\AppData\Local\Temp/cc36OEJY.s 			page 18
+
+
+ 970 0728 6C01      		movw r12,r24
+ 971 072a 8091 0000 		lds r24,temperature_value
+ 972 072e 9091 0000 		lds r25,(temperature_value)+1
+ 973 0732 0E94 0000 		call calculate
+ 974 0736 7B01      		movw r14,r22
+ 975 0738 8C01      		movw r16,r24
+ 976 073a C601      		movw r24,r12
+ 977 073c B501      		movw r22,r10
+ 978 073e A801      		movw r20,r16
+ 979 0740 9701      		movw r18,r14
+ 980 0742 0E94 0000 		call __gtsf2
+ 981 0746 1816      		cp __zero_reg__,r24
+ 982 0748 04F4      		brge .L131
+ 983 074a 8091 0000 		lds r24,index
+ 984 074e 9091 0000 		lds r25,(index)+1
+ 985 0752 0497      		sbiw r24,4
+ 986 0754 01F0      		breq .L141
+ 987 0756 8091 0000 		lds r24,checktemperbox
+ 988 075a 9091 0000 		lds r25,(checktemperbox)+1
+ 989 075e 60E0      		ldi r22,lo8(index)
+ 990 0760 70E0      		ldi r23,hi8(index)
+ 991 0762 0E94 0000 		call OSMboxPost
+ 992 0766 8091 0000 		lds r24,index
+ 993 076a 9091 0000 		lds r25,(index)+1
+ 994 076e 0196      		adiw r24,1
+ 995 0770 9093 0000 		sts (index)+1,r25
+ 996 0774 8093 0000 		sts index,r24
+ 997               	.L131:
+ 998 0778 C601      		movw r24,r12
+ 999 077a B501      		movw r22,r10
+ 1000 077c A801      		movw r20,r16
+ 1001 077e 9701      		movw r18,r14
+ 1002 0780 0E94 0000 		call __ltsf2
+ 1003 0784 8823      		tst r24
+ 1004 0786 04F4      		brge .L134
+ 1005 0788 8091 0000 		lds r24,index
+ 1006 078c 9091 0000 		lds r25,(index)+1
+ 1007 0790 97FD      		sbrc r25,7
+ 1008 0792 00C0      		rjmp .L134
+ 1009 0794 0197      		sbiw r24,1
+ 1010 0796 9093 0000 		sts (index)+1,r25
+ 1011 079a 8093 0000 		sts index,r24
+ 1012 079e 8091 0000 		lds r24,checktemperbox
+ 1013 07a2 9091 0000 		lds r25,(checktemperbox)+1
+ 1014 07a6 60E0      		ldi r22,lo8(index)
+ 1015 07a8 70E0      		ldi r23,hi8(index)
+ 1016 07aa 0E94 0000 		call OSMboxPost
+ 1017               	.L134:
+ 1018 07ae 9092 0000 		sts (temperature_value)+1,r9
+ 1019 07b2 8092 0000 		sts temperature_value,r8
+ 1020 07b6 00C0      		rjmp .L139
+ 1021               	.L140:
+ 1022 07b8 9092 0000 		sts (temperature_value)+1,r9
+ 1023 07bc 8092 0000 		sts temperature_value,r8
+ 1024 07c0 1092 0000 		sts (index)+1,__zero_reg__
+ 1025 07c4 1092 0000 		sts index,__zero_reg__
+ 1026 07c8 00C0      		rjmp .L139
+GAS LISTING C:\Users\82104\AppData\Local\Temp/cc36OEJY.s 			page 19
+
+
+ 1027               	.L141:
+ 1028 07ca 8091 0000 		lds r24,checkTemperflag
+ 1029 07ce 9091 0000 		lds r25,(checkTemperflag)+1
+ 1030 07d2 6FEF      		ldi r22,lo8(-1)
+ 1031 07d4 41E0      		ldi r20,lo8(1)
+ 1032 07d6 9301      		movw r18,r6
+ 1033 07d8 0E94 0000 		call OSFlagPost
+ 1034 07dc 1092 0000 		sts (index)+1,__zero_reg__
+ 1035 07e0 1092 0000 		sts index,__zero_reg__
+ 1036 07e4 00C0      		rjmp .L131
+ 1037               		.size	TemperatureTask, .-TemperatureTask
+ 1038               	.global	main
+ 1039               		.type	main, @function
+ 1040               	main:
+ 1041 07e6 0F93      		push r16
+ 1042 07e8 1F93      		push r17
+ 1043 07ea DF93      		push r29
+ 1044 07ec CF93      		push r28
+ 1045 07ee 0F92      		push __tmp_reg__
+ 1046 07f0 CDB7      		in r28,__SP_L__
+ 1047 07f2 DEB7      		in r29,__SP_H__
+ 1048               	/* prologue: function */
+ 1049               	/* frame size = 1 */
+ 1050 07f4 0E94 0000 		call OSInit
+ 1051               	/* #APP */
+ 1052               	 ;  65 "lab2.c" 1
+ 1053 07f8 F894      		cli
+ 1054               	 ;  0 "" 2
+ 1055               	/* #NOAPP */
+ 1056 07fa 87E0      		ldi r24,lo8(7)
+ 1057 07fc 83BF      		out 83-32,r24
+ 1058 07fe 81E0      		ldi r24,lo8(1)
+ 1059 0800 87BF      		out 87-32,r24
+ 1060 0802 84E6      		ldi r24,lo8(100)
+ 1061 0804 82BF      		out 82-32,r24
+ 1062 0806 80E0      		ldi r24,lo8(0)
+ 1063 0808 90E0      		ldi r25,hi8(0)
+ 1064 080a 0E94 0000 		call OSMboxCreate
+ 1065 080e 9093 0000 		sts (checktemperbox)+1,r25
+ 1066 0812 8093 0000 		sts checktemperbox,r24
+ 1067 0816 80E0      		ldi r24,lo8(0)
+ 1068 0818 8E01      		movw r16,r28
+ 1069 081a 0F5F      		subi r16,lo8(-(1))
+ 1070 081c 1F4F      		sbci r17,hi8(-(1))
+ 1071 081e B801      		movw r22,r16
+ 1072 0820 0E94 0000 		call OSFlagCreate
+ 1073 0824 9093 0000 		sts (manageflag)+1,r25
+ 1074 0828 8093 0000 		sts manageflag,r24
+ 1075 082c 80E0      		ldi r24,lo8(0)
+ 1076 082e B801      		movw r22,r16
+ 1077 0830 0E94 0000 		call OSFlagCreate
+ 1078 0834 9093 0000 		sts (checkTemperflag)+1,r25
+ 1079 0838 8093 0000 		sts checkTemperflag,r24
+ 1080               	/* #APP */
+ 1081               	 ;  74 "lab2.c" 1
+ 1082 083c 7894      		sei
+ 1083               	 ;  0 "" 2
+GAS LISTING C:\Users\82104\AppData\Local\Temp/cc36OEJY.s 			page 20
+
+
+ 1084               	/* #NOAPP */
+ 1085 083e 80E0      		ldi r24,lo8(gs(manageTask))
+ 1086 0840 90E0      		ldi r25,hi8(gs(manageTask))
+ 1087 0842 60E0      		ldi r22,lo8(0)
+ 1088 0844 70E0      		ldi r23,hi8(0)
+ 1089 0846 40E0      		ldi r20,lo8(TaskStk+127)
+ 1090 0848 50E0      		ldi r21,hi8(TaskStk+127)
+ 1091 084a 20E0      		ldi r18,lo8(0)
+ 1092 084c 0E94 0000 		call OSTaskCreate
+ 1093 0850 80E0      		ldi r24,lo8(gs(TemperatureTask))
+ 1094 0852 90E0      		ldi r25,hi8(gs(TemperatureTask))
+ 1095 0854 60E0      		ldi r22,lo8(0)
+ 1096 0856 70E0      		ldi r23,hi8(0)
+ 1097 0858 40E0      		ldi r20,lo8(TaskStk+639)
+ 1098 085a 50E0      		ldi r21,hi8(TaskStk+639)
+ 1099 085c 24E0      		ldi r18,lo8(4)
+ 1100 085e 0E94 0000 		call OSTaskCreate
+ 1101 0862 80E0      		ldi r24,lo8(gs(cdsTask))
+ 1102 0864 90E0      		ldi r25,hi8(gs(cdsTask))
+ 1103 0866 60E0      		ldi r22,lo8(0)
+ 1104 0868 70E0      		ldi r23,hi8(0)
+ 1105 086a 40E0      		ldi r20,lo8(TaskStk+255)
+ 1106 086c 50E0      		ldi r21,hi8(TaskStk+255)
+ 1107 086e 21E0      		ldi r18,lo8(1)
+ 1108 0870 0E94 0000 		call OSTaskCreate
+ 1109 0874 80E0      		ldi r24,lo8(gs(checkTemper))
+ 1110 0876 90E0      		ldi r25,hi8(gs(checkTemper))
+ 1111 0878 60E0      		ldi r22,lo8(0)
+ 1112 087a 70E0      		ldi r23,hi8(0)
+ 1113 087c 40E0      		ldi r20,lo8(TaskStk+511)
+ 1114 087e 50E0      		ldi r21,hi8(TaskStk+511)
+ 1115 0880 23E0      		ldi r18,lo8(3)
+ 1116 0882 0E94 0000 		call OSTaskCreate
+ 1117 0886 80E0      		ldi r24,lo8(gs(FireEmergence))
+ 1118 0888 90E0      		ldi r25,hi8(gs(FireEmergence))
+ 1119 088a 60E0      		ldi r22,lo8(0)
+ 1120 088c 70E0      		ldi r23,hi8(0)
+ 1121 088e 40E0      		ldi r20,lo8(TaskStk+383)
+ 1122 0890 50E0      		ldi r21,hi8(TaskStk+383)
+ 1123 0892 22E0      		ldi r18,lo8(2)
+ 1124 0894 0E94 0000 		call OSTaskCreate
+ 1125 0898 0E94 0000 		call OSStart
+ 1126 089c 80E0      		ldi r24,lo8(0)
+ 1127 089e 90E0      		ldi r25,hi8(0)
+ 1128               	/* epilogue start */
+ 1129 08a0 0F90      		pop __tmp_reg__
+ 1130 08a2 CF91      		pop r28
+ 1131 08a4 DF91      		pop r29
+ 1132 08a6 1F91      		pop r17
+ 1133 08a8 0F91      		pop r16
+ 1134 08aa 0895      		ret
+ 1135               		.size	main, .-main
+ 1136               	.global	index
+ 1137               		.data
+ 1138               		.type	index, @object
+ 1139               		.size	index, 2
+ 1140               	index:
+GAS LISTING C:\Users\82104\AppData\Local\Temp/cc36OEJY.s 			page 21
+
+
+ 1141 0000 FFFF      		.word	-1
+ 1142               	.global	signal
+ 1143               	.global	signal
+ 1144               		.section .bss
+ 1145               		.type	signal, @object
+ 1146               		.size	signal, 2
+ 1147               	signal:
+ 1148 0000 0000      		.skip 2,0
+ 1149               	.global	mel_idx
+ 1150               	.global	mel_idx
+ 1151               		.type	mel_idx, @object
+ 1152               		.size	mel_idx, 2
+ 1153               	mel_idx:
+ 1154 0002 0000      		.skip 2,0
+ 1155               	.global	state
+ 1156               	.global	state
+ 1157               		.type	state, @object
+ 1158               		.size	state, 2
+ 1159               	state:
+ 1160 0004 0000      		.skip 2,0
+ 1161               	.global	myMapTbl
+ 1162               		.data
+ 1163               		.type	myMapTbl, @object
+ 1164               		.size	myMapTbl, 5
+ 1165               	myMapTbl:
+ 1166 0002 01        		.byte	1
+ 1167 0003 03        		.byte	3
+ 1168 0004 0F        		.byte	15
+ 1169 0005 3F        		.byte	63
+ 1170 0006 7F        		.byte	127
+ 1171               	.global	melody
+ 1172               		.type	melody, @object
+ 1173               		.size	melody, 2
+ 1174               	melody:
+ 1175 0007 2B        		.byte	43
+ 1176 0008 72        		.byte	114
+ 1177               		.type	C.0.1647, @object
+ 1178               		.size	C.0.1647, 12
+ 1179               	C.0.1647:
+ 1180 0009 3F        		.byte	63
+ 1181 000a 06        		.byte	6
+ 1182 000b 5B        		.byte	91
+ 1183 000c 4F        		.byte	79
+ 1184 000d 66        		.byte	102
+ 1185 000e 6D        		.byte	109
+ 1186 000f 7C        		.byte	124
+ 1187 0010 07        		.byte	7
+ 1188 0011 7F        		.byte	127
+ 1189 0012 67        		.byte	103
+ 1190 0013 40        		.byte	64
+ 1191 0014 00        		.byte	0
+ 1192               		.comm TaskStk,640,1
+ 1193               		.comm checktemperbox,2,1
+ 1194               		.comm manageflag,2,1
+ 1195               		.comm checkTemperflag,2,1
+ 1196               		.comm temperature_value,2,1
+ 1197               		.comm value_int,1,1
+GAS LISTING C:\Users\82104\AppData\Local\Temp/cc36OEJY.s 			page 22
+
+
+ 1198               		.comm value_deci,1,1
+ 1199               		.comm num,4,1
+ 1200               	.global __do_copy_data
+ 1201               	.global __do_clear_bss
+GAS LISTING C:\Users\82104\AppData\Local\Temp/cc36OEJY.s 			page 23
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 lab2.c
-C:\Users\82104\AppData\Local\Temp/ccpr1O2j.s:2      *ABS*:0000003f __SREG__
-C:\Users\82104\AppData\Local\Temp/ccpr1O2j.s:3      *ABS*:0000003e __SP_H__
-C:\Users\82104\AppData\Local\Temp/ccpr1O2j.s:4      *ABS*:0000003d __SP_L__
-C:\Users\82104\AppData\Local\Temp/ccpr1O2j.s:5      *ABS*:00000034 __CCP__
-C:\Users\82104\AppData\Local\Temp/ccpr1O2j.s:6      *ABS*:00000000 __tmp_reg__
-C:\Users\82104\AppData\Local\Temp/ccpr1O2j.s:7      *ABS*:00000001 __zero_reg__
-C:\Users\82104\AppData\Local\Temp/ccpr1O2j.s:11     .text:00000000 InitI2C
-C:\Users\82104\AppData\Local\Temp/ccpr1O2j.s:31     .text:0000001e write_twi_1byte_nopreset
-C:\Users\82104\AppData\Local\Temp/ccpr1O2j.s:91     .text:000000a0 write_twi_0byte_nopreset
-C:\Users\82104\AppData\Local\Temp/ccpr1O2j.s:140    .text:00000106 read_twi_2byte_preset
-C:\Users\82104\AppData\Local\Temp/ccpr1O2j.s:205    .text:00000192 DisplayTemp
-C:\Users\82104\AppData\Local\Temp/ccpr1O2j.s:710    .data:00000000 C.0.1645
-C:\Users\82104\AppData\Local\Temp/ccpr1O2j.s:380    .text:000002d4 init_adc
-C:\Users\82104\AppData\Local\Temp/ccpr1O2j.s:391    .text:000002dc read_adc
-C:\Users\82104\AppData\Local\Temp/ccpr1O2j.s:411    .text:000002f4 show_adc
-C:\Users\82104\AppData\Local\Temp/ccpr1O2j.s:426    .text:00000304 __vector_5
-C:\Users\82104\AppData\Local\Temp/ccpr1O2j.s:705    .bss:00000000 signal
-C:\Users\82104\AppData\Local\Temp/ccpr1O2j.s:459    .text:00000334 __vector_6
-C:\Users\82104\AppData\Local\Temp/ccpr1O2j.s:490    .text:00000360 TemperatureTask
-                            *COM*:00000002 Eflag
-C:\Users\82104\AppData\Local\Temp/ccpr1O2j.s:526    .text:000003a8 cdsTask
-C:\Users\82104\AppData\Local\Temp/ccpr1O2j.s:567    .text:000003f2 manageTask
-C:\Users\82104\AppData\Local\Temp/ccpr1O2j.s:626    .text:0000046c main
-                            *COM*:00000002 Mbox
-                            *COM*:00000180 TaskStk
+C:\Users\82104\AppData\Local\Temp/cc36OEJY.s:2      *ABS*:0000003f __SREG__
+C:\Users\82104\AppData\Local\Temp/cc36OEJY.s:3      *ABS*:0000003e __SP_H__
+C:\Users\82104\AppData\Local\Temp/cc36OEJY.s:4      *ABS*:0000003d __SP_L__
+C:\Users\82104\AppData\Local\Temp/cc36OEJY.s:5      *ABS*:00000034 __CCP__
+C:\Users\82104\AppData\Local\Temp/cc36OEJY.s:6      *ABS*:00000000 __tmp_reg__
+C:\Users\82104\AppData\Local\Temp/cc36OEJY.s:7      *ABS*:00000001 __zero_reg__
+C:\Users\82104\AppData\Local\Temp/cc36OEJY.s:11     .text:00000000 InitI2C
+C:\Users\82104\AppData\Local\Temp/cc36OEJY.s:33     .text:00000026 write_twi_1byte_nopreset
+C:\Users\82104\AppData\Local\Temp/cc36OEJY.s:93     .text:000000a8 write_twi_0byte_nopreset
+C:\Users\82104\AppData\Local\Temp/cc36OEJY.s:142    .text:0000010e read_twi_2byte_preset
+C:\Users\82104\AppData\Local\Temp/cc36OEJY.s:207    .text:0000019a DisplayTemp
+C:\Users\82104\AppData\Local\Temp/cc36OEJY.s:1179   .data:00000009 C.0.1647
+C:\Users\82104\AppData\Local\Temp/cc36OEJY.s:382    .text:000002dc init_adc
+C:\Users\82104\AppData\Local\Temp/cc36OEJY.s:393    .text:000002e4 read_adc
+C:\Users\82104\AppData\Local\Temp/cc36OEJY.s:413    .text:000002fc show_adc
+C:\Users\82104\AppData\Local\Temp/cc36OEJY.s:428    .text:0000030c __vector_5
+C:\Users\82104\AppData\Local\Temp/cc36OEJY.s:1147   .bss:00000000 signal
+C:\Users\82104\AppData\Local\Temp/cc36OEJY.s:461    .text:0000033c __vector_6
+C:\Users\82104\AppData\Local\Temp/cc36OEJY.s:492    .text:00000368 __vector_10
+C:\Users\82104\AppData\Local\Temp/cc36OEJY.s:1159   .bss:00000004 state
+C:\Users\82104\AppData\Local\Temp/cc36OEJY.s:1153   .bss:00000002 mel_idx
+C:\Users\82104\AppData\Local\Temp/cc36OEJY.s:1174   .data:00000007 melody
+C:\Users\82104\AppData\Local\Temp/cc36OEJY.s:543    .text:000003cc calculate
+                            *COM*:00000004 num
+                            *COM*:00000001 value_int
+                            *COM*:00000001 value_deci
+C:\Users\82104\AppData\Local\Temp/cc36OEJY.s:637    .text:0000048a FireEmergence
+                            *COM*:00000002 checkTemperflag
+C:\Users\82104\AppData\Local\Temp/cc36OEJY.s:746    .text:0000055a cdsTask
+                            *COM*:00000002 manageflag
+C:\Users\82104\AppData\Local\Temp/cc36OEJY.s:797    .text:000005ba checkTemper
+C:\Users\82104\AppData\Local\Temp/cc36OEJY.s:1140   .data:00000000 index
+                            *COM*:00000002 checktemperbox
+C:\Users\82104\AppData\Local\Temp/cc36OEJY.s:1165   .data:00000002 myMapTbl
+C:\Users\82104\AppData\Local\Temp/cc36OEJY.s:851    .text:00000624 manageTask
+C:\Users\82104\AppData\Local\Temp/cc36OEJY.s:917    .text:000006b0 TemperatureTask
+                            *COM*:00000002 temperature_value
+C:\Users\82104\AppData\Local\Temp/cc36OEJY.s:1040   .text:000007e6 main
+                            *COM*:00000280 TaskStk
 
 UNDEFINED SYMBOLS
 __udivmodqi4
+__floatsisf
+__addsf3
 OSFlagPend
 OSTimeDly
+OSMboxPend
 OSFlagPost
+__gtsf2
+OSMboxPost
+__ltsf2
 OSInit
 OSMboxCreate
 OSFlagCreate
 OSTaskCreate
+GAS LISTING C:\Users\82104\AppData\Local\Temp/cc36OEJY.s 			page 24
+
+
 OSStart
 __do_copy_data
 __do_clear_bss

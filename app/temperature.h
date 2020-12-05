@@ -7,10 +7,13 @@
 
 void InitI2C()
 {
-  	DDRC = 0xff; DDRG = 0xff; // FND 출력 세팅
+	DDRC = 0xff; 
+	DDRG = 0x0f; // FND 출력 세팅
 	PORTD = 3;   // For Internal pull-up for SCL & SCK
-	TWBR = (F_CPU/F_SCK - 16) / 2; // 공식 참조, bit trans rate 설정
-	TWSR = TWSR & 0xfc;  // Prescaler 값 = 00 (1배)
+	SFIOR &= ~(1 << PUD); 			// PUD
+	TWSR = 0; 						// TWPS0 = 0, TWPS1 = 0
+	TWBR = 32;						// for 100  K Hz bus clock
+	TWCR = _BV(TWEA) | _BV(TWEN);	// TWEA = Ack pulse is generated
 }
 
 void write_twi_1byte_nopreset(unsigned char reg, unsigned char  data)
