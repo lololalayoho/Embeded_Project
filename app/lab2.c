@@ -30,14 +30,15 @@ unsigned char melody[2] = {43,114};
 
 ISR(INT4_vect){
 	signal = Temp;
-	_delay_ms(10);
+	OSTimeDly(1);
 }
 
 ISR(INT5_vect){
-	INT8U i;
 	signal = CDS;
-
-	_delay_ms(10);
+	PORTB = 0X00;
+	state = OFF;
+	TIMSK = _BV(TOIE0);
+	OSTimeDly(1);
 }
 
 ISR(TIMER2_OVF_vect){
@@ -46,10 +47,10 @@ ISR(TIMER2_OVF_vect){
 		state = OFF;
 	}
 	else{
-		PORTB = 0xff;
+		PORTB = 0x10;
 		state = ON;
 	}
-	TCNT0 = melody[mel_idx];
+	TCNT2 = melody[mel_idx];
 }
 
 void  cdsTask(void *data);
@@ -67,6 +68,7 @@ int main (void){
   TCCR0 = 0x07;
   TIMSK = _BV(TOIE0);
   TCNT0 = 256 - (CPU_CLOCK_HZ / OS_TICKS_PER_SEC / 1024);
+  
   checktemperbox = OSMboxCreate((void*)0);
   manageflag = OSFlagCreate(0x00,&err);
   checkTemperflag = OSFlagCreate(0x00,&err);
@@ -203,7 +205,7 @@ void FireEmergence(void *data){
 	int value;
 
 	DDRA = 0xff;
-	DDRB = 0x10;
+	DDRB = 0xff;
 	TCCR2 = 0x03;
 
 	DDRE = 0xCF;
@@ -218,15 +220,11 @@ void FireEmergence(void *data){
 			if(signal == Temp){
 				PORTA ^= 0xff;
 				TIMSK = 0x40;
-				_delay_ms(5000);
-				mel_idx = mel_idx + 1;
-				//_delay_ms(500);
-				if(mel_idx == 2)
-					mel_idx = 0;
+				_delay_ms(50);
+				mel_idx = (mel_idx + 1)%2;
 			}
 			else{
-				PORTA = 0x00;
-				TIMSK = 0x00;
+				TIMSK = _BV(TOIE0);
 				break;
 			}
 		}

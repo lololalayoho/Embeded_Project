@@ -4,6 +4,8 @@ c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_mulsi3.o)
                               ucos_ii.o (__mulsi3)
 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_udivmodqi4.o)
                               lab2.o (__udivmodqi4)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_divmodhi4.o)
+                              lab2.o (__divmodhi4)
 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_udivmodsi4.o)
                               ucos_ii.o (__udivmodsi4)
 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_exit.o)
@@ -20,6 +22,8 @@ c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_si_to_sf.o)
                               lab2.o (__floatsisf)
 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_thenan_sf.o)
                               c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_addsub_sf.o) (__thenan_sf)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_udivmodhi4.o)
+                              c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_divmodhi4.o) (__udivmodhi4)
 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_prologue.o)
                               c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_addsub_sf.o) (__prologue_saves__)
 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_epilogue.o)
@@ -189,7 +193,7 @@ LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000     0x2786
+.text           0x00000000     0x2832
  *(.vectors)
  .vectors       0x00000000       0x8c c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm128.o
                 0x00000000                __vectors
@@ -276,122 +280,129 @@ LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a
                 0x000000ca                __vector_14
                 0x000000ca                __vector_18
                 0x000000ca                __vector_20
- .text          0x000000ce      0x8ac lab2.o
+ .text          0x000000ce      0x90a lab2.o
                 0x000003b2                read_adc
-                0x0000040a                __vector_6
-                0x0000049a                calculate
+                0x00000620                __vector_6
+                0x0000043e                calculate
                 0x000003ca                show_adc
                 0x000000ce                InitI2C
                 0x000000f4                write_twi_1byte_nopreset
-                0x00000628                cdsTask
-                0x000006f2                manageTask
-                0x000003da                __vector_5
+                0x000005c0                cdsTask
+                0x00000750                manageTask
+                0x0000068a                __vector_5
                 0x000003aa                init_adc
-                0x000008b4                main
-                0x00000558                FireEmergence
-                0x0000077e                TemperatureTask
+                0x00000912                main
+                0x000004fc                FireEmergence
+                0x000007dc                TemperatureTask
                 0x00000176                write_twi_0byte_nopreset
                 0x000001dc                read_twi_2byte_preset
-                0x00000436                __vector_10
+                0x000003da                __vector_10
                 0x00000268                DisplayTemp
-                0x00000688                checkTemper
- .text          0x0000097a       0x64 os_cpu_c.o
-                0x000009cc                OSTaskCreateHook
-                0x000009d2                OSTaskStatHook
-                0x000009d6                OSInitHookBegin
-                0x000009ce                OSTaskDelHook
-                0x000009d4                OSTimeTickHook
-                0x000009dc                OSTCBInitHook
-                0x0000097a                OSTaskStkInit
-                0x000009d8                OSInitHookEnd
-                0x000009d0                OSTaskSwHook
-                0x000009da                OSTaskIdleHook
- .text          0x000009de     0x1184 ucos_ii.o
-                0x000009de                OSIntEnter
-                0x00000ec8                OS_TCBInit
-                0x00001302                OSTaskCreate
-                0x000019c8                OSIntExit
-                0x00000ca0                OS_FlagUnlink
-                0x00000fc8                OS_Sched
-                0x000013e8                OSSemPend
-                0x0000156c                OSMboxPost
-                0x00000c78                OS_FlagInit
-                0x000011c8                OS_TaskStat
-                0x00000a1c                OS_EventTaskRdy
-                0x0000147e                OSQPend
-                0x00001056                OSTimeDly
-                0x000010a6                OSTimeDlyHMSM
-                0x000013aa                OSSemPost
-                0x000018a4                OSSchedUnlock
-                0x000012b2                OSStatInit
-                0x0000163c                OSFlagPost
-                0x00000ad2                OS_EventTaskWait
-                0x0000196e                OSStart
-                0x00000d9c                OSQCreate
-                0x000018da                OSTimeTick
-                0x00000e80                OSSemCreate
-                0x000009f8                OSSchedLock
-                0x00000b94                OSFlagCreate
-                0x0000172a                OSFlagPend
-                0x00000d54                OSMboxCreate
-                0x000015a0                OSMboxPend
-                0x00001a6e                OSInit
-                0x00000b3c                OS_EventTO
-                0x00000e54                OS_QInit
-                0x00000a16                OSVersion
-                0x00000b8a                OS_EventWaitListInit
-                0x00000f98                OS_TaskIdle
- .text          0x00001b62      0x25e os_cpu_a.o
-                0x00001b62                OSStartHighRdy
-                0x00001bca                OSCtxSw
-                0x00001c90                OSIntCtxSw
-                0x00001cfe                OSTickISR
-                0x00001cfe                __vector_16
- .text          0x00001dc0        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_mulsi3.o)
- .text          0x00001dc0        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_udivmodqi4.o)
- .text          0x00001dc0        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_udivmodsi4.o)
- .text          0x00001dc0        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_exit.o)
- .text          0x00001dc0        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_clear_bss.o)
- .text          0x00001dc0      0x354 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_addsub_sf.o)
-                0x00002058                __subsf3
-                0x000020ba                __addsf3
- .text          0x00002114       0x60 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_gt_sf.o)
-                0x00002114                __gtsf2
- .text          0x00002174       0x60 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_lt_sf.o)
-                0x00002174                __ltsf2
- .text          0x000021d4       0xbc c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_si_to_sf.o)
-                0x000021d4                __floatsisf
- .text          0x00002290        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_thenan_sf.o)
- .text          0x00002290        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_prologue.o)
- .text          0x00002290        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_epilogue.o)
- .text          0x00002290       0x9e c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_clzsi2.o)
-                0x00002290                __clzsi2
- .text          0x0000232e      0x1aa c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_pack_sf.o)
-                0x0000232e                __pack_f
- .text          0x000024d8       0xf0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_unpack_sf.o)
-                0x000024d8                __unpack_f
- .text          0x000025c8       0xb2 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_fpcmp_parts_sf.o)
-                0x000025c8                __fpcmp_parts_f
- .text          0x0000267a        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_clz.o)
-                0x0000267a                . = ALIGN (0x2)
+                0x000006e6                checkTemper
+ .text          0x000009d8       0x64 os_cpu_c.o
+                0x00000a2a                OSTaskCreateHook
+                0x00000a30                OSTaskStatHook
+                0x00000a34                OSInitHookBegin
+                0x00000a2c                OSTaskDelHook
+                0x00000a32                OSTimeTickHook
+                0x00000a3a                OSTCBInitHook
+                0x000009d8                OSTaskStkInit
+                0x00000a36                OSInitHookEnd
+                0x00000a2e                OSTaskSwHook
+                0x00000a38                OSTaskIdleHook
+ .text          0x00000a3c     0x1184 ucos_ii.o
+                0x00000a3c                OSIntEnter
+                0x00000f26                OS_TCBInit
+                0x00001360                OSTaskCreate
+                0x00001a26                OSIntExit
+                0x00000cfe                OS_FlagUnlink
+                0x00001026                OS_Sched
+                0x00001446                OSSemPend
+                0x000015ca                OSMboxPost
+                0x00000cd6                OS_FlagInit
+                0x00001226                OS_TaskStat
+                0x00000a7a                OS_EventTaskRdy
+                0x000014dc                OSQPend
+                0x000010b4                OSTimeDly
+                0x00001104                OSTimeDlyHMSM
+                0x00001408                OSSemPost
+                0x00001902                OSSchedUnlock
+                0x00001310                OSStatInit
+                0x0000169a                OSFlagPost
+                0x00000b30                OS_EventTaskWait
+                0x000019cc                OSStart
+                0x00000dfa                OSQCreate
+                0x00001938                OSTimeTick
+                0x00000ede                OSSemCreate
+                0x00000a56                OSSchedLock
+                0x00000bf2                OSFlagCreate
+                0x00001788                OSFlagPend
+                0x00000db2                OSMboxCreate
+                0x000015fe                OSMboxPend
+                0x00001acc                OSInit
+                0x00000b9a                OS_EventTO
+                0x00000eb2                OS_QInit
+                0x00000a74                OSVersion
+                0x00000be8                OS_EventWaitListInit
+                0x00000ff6                OS_TaskIdle
+ .text          0x00001bc0      0x25e os_cpu_a.o
+                0x00001bc0                OSStartHighRdy
+                0x00001c28                OSCtxSw
+                0x00001cee                OSIntCtxSw
+                0x00001d5c                OSTickISR
+                0x00001d5c                __vector_16
+ .text          0x00001e1e        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_mulsi3.o)
+ .text          0x00001e1e        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_udivmodqi4.o)
+ .text          0x00001e1e        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_divmodhi4.o)
+ .text          0x00001e1e        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_udivmodsi4.o)
+ .text          0x00001e1e        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_exit.o)
+ .text          0x00001e1e        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_clear_bss.o)
+ .text          0x00001e1e      0x354 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_addsub_sf.o)
+                0x000020b6                __subsf3
+                0x00002118                __addsf3
+ .text          0x00002172       0x60 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_gt_sf.o)
+                0x00002172                __gtsf2
+ .text          0x000021d2       0x60 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_lt_sf.o)
+                0x000021d2                __ltsf2
+ .text          0x00002232       0xbc c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_si_to_sf.o)
+                0x00002232                __floatsisf
+ .text          0x000022ee        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_thenan_sf.o)
+ .text          0x000022ee        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_udivmodhi4.o)
+ .text          0x000022ee        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_prologue.o)
+ .text          0x000022ee        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_epilogue.o)
+ .text          0x000022ee       0x9e c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_clzsi2.o)
+                0x000022ee                __clzsi2
+ .text          0x0000238c      0x1aa c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_pack_sf.o)
+                0x0000238c                __pack_f
+ .text          0x00002536       0xf0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_unpack_sf.o)
+                0x00002536                __unpack_f
+ .text          0x00002626       0xb2 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_fpcmp_parts_sf.o)
+                0x00002626                __fpcmp_parts_f
+ .text          0x000026d8        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_clz.o)
+                0x000026d8                . = ALIGN (0x2)
  *(.text.*)
- .text.libgcc   0x0000267a       0x3e c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_mulsi3.o)
-                0x0000267a                __mulsi3
- .text.libgcc   0x000026b8       0x18 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_udivmodqi4.o)
-                0x000026b8                __udivmodqi4
- .text.libgcc   0x000026d0       0x44 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_udivmodsi4.o)
-                0x000026d0                __udivmodsi4
- .text.libgcc   0x00002714        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_exit.o)
- .text.libgcc   0x00002714        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_clear_bss.o)
- .text.libgcc   0x00002714       0x38 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_prologue.o)
-                0x00002714                __prologue_saves__
- .text.libgcc   0x0000274c       0x36 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_epilogue.o)
-                0x0000274c                __epilogue_restores__
-                0x00002782                . = ALIGN (0x2)
+ .text.libgcc   0x000026d8       0x3e c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_mulsi3.o)
+                0x000026d8                __mulsi3
+ .text.libgcc   0x00002716       0x18 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_udivmodqi4.o)
+                0x00002716                __udivmodqi4
+ .text.libgcc   0x0000272e       0x26 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_divmodhi4.o)
+                0x0000272e                __divmodhi4
+                0x0000272e                _div
+ .text.libgcc   0x00002754       0x44 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_udivmodsi4.o)
+                0x00002754                __udivmodsi4
+ .text.libgcc   0x00002798        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_exit.o)
+ .text.libgcc   0x00002798        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_clear_bss.o)
+ .text.libgcc   0x00002798       0x28 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_udivmodhi4.o)
+                0x00002798                __udivmodhi4
+ .text.libgcc   0x000027c0       0x38 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_prologue.o)
+                0x000027c0                __prologue_saves__
+ .text.libgcc   0x000027f8       0x36 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_epilogue.o)
+                0x000027f8                __epilogue_restores__
+                0x0000282e                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x00002782        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_exit.o)
-                0x00002782                exit
-                0x00002782                _exit
+ .fini9         0x0000282e        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_exit.o)
+                0x0000282e                exit
+                0x0000282e                _exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -410,11 +421,11 @@ LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x00002782        0x4 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_exit.o)
+ .fini0         0x0000282e        0x4 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_exit.o)
  *(.fini0)
-                0x00002786                _etext = .
+                0x00002832                _etext = .
 
-.data           0x00800100      0x226 load address 0x00002786
+.data           0x00800100      0x226 load address 0x00002832
                 0x00800100                PROVIDE (__data_start, .)
  *(.data)
  .data          0x00800100        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm128.o
@@ -429,6 +440,7 @@ LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a
  .data          0x0080021d        0x0 os_cpu_a.o
  .data          0x0080021d        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_mulsi3.o)
  .data          0x0080021d        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_udivmodqi4.o)
+ .data          0x0080021d        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_divmodhi4.o)
  .data          0x0080021d        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_udivmodsi4.o)
  .data          0x0080021d        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_exit.o)
  .data          0x0080021d        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_clear_bss.o)
@@ -438,6 +450,7 @@ LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a
  .data          0x0080021d        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_si_to_sf.o)
  .data          0x0080021d        0x8 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_thenan_sf.o)
                 0x0080021d                __thenan_sf
+ .data          0x00800225        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_udivmodhi4.o)
  .data          0x00800225        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_prologue.o)
  .data          0x00800225        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_epilogue.o)
  .data          0x00800225        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_clzsi2.o)
@@ -468,6 +481,7 @@ LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a
  .bss           0x0080032c        0x0 os_cpu_a.o
  .bss           0x0080032c        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_mulsi3.o)
  .bss           0x0080032c        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_udivmodqi4.o)
+ .bss           0x0080032c        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_divmodhi4.o)
  .bss           0x0080032c        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_udivmodsi4.o)
  .bss           0x0080032c        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_exit.o)
  .bss           0x0080032c        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_clear_bss.o)
@@ -476,6 +490,7 @@ LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a
  .bss           0x0080032c        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_lt_sf.o)
  .bss           0x0080032c        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_si_to_sf.o)
  .bss           0x0080032c        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_thenan_sf.o)
+ .bss           0x0080032c        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_udivmodhi4.o)
  .bss           0x0080032c        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_prologue.o)
  .bss           0x0080032c        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_epilogue.o)
  .bss           0x0080032c        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_clzsi2.o)
@@ -525,8 +540,8 @@ LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a
                 0x00800de3                OSTCBPrioTbl
                 0x00800dfd                OSIdleCtrRun
                 0x00800e01                PROVIDE (__bss_end, .)
-                0x00002786                __data_load_start = LOADADDR (.data)
-                0x000029ac                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x00002832                __data_load_start = LOADADDR (.data)
+                0x00002a58                __data_load_end = (__data_load_start + SIZEOF (.data))
 
 .noinit         0x00800e01        0x0
                 0x00800e01                PROVIDE (__noinit_start, .)
@@ -846,6 +861,8 @@ __clzsi2                                          c:/winavr-20100110/bin/../lib/
 __data_end                                        c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm128.o
 __data_load_start                                 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm128.o
 __data_start                                      c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm128.o
+__divmodhi4                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_divmodhi4.o)
+                                                  lab2.o
 __do_clear_bss                                    c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_clear_bss.o)
                                                   ucos_ii.o
                                                   lab2.o
@@ -884,6 +901,8 @@ __stack                                           c:/winavr-20100110/bin/../lib/
 __subsf3                                          c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_addsub_sf.o)
 __thenan_sf                                       c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_thenan_sf.o)
                                                   c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_addsub_sf.o)
+__udivmodhi4                                      c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_udivmodhi4.o)
+                                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_divmodhi4.o)
 __udivmodqi4                                      c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_udivmodqi4.o)
                                                   lab2.o
 __udivmodsi4                                      c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_udivmodsi4.o)
@@ -932,6 +951,7 @@ __vector_8                                        c:/winavr-20100110/bin/../lib/
 __vector_9                                        c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm128.o
 __vector_default                                  c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm128.o
 __vectors                                         c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr51/crtm128.o
+_div                                              c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_divmodhi4.o)
 _exit                                             c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr51\libgcc.a(_exit.o)
 calculate                                         lab2.o
 cdsTask                                           lab2.o
