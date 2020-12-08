@@ -1,4 +1,4 @@
-GAS LISTING C:\Users\82104\AppData\Local\Temp/ccbl174o.s 			page 1
+GAS LISTING C:\Users\82104\AppData\Local\Temp/cc0xFDiN.s 			page 1
 
 
    1               		.file	"os_cpu_c.c"
@@ -58,7 +58,7 @@ GAS LISTING C:\Users\82104\AppData\Local\Temp/ccbl174o.s 			page 1
   55 0050 0895      		ret
   56               		.size	OSTaskStkInit, .-OSTaskStkInit
   57               	.global	OSTaskCreateHook
-GAS LISTING C:\Users\82104\AppData\Local\Temp/ccbl174o.s 			page 2
+GAS LISTING C:\Users\82104\AppData\Local\Temp/cc0xFDiN.s 			page 2
 
 
   58               		.type	OSTaskCreateHook, @function
@@ -118,7 +118,7 @@ GAS LISTING C:\Users\82104\AppData\Local\Temp/ccbl174o.s 			page 1
  112               		.size	OSInitHookEnd, .-OSInitHookEnd
  113               	.global	OSTaskIdleHook
  114               		.type	OSTaskIdleHook, @function
-GAS LISTING C:\Users\82104\AppData\Local\Temp/ccbl174o.s 			page 3
+GAS LISTING C:\Users\82104\AppData\Local\Temp/cc0xFDiN.s 			page 3
 
 
  115               	OSTaskIdleHook:
@@ -135,26 +135,26 @@ GAS LISTING C:\Users\82104\AppData\Local\Temp/ccbl174o.s 			page 1
  126               	/* epilogue start */
  127 0062 0895      		ret
  128               		.size	OSTCBInitHook, .-OSTCBInitHook
-GAS LISTING C:\Users\82104\AppData\Local\Temp/ccbl174o.s 			page 4
+GAS LISTING C:\Users\82104\AppData\Local\Temp/cc0xFDiN.s 			page 4
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 os_cpu_c.c
-C:\Users\82104\AppData\Local\Temp/ccbl174o.s:2      *ABS*:0000003f __SREG__
-C:\Users\82104\AppData\Local\Temp/ccbl174o.s:3      *ABS*:0000003e __SP_H__
-C:\Users\82104\AppData\Local\Temp/ccbl174o.s:4      *ABS*:0000003d __SP_L__
-C:\Users\82104\AppData\Local\Temp/ccbl174o.s:5      *ABS*:00000034 __CCP__
-C:\Users\82104\AppData\Local\Temp/ccbl174o.s:6      *ABS*:00000000 __tmp_reg__
-C:\Users\82104\AppData\Local\Temp/ccbl174o.s:7      *ABS*:00000001 __zero_reg__
-C:\Users\82104\AppData\Local\Temp/ccbl174o.s:11     .text:00000000 OSTaskStkInit
-C:\Users\82104\AppData\Local\Temp/ccbl174o.s:59     .text:00000052 OSTaskCreateHook
-C:\Users\82104\AppData\Local\Temp/ccbl174o.s:67     .text:00000054 OSTaskDelHook
-C:\Users\82104\AppData\Local\Temp/ccbl174o.s:75     .text:00000056 OSTaskSwHook
-C:\Users\82104\AppData\Local\Temp/ccbl174o.s:83     .text:00000058 OSTaskStatHook
-C:\Users\82104\AppData\Local\Temp/ccbl174o.s:91     .text:0000005a OSTimeTickHook
-C:\Users\82104\AppData\Local\Temp/ccbl174o.s:99     .text:0000005c OSInitHookBegin
-C:\Users\82104\AppData\Local\Temp/ccbl174o.s:107    .text:0000005e OSInitHookEnd
-C:\Users\82104\AppData\Local\Temp/ccbl174o.s:115    .text:00000060 OSTaskIdleHook
-C:\Users\82104\AppData\Local\Temp/ccbl174o.s:123    .text:00000062 OSTCBInitHook
+C:\Users\82104\AppData\Local\Temp/cc0xFDiN.s:2      *ABS*:0000003f __SREG__
+C:\Users\82104\AppData\Local\Temp/cc0xFDiN.s:3      *ABS*:0000003e __SP_H__
+C:\Users\82104\AppData\Local\Temp/cc0xFDiN.s:4      *ABS*:0000003d __SP_L__
+C:\Users\82104\AppData\Local\Temp/cc0xFDiN.s:5      *ABS*:00000034 __CCP__
+C:\Users\82104\AppData\Local\Temp/cc0xFDiN.s:6      *ABS*:00000000 __tmp_reg__
+C:\Users\82104\AppData\Local\Temp/cc0xFDiN.s:7      *ABS*:00000001 __zero_reg__
+C:\Users\82104\AppData\Local\Temp/cc0xFDiN.s:11     .text:00000000 OSTaskStkInit
+C:\Users\82104\AppData\Local\Temp/cc0xFDiN.s:59     .text:00000052 OSTaskCreateHook
+C:\Users\82104\AppData\Local\Temp/cc0xFDiN.s:67     .text:00000054 OSTaskDelHook
+C:\Users\82104\AppData\Local\Temp/cc0xFDiN.s:75     .text:00000056 OSTaskSwHook
+C:\Users\82104\AppData\Local\Temp/cc0xFDiN.s:83     .text:00000058 OSTaskStatHook
+C:\Users\82104\AppData\Local\Temp/cc0xFDiN.s:91     .text:0000005a OSTimeTickHook
+C:\Users\82104\AppData\Local\Temp/cc0xFDiN.s:99     .text:0000005c OSInitHookBegin
+C:\Users\82104\AppData\Local\Temp/cc0xFDiN.s:107    .text:0000005e OSInitHookEnd
+C:\Users\82104\AppData\Local\Temp/cc0xFDiN.s:115    .text:00000060 OSTaskIdleHook
+C:\Users\82104\AppData\Local\Temp/cc0xFDiN.s:123    .text:00000062 OSTCBInitHook
 
 NO UNDEFINED SYMBOLS

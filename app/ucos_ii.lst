@@ -1,4 +1,4 @@
-GAS LISTING C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s 			page 1
+GAS LISTING C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s 			page 1
 
 
    1               		.file	"ucos_ii.c"
@@ -58,7 +58,7 @@ GAS LISTING C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s 			page 1
   55               	.global	OSVersion
   56               		.type	OSVersion, @function
   57               	OSVersion:
-GAS LISTING C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s 			page 2
+GAS LISTING C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s 			page 2
 
 
   58               	/* prologue: function */
@@ -118,7 +118,7 @@ GAS LISTING C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s 			page 1
  112 0092 8923      		and r24,r25
  113 0094 1696      		adiw r26,6
  114 0096 8C93      		st X,r24
-GAS LISTING C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s 			page 3
+GAS LISTING C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s 			page 3
 
 
  115 0098 8823      		tst r24
@@ -178,7 +178,7 @@ GAS LISTING C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s 			page 1
  169               	/* frame size = 0 */
  170 00f8 EC01      		movw r28,r24
  171 00fa A091 0000 		lds r26,OSTCBCur
-GAS LISTING C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s 			page 4
+GAS LISTING C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s 			page 4
 
 
  172 00fe B091 0000 		lds r27,(OSTCBCur)+1
@@ -238,7 +238,7 @@ GAS LISTING C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s 			page 1
  226               	/* prologue: function */
  227               	/* frame size = 0 */
  228 0162 EC01      		movw r28,r24
-GAS LISTING C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s 			page 5
+GAS LISTING C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s 			page 5
 
 
  229 0164 A091 0000 		lds r26,OSTCBCur
@@ -298,7 +298,7 @@ GAS LISTING C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s 			page 1
  283 01b6 282F      		mov r18,r24
  284 01b8 DB01      		movw r26,r22
  285 01ba 8091 0000 		lds r24,OSIntNesting
-GAS LISTING C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s 			page 6
+GAS LISTING C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s 			page 6
 
 
  286 01be 8823      		tst r24
@@ -358,7 +358,7 @@ GAS LISTING C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s 			page 1
  340 020c DF93      		push r29
  341               	/* prologue: function */
  342               	/* frame size = 0 */
-GAS LISTING C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s 			page 7
+GAS LISTING C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s 			page 7
 
 
  343 020e 7C01      		movw r14,r24
@@ -418,7 +418,7 @@ GAS LISTING C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s 			page 1
  397 027c 5296      		adiw r26,18
  398 027e 9C91      		ld r25,X
  399 0280 9095      		com r25
-GAS LISTING C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s 			page 8
+GAS LISTING C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s 			page 8
 
 
  400 0282 8091 0000 		lds r24,OSRdyGrp
@@ -478,7 +478,7 @@ GAS LISTING C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s 			page 1
  454 02d6 DC93      		st X,r29
  455 02d8 CE93      		st -X,r28
  456 02da 2097      		sbiw r28,0
-GAS LISTING C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s 			page 9
+GAS LISTING C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s 			page 9
 
 
  457 02dc 01F0      		breq .L44
@@ -538,7 +538,7 @@ GAS LISTING C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s 			page 1
  511 033c 5096      		adiw r26,16
  512 033e EC91      		ld r30,X
  513 0340 5097      		sbiw r26,16
-GAS LISTING C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s 			page 10
+GAS LISTING C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s 			page 10
 
 
  514 0342 F0E0      		ldi r31,lo8(0)
@@ -598,7 +598,7 @@ GAS LISTING C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s 			page 1
  568               	/* #NOAPP */
  569 039c 3097      		sbiw r30,0
  570 039e 01F0      		breq .L53
-GAS LISTING C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s 			page 11
+GAS LISTING C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s 			page 11
 
 
  571 03a0 81E0      		ldi r24,lo8(1)
@@ -658,7 +658,7 @@ GAS LISTING C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s 			page 1
  625               	/* #NOAPP */
  626 03ec A091 0000 		lds r26,OSQFreeList
  627 03f0 B091 0000 		lds r27,(OSQFreeList)+1
-GAS LISTING C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s 			page 12
+GAS LISTING C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s 			page 12
 
 
  628 03f4 1097      		sbiw r26,0
@@ -718,7 +718,7 @@ GAS LISTING C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s 			page 1
  682               	.L61:
  683 0458 8091 0000 		lds r24,OSEventFreeList
  684 045c 9091 0000 		lds r25,(OSEventFreeList)+1
-GAS LISTING C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s 			page 13
+GAS LISTING C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s 			page 13
 
 
  685 0460 9583      		std Z+5,r25
@@ -778,7 +778,7 @@ GAS LISTING C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s 			page 1
  739               	/* #NOAPP */
  740 04ae E091 0000 		lds r30,OSEventFreeList
  741 04b2 F091 0000 		lds r31,(OSEventFreeList)+1
-GAS LISTING C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s 			page 14
+GAS LISTING C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s 			page 14
 
 
  742 04b6 3097      		sbiw r30,0
@@ -838,7 +838,7 @@ GAS LISTING C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s 			page 1
  796 0506 9093 0000 		sts (OSTCBFreeList)+1,r25
  797 050a 8093 0000 		sts OSTCBFreeList,r24
  798               	/* #APP */
-GAS LISTING C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s 			page 15
+GAS LISTING C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s 			page 15
 
 
  799               	 ;  1047 "c:/ucos-II/source/os_core.c" 1
@@ -898,7 +898,7 @@ GAS LISTING C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s 			page 1
  853 0574 1C82      		std Y+4,__zero_reg__
  854 0576 3097      		sbiw r30,0
  855 0578 01F0      		breq .L76
-GAS LISTING C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s 			page 16
+GAS LISTING C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s 			page 16
 
 
  856 057a D583      		std Z+5,r29
@@ -958,7 +958,7 @@ GAS LISTING C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s 			page 1
  910 05c8 B091 0000 		lds r27,(OSIdleCtr)+3
  911 05cc 0196      		adiw r24,1
  912 05ce A11D      		adc r26,__zero_reg__
-GAS LISTING C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s 			page 17
+GAS LISTING C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s 			page 17
 
 
  913 05d0 B11D      		adc r27,__zero_reg__
@@ -1018,7 +1018,7 @@ GAS LISTING C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s 			page 1
  967 0634 F0E0      		ldi r31,lo8(0)
  968 0636 EE0F      		lsl r30
  969 0638 FF1F      		rol r31
-GAS LISTING C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s 			page 18
+GAS LISTING C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s 			page 18
 
 
  970 063a E050      		subi r30,lo8(-(OSTCBPrioTbl))
@@ -1078,7 +1078,7 @@ GAS LISTING C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s 			page 1
  1024 06a0 8083      		st Z,r24
  1025 06a2 8823      		tst r24
  1026 06a4 01F4      		brne .L87
-GAS LISTING C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s 			page 19
+GAS LISTING C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s 			page 19
 
 
  1027 06a6 5296      		adiw r26,18
@@ -1138,7 +1138,7 @@ GAS LISTING C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s 			page 1
  1081 06fa 00F0      		brlo .L94
  1082 06fc 83E5      		ldi r24,lo8(83)
  1083               	.L93:
-GAS LISTING C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s 			page 20
+GAS LISTING C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s 			page 20
 
 
  1084               	/* epilogue start */
@@ -1198,7 +1198,7 @@ GAS LISTING C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s 			page 1
  1138 0764 2CE3      		ldi r18,lo8(60)
  1139 0766 30E0      		ldi r19,hi8(60)
  1140 0768 40E0      		ldi r20,hlo8(60)
-GAS LISTING C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s 			page 21
+GAS LISTING C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s 			page 21
 
 
  1141 076a 50E0      		ldi r21,hhi8(60)
@@ -1258,7 +1258,7 @@ GAS LISTING C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s 			page 1
  1195 07de 0E94 0000 		call OSTimeDly
  1196 07e2 2197      		sbiw r28,1
  1197 07e4 01F4      		brne .L98
-GAS LISTING C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s 			page 22
+GAS LISTING C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s 			page 22
 
 
  1198               	.L95:
@@ -1318,7 +1318,7 @@ GAS LISTING C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s 			page 1
  1252 0852 0E94 0000 		call OSTimeDly
  1253               	.L109:
  1254               	/* #APP */
-GAS LISTING C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s 			page 23
+GAS LISTING C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s 			page 23
 
 
  1255               	 ;  970 "c:/ucos-II/source/os_core.c" 1
@@ -1378,7 +1378,7 @@ GAS LISTING C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s 			page 1
  1309 08d4 82E0      		ldi r24,lo8(2)
  1310 08d6 90E0      		ldi r25,hi8(2)
  1311 08d8 0E94 0000 		call OSTimeDly
-GAS LISTING C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s 			page 24
+GAS LISTING C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s 			page 24
 
 
  1312               	/* #APP */
@@ -1438,7 +1438,7 @@ GAS LISTING C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s 			page 1
  1366               	/* frame size = 0 */
  1367 0938 FC01      		movw r30,r24
  1368 093a 122F      		mov r17,r18
-GAS LISTING C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s 			page 25
+GAS LISTING C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s 			page 25
 
 
  1369               	/* #APP */
@@ -1498,7 +1498,7 @@ GAS LISTING C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s 			page 1
  1423 098c 30E0      		ldi r19,hi8(0)
  1424 098e EE24      		clr r14
  1425 0990 FF24      		clr r15
-GAS LISTING C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s 			page 26
+GAS LISTING C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s 			page 26
 
 
  1426 0992 8701      		movw r16,r14
@@ -1558,7 +1558,7 @@ GAS LISTING C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s 			page 1
  1480 09d2 8823      		tst r24
  1481 09d4 01F4      		brne .L127
  1482 09d6 8281      		ldd r24,Z+2
-GAS LISTING C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s 			page 27
+GAS LISTING C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s 			page 27
 
 
  1483 09d8 9381      		ldd r25,Z+3
@@ -1618,7 +1618,7 @@ GAS LISTING C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s 			page 1
  1537 0a1e F894      		cli
  1538               	 ;  0 "" 2
  1539               	/* #NOAPP */
-GAS LISTING C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s 			page 28
+GAS LISTING C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s 			page 28
 
 
  1540 0a20 8A81      		ldd r24,Y+2
@@ -1678,7 +1678,7 @@ GAS LISTING C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s 			page 1
  1594 0a78 80FD      		sbrc r24,0
  1595 0a7a 00C0      		rjmp .L135
  1596 0a7c 1782      		std Z+7,__zero_reg__
-GAS LISTING C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s 			page 29
+GAS LISTING C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s 			page 29
 
 
  1597 0a7e 1682      		std Z+6,__zero_reg__
@@ -1707,1515 +1707,1608 @@ GAS LISTING C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s 			page 1
  1620 0a9c 8083      		st Z,r24
  1621 0a9e 00C0      		rjmp .L133
  1622               		.size	OSSemPend, .-OSSemPend
- 1623               	.global	OSQPend
- 1624               		.type	OSQPend, @function
- 1625               	OSQPend:
- 1626 0aa0 EF92      		push r14
- 1627 0aa2 FF92      		push r15
- 1628 0aa4 0F93      		push r16
- 1629 0aa6 1F93      		push r17
- 1630 0aa8 CF93      		push r28
- 1631 0aaa DF93      		push r29
- 1632               	/* prologue: function */
- 1633               	/* frame size = 0 */
- 1634 0aac 8C01      		movw r16,r24
- 1635 0aae 7A01      		movw r14,r20
- 1636 0ab0 8091 0000 		lds r24,OSIntNesting
- 1637 0ab4 8823      		tst r24
- 1638 0ab6 01F0      		breq .+2
- 1639 0ab8 00C0      		rjmp .L143
- 1640               	/* #APP */
- 1641               	 ;  346 "c:/ucos-II/source/os_q.c" 1
- 1642 0aba F894      		cli
- 1643               	 ;  0 "" 2
- 1644               	/* #NOAPP */
- 1645 0abc F801      		movw r30,r16
- 1646 0abe A481      		ldd r26,Z+4
- 1647 0ac0 B581      		ldd r27,Z+5
- 1648 0ac2 1C96      		adiw r26,12
- 1649 0ac4 8D91      		ld r24,X+
- 1650 0ac6 9C91      		ld r25,X
- 1651 0ac8 1D97      		sbiw r26,12+1
- 1652 0aca 0097      		sbiw r24,0
- 1653 0acc 01F0      		breq .L139
-GAS LISTING C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s 			page 30
+ 1623               	.global	OSQPost
+ 1624               		.type	OSQPost, @function
+ 1625               	OSQPost:
+ 1626               	/* prologue: function */
+ 1627               	/* frame size = 0 */
+ 1628 0aa0 FC01      		movw r30,r24
+ 1629               	/* #APP */
+ 1630               	 ;  417 "c:/ucos-II/source/os_q.c" 1
+ 1631 0aa2 F894      		cli
+ 1632               	 ;  0 "" 2
+ 1633               	/* #NOAPP */
+ 1634 0aa4 8181      		ldd r24,Z+1
+ 1635 0aa6 8823      		tst r24
+ 1636 0aa8 01F4      		brne .L142
+ 1637 0aaa A481      		ldd r26,Z+4
+ 1638 0aac B581      		ldd r27,Z+5
+ 1639 0aae 1C96      		adiw r26,12
+ 1640 0ab0 2D91      		ld r18,X+
+ 1641 0ab2 3C91      		ld r19,X
+ 1642 0ab4 1D97      		sbiw r26,12+1
+ 1643 0ab6 1A96      		adiw r26,10
+ 1644 0ab8 8D91      		ld r24,X+
+ 1645 0aba 9C91      		ld r25,X
+ 1646 0abc 1B97      		sbiw r26,10+1
+ 1647 0abe 2817      		cp r18,r24
+ 1648 0ac0 3907      		cpc r19,r25
+ 1649 0ac2 00F0      		brlo .L139
+ 1650               	/* #APP */
+ 1651               	 ;  426 "c:/ucos-II/source/os_q.c" 1
+ 1652 0ac4 7894      		sei
+ 1653               	 ;  0 "" 2
+GAS LISTING C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s 			page 30
 
 
- 1654 0ace 1896      		adiw r26,8
- 1655 0ad0 ED91      		ld r30,X+
- 1656 0ad2 FC91      		ld r31,X
- 1657 0ad4 1997      		sbiw r26,8+1
- 1658 0ad6 C191      		ld r28,Z+
- 1659 0ad8 D191      		ld r29,Z+
- 1660 0ada 1996      		adiw r26,8+1
- 1661 0adc FC93      		st X,r31
- 1662 0ade EE93      		st -X,r30
- 1663 0ae0 1897      		sbiw r26,8
- 1664 0ae2 0197      		sbiw r24,1
- 1665 0ae4 1D96      		adiw r26,12+1
- 1666 0ae6 9C93      		st X,r25
- 1667 0ae8 8E93      		st -X,r24
- 1668 0aea 1C97      		sbiw r26,12
- 1669 0aec 1496      		adiw r26,4
- 1670 0aee 8D91      		ld r24,X+
- 1671 0af0 9C91      		ld r25,X
- 1672 0af2 1597      		sbiw r26,4+1
- 1673 0af4 E817      		cp r30,r24
- 1674 0af6 F907      		cpc r31,r25
- 1675 0af8 01F0      		breq .L144
- 1676               	.L140:
- 1677               	/* #APP */
- 1678               	 ;  354 "c:/ucos-II/source/os_q.c" 1
- 1679 0afa 7894      		sei
- 1680               	 ;  0 "" 2
- 1681               	/* #NOAPP */
- 1682 0afc F701      		movw r30,r14
- 1683 0afe 1082      		st Z,__zero_reg__
- 1684               	.L138:
- 1685 0b00 CE01      		movw r24,r28
- 1686               	/* epilogue start */
- 1687 0b02 DF91      		pop r29
- 1688 0b04 CF91      		pop r28
- 1689 0b06 1F91      		pop r17
- 1690 0b08 0F91      		pop r16
- 1691 0b0a FF90      		pop r15
- 1692 0b0c EF90      		pop r14
- 1693 0b0e 0895      		ret
- 1694               	.L139:
- 1695 0b10 E091 0000 		lds r30,OSTCBCur
- 1696 0b14 F091 0000 		lds r31,(OSTCBCur)+1
- 1697 0b18 8585      		ldd r24,Z+13
- 1698 0b1a 8460      		ori r24,lo8(4)
- 1699 0b1c 8587      		std Z+13,r24
- 1700 0b1e 7487      		std Z+12,r23
- 1701 0b20 6387      		std Z+11,r22
- 1702 0b22 C801      		movw r24,r16
- 1703 0b24 0E94 0000 		call OS_EventTaskWait
- 1704               	/* #APP */
- 1705               	 ;  361 "c:/ucos-II/source/os_q.c" 1
- 1706 0b28 7894      		sei
- 1707               	 ;  0 "" 2
- 1708               	/* #NOAPP */
- 1709 0b2a 0E94 0000 		call OS_Sched
- 1710               	/* #APP */
-GAS LISTING C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s 			page 31
+ 1654               	/* #NOAPP */
+ 1655 0ac6 8EE1      		ldi r24,lo8(30)
+ 1656 0ac8 0895      		ret
+ 1657               	.L139:
+ 1658 0aca 1696      		adiw r26,6
+ 1659 0acc ED91      		ld r30,X+
+ 1660 0ace FC91      		ld r31,X
+ 1661 0ad0 1797      		sbiw r26,6+1
+ 1662 0ad2 6193      		st Z+,r22
+ 1663 0ad4 7193      		st Z+,r23
+ 1664 0ad6 1796      		adiw r26,6+1
+ 1665 0ad8 FC93      		st X,r31
+ 1666 0ada EE93      		st -X,r30
+ 1667 0adc 1697      		sbiw r26,6
+ 1668 0ade 2F5F      		subi r18,lo8(-(1))
+ 1669 0ae0 3F4F      		sbci r19,hi8(-(1))
+ 1670 0ae2 1D96      		adiw r26,12+1
+ 1671 0ae4 3C93      		st X,r19
+ 1672 0ae6 2E93      		st -X,r18
+ 1673 0ae8 1C97      		sbiw r26,12
+ 1674 0aea 1496      		adiw r26,4
+ 1675 0aec 8D91      		ld r24,X+
+ 1676 0aee 9C91      		ld r25,X
+ 1677 0af0 1597      		sbiw r26,4+1
+ 1678 0af2 E817      		cp r30,r24
+ 1679 0af4 F907      		cpc r31,r25
+ 1680 0af6 01F0      		breq .L143
+ 1681               	.L140:
+ 1682               	/* #APP */
+ 1683               	 ;  434 "c:/ucos-II/source/os_q.c" 1
+ 1684 0af8 7894      		sei
+ 1685               	 ;  0 "" 2
+ 1686               	/* #NOAPP */
+ 1687 0afa 80E0      		ldi r24,lo8(0)
+ 1688 0afc 0895      		ret
+ 1689               	.L142:
+ 1690 0afe CF01      		movw r24,r30
+ 1691 0b00 44E0      		ldi r20,lo8(4)
+ 1692 0b02 0E94 0000 		call OS_EventTaskRdy
+ 1693               	/* #APP */
+ 1694               	 ;  420 "c:/ucos-II/source/os_q.c" 1
+ 1695 0b06 7894      		sei
+ 1696               	 ;  0 "" 2
+ 1697               	/* #NOAPP */
+ 1698 0b08 0E94 0000 		call OS_Sched
+ 1699 0b0c 80E0      		ldi r24,lo8(0)
+ 1700 0b0e 0895      		ret
+ 1701               	.L143:
+ 1702 0b10 1296      		adiw r26,2
+ 1703 0b12 8D91      		ld r24,X+
+ 1704 0b14 9C91      		ld r25,X
+ 1705 0b16 1397      		sbiw r26,2+1
+ 1706 0b18 1796      		adiw r26,6+1
+ 1707 0b1a 9C93      		st X,r25
+ 1708 0b1c 8E93      		st -X,r24
+ 1709 0b1e 1697      		sbiw r26,6
+ 1710 0b20 00C0      		rjmp .L140
+GAS LISTING C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s 			page 31
 
 
- 1711               	 ;  363 "c:/ucos-II/source/os_q.c" 1
- 1712 0b2e F894      		cli
- 1713               	 ;  0 "" 2
- 1714               	/* #NOAPP */
- 1715 0b30 E091 0000 		lds r30,OSTCBCur
- 1716 0b34 F091 0000 		lds r31,(OSTCBCur)+1
- 1717 0b38 C085      		ldd r28,Z+8
- 1718 0b3a D185      		ldd r29,Z+9
- 1719 0b3c 2097      		sbiw r28,0
- 1720 0b3e 01F0      		breq .L141
- 1721 0b40 1186      		std Z+9,__zero_reg__
- 1722 0b42 1086      		std Z+8,__zero_reg__
- 1723 0b44 1586      		std Z+13,__zero_reg__
- 1724 0b46 1782      		std Z+7,__zero_reg__
- 1725 0b48 1682      		std Z+6,__zero_reg__
- 1726               	/* #APP */
- 1727               	 ;  369 "c:/ucos-II/source/os_q.c" 1
- 1728 0b4a 7894      		sei
- 1729               	 ;  0 "" 2
- 1730               	/* #NOAPP */
- 1731 0b4c F701      		movw r30,r14
- 1732 0b4e 1082      		st Z,__zero_reg__
- 1733 0b50 CE01      		movw r24,r28
- 1734 0b52 DF91      		pop r29
- 1735 0b54 CF91      		pop r28
- 1736 0b56 1F91      		pop r17
- 1737 0b58 0F91      		pop r16
- 1738 0b5a FF90      		pop r15
- 1739 0b5c EF90      		pop r14
- 1740 0b5e 0895      		ret
- 1741               	.L144:
- 1742 0b60 1296      		adiw r26,2
- 1743 0b62 8D91      		ld r24,X+
- 1744 0b64 9C91      		ld r25,X
- 1745 0b66 1397      		sbiw r26,2+1
- 1746 0b68 1996      		adiw r26,8+1
- 1747 0b6a 9C93      		st X,r25
- 1748 0b6c 8E93      		st -X,r24
- 1749 0b6e 1897      		sbiw r26,8
- 1750 0b70 00C0      		rjmp .L140
- 1751               	.L143:
- 1752 0b72 82E0      		ldi r24,lo8(2)
- 1753 0b74 FA01      		movw r30,r20
- 1754 0b76 8083      		st Z,r24
- 1755 0b78 C0E0      		ldi r28,lo8(0)
- 1756 0b7a D0E0      		ldi r29,hi8(0)
- 1757 0b7c 00C0      		rjmp .L138
- 1758               	.L141:
- 1759 0b7e C801      		movw r24,r16
- 1760 0b80 0E94 0000 		call OS_EventTO
- 1761               	/* #APP */
- 1762               	 ;  374 "c:/ucos-II/source/os_q.c" 1
- 1763 0b84 7894      		sei
- 1764               	 ;  0 "" 2
- 1765               	/* #NOAPP */
- 1766 0b86 8AE0      		ldi r24,lo8(10)
- 1767 0b88 F701      		movw r30,r14
-GAS LISTING C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s 			page 32
+ 1711               		.size	OSQPost, .-OSQPost
+ 1712               	.global	OSQPend
+ 1713               		.type	OSQPend, @function
+ 1714               	OSQPend:
+ 1715 0b22 EF92      		push r14
+ 1716 0b24 FF92      		push r15
+ 1717 0b26 0F93      		push r16
+ 1718 0b28 1F93      		push r17
+ 1719 0b2a CF93      		push r28
+ 1720 0b2c DF93      		push r29
+ 1721               	/* prologue: function */
+ 1722               	/* frame size = 0 */
+ 1723 0b2e 8C01      		movw r16,r24
+ 1724 0b30 7A01      		movw r14,r20
+ 1725 0b32 8091 0000 		lds r24,OSIntNesting
+ 1726 0b36 8823      		tst r24
+ 1727 0b38 01F0      		breq .+2
+ 1728 0b3a 00C0      		rjmp .L151
+ 1729               	/* #APP */
+ 1730               	 ;  346 "c:/ucos-II/source/os_q.c" 1
+ 1731 0b3c F894      		cli
+ 1732               	 ;  0 "" 2
+ 1733               	/* #NOAPP */
+ 1734 0b3e F801      		movw r30,r16
+ 1735 0b40 A481      		ldd r26,Z+4
+ 1736 0b42 B581      		ldd r27,Z+5
+ 1737 0b44 1C96      		adiw r26,12
+ 1738 0b46 8D91      		ld r24,X+
+ 1739 0b48 9C91      		ld r25,X
+ 1740 0b4a 1D97      		sbiw r26,12+1
+ 1741 0b4c 0097      		sbiw r24,0
+ 1742 0b4e 01F0      		breq .L147
+ 1743 0b50 1896      		adiw r26,8
+ 1744 0b52 ED91      		ld r30,X+
+ 1745 0b54 FC91      		ld r31,X
+ 1746 0b56 1997      		sbiw r26,8+1
+ 1747 0b58 C191      		ld r28,Z+
+ 1748 0b5a D191      		ld r29,Z+
+ 1749 0b5c 1996      		adiw r26,8+1
+ 1750 0b5e FC93      		st X,r31
+ 1751 0b60 EE93      		st -X,r30
+ 1752 0b62 1897      		sbiw r26,8
+ 1753 0b64 0197      		sbiw r24,1
+ 1754 0b66 1D96      		adiw r26,12+1
+ 1755 0b68 9C93      		st X,r25
+ 1756 0b6a 8E93      		st -X,r24
+ 1757 0b6c 1C97      		sbiw r26,12
+ 1758 0b6e 1496      		adiw r26,4
+ 1759 0b70 8D91      		ld r24,X+
+ 1760 0b72 9C91      		ld r25,X
+ 1761 0b74 1597      		sbiw r26,4+1
+ 1762 0b76 E817      		cp r30,r24
+ 1763 0b78 F907      		cpc r31,r25
+ 1764 0b7a 01F0      		breq .L152
+ 1765               	.L148:
+ 1766               	/* #APP */
+ 1767               	 ;  354 "c:/ucos-II/source/os_q.c" 1
+GAS LISTING C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s 			page 32
 
 
- 1768 0b8a 8083      		st Z,r24
- 1769 0b8c 00C0      		rjmp .L138
- 1770               		.size	OSQPend, .-OSQPend
- 1771               	.global	OSMboxPost
- 1772               		.type	OSMboxPost, @function
- 1773               	OSMboxPost:
- 1774               	/* prologue: function */
- 1775               	/* frame size = 0 */
- 1776 0b8e FC01      		movw r30,r24
- 1777               	/* #APP */
- 1778               	 ;  328 "c:/ucos-II/source/os_mbox.c" 1
- 1779 0b90 F894      		cli
- 1780               	 ;  0 "" 2
- 1781               	/* #NOAPP */
- 1782 0b92 8181      		ldd r24,Z+1
- 1783 0b94 8823      		tst r24
- 1784 0b96 01F4      		brne .L150
- 1785 0b98 8481      		ldd r24,Z+4
- 1786 0b9a 9581      		ldd r25,Z+5
- 1787 0b9c 892B      		or r24,r25
- 1788 0b9e 01F0      		breq .L148
- 1789               	/* #APP */
- 1790               	 ;  336 "c:/ucos-II/source/os_mbox.c" 1
- 1791 0ba0 7894      		sei
- 1792               	 ;  0 "" 2
- 1793               	/* #NOAPP */
- 1794 0ba2 84E1      		ldi r24,lo8(20)
- 1795 0ba4 0895      		ret
- 1796               	.L150:
- 1797 0ba6 CF01      		movw r24,r30
- 1798 0ba8 42E0      		ldi r20,lo8(2)
- 1799 0baa 0E94 0000 		call OS_EventTaskRdy
- 1800               	/* #APP */
- 1801               	 ;  331 "c:/ucos-II/source/os_mbox.c" 1
- 1802 0bae 7894      		sei
- 1803               	 ;  0 "" 2
- 1804               	/* #NOAPP */
- 1805 0bb0 0E94 0000 		call OS_Sched
- 1806 0bb4 80E0      		ldi r24,lo8(0)
- 1807 0bb6 0895      		ret
- 1808               	.L148:
- 1809 0bb8 7583      		std Z+5,r23
- 1810 0bba 6483      		std Z+4,r22
- 1811               	/* #APP */
- 1812               	 ;  340 "c:/ucos-II/source/os_mbox.c" 1
- 1813 0bbc 7894      		sei
- 1814               	 ;  0 "" 2
- 1815               	/* #NOAPP */
- 1816 0bbe 80E0      		ldi r24,lo8(0)
- 1817 0bc0 0895      		ret
- 1818               		.size	OSMboxPost, .-OSMboxPost
- 1819               	.global	OSMboxPend
- 1820               		.type	OSMboxPend, @function
- 1821               	OSMboxPend:
- 1822 0bc2 EF92      		push r14
- 1823 0bc4 FF92      		push r15
- 1824 0bc6 0F93      		push r16
-GAS LISTING C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s 			page 33
+ 1768 0b7c 7894      		sei
+ 1769               	 ;  0 "" 2
+ 1770               	/* #NOAPP */
+ 1771 0b7e F701      		movw r30,r14
+ 1772 0b80 1082      		st Z,__zero_reg__
+ 1773               	.L146:
+ 1774 0b82 CE01      		movw r24,r28
+ 1775               	/* epilogue start */
+ 1776 0b84 DF91      		pop r29
+ 1777 0b86 CF91      		pop r28
+ 1778 0b88 1F91      		pop r17
+ 1779 0b8a 0F91      		pop r16
+ 1780 0b8c FF90      		pop r15
+ 1781 0b8e EF90      		pop r14
+ 1782 0b90 0895      		ret
+ 1783               	.L147:
+ 1784 0b92 E091 0000 		lds r30,OSTCBCur
+ 1785 0b96 F091 0000 		lds r31,(OSTCBCur)+1
+ 1786 0b9a 8585      		ldd r24,Z+13
+ 1787 0b9c 8460      		ori r24,lo8(4)
+ 1788 0b9e 8587      		std Z+13,r24
+ 1789 0ba0 7487      		std Z+12,r23
+ 1790 0ba2 6387      		std Z+11,r22
+ 1791 0ba4 C801      		movw r24,r16
+ 1792 0ba6 0E94 0000 		call OS_EventTaskWait
+ 1793               	/* #APP */
+ 1794               	 ;  361 "c:/ucos-II/source/os_q.c" 1
+ 1795 0baa 7894      		sei
+ 1796               	 ;  0 "" 2
+ 1797               	/* #NOAPP */
+ 1798 0bac 0E94 0000 		call OS_Sched
+ 1799               	/* #APP */
+ 1800               	 ;  363 "c:/ucos-II/source/os_q.c" 1
+ 1801 0bb0 F894      		cli
+ 1802               	 ;  0 "" 2
+ 1803               	/* #NOAPP */
+ 1804 0bb2 E091 0000 		lds r30,OSTCBCur
+ 1805 0bb6 F091 0000 		lds r31,(OSTCBCur)+1
+ 1806 0bba C085      		ldd r28,Z+8
+ 1807 0bbc D185      		ldd r29,Z+9
+ 1808 0bbe 2097      		sbiw r28,0
+ 1809 0bc0 01F0      		breq .L149
+ 1810 0bc2 1186      		std Z+9,__zero_reg__
+ 1811 0bc4 1086      		std Z+8,__zero_reg__
+ 1812 0bc6 1586      		std Z+13,__zero_reg__
+ 1813 0bc8 1782      		std Z+7,__zero_reg__
+ 1814 0bca 1682      		std Z+6,__zero_reg__
+ 1815               	/* #APP */
+ 1816               	 ;  369 "c:/ucos-II/source/os_q.c" 1
+ 1817 0bcc 7894      		sei
+ 1818               	 ;  0 "" 2
+ 1819               	/* #NOAPP */
+ 1820 0bce F701      		movw r30,r14
+ 1821 0bd0 1082      		st Z,__zero_reg__
+ 1822 0bd2 CE01      		movw r24,r28
+ 1823 0bd4 DF91      		pop r29
+ 1824 0bd6 CF91      		pop r28
+GAS LISTING C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s 			page 33
 
 
- 1825 0bc8 1F93      		push r17
- 1826 0bca CF93      		push r28
- 1827 0bcc DF93      		push r29
- 1828               	/* prologue: function */
- 1829               	/* frame size = 0 */
- 1830 0bce 8C01      		movw r16,r24
- 1831 0bd0 7A01      		movw r14,r20
- 1832 0bd2 8091 0000 		lds r24,OSIntNesting
- 1833 0bd6 8823      		tst r24
- 1834 0bd8 01F4      		brne .L157
- 1835               	/* #APP */
- 1836               	 ;  260 "c:/ucos-II/source/os_mbox.c" 1
- 1837 0bda F894      		cli
- 1838               	 ;  0 "" 2
- 1839               	/* #NOAPP */
- 1840 0bdc F801      		movw r30,r16
- 1841 0bde C481      		ldd r28,Z+4
- 1842 0be0 D581      		ldd r29,Z+5
- 1843 0be2 2097      		sbiw r28,0
- 1844 0be4 01F0      		breq .L154
- 1845 0be6 1582      		std Z+5,__zero_reg__
- 1846 0be8 1482      		std Z+4,__zero_reg__
- 1847               	/* #APP */
- 1848               	 ;  264 "c:/ucos-II/source/os_mbox.c" 1
- 1849 0bea 7894      		sei
- 1850               	 ;  0 "" 2
- 1851               	/* #NOAPP */
- 1852 0bec FA01      		movw r30,r20
- 1853 0bee 1082      		st Z,__zero_reg__
- 1854               	.L153:
- 1855 0bf0 CE01      		movw r24,r28
- 1856               	/* epilogue start */
- 1857 0bf2 DF91      		pop r29
- 1858 0bf4 CF91      		pop r28
- 1859 0bf6 1F91      		pop r17
- 1860 0bf8 0F91      		pop r16
- 1861 0bfa FF90      		pop r15
- 1862 0bfc EF90      		pop r14
- 1863 0bfe 0895      		ret
- 1864               	.L154:
- 1865 0c00 E091 0000 		lds r30,OSTCBCur
- 1866 0c04 F091 0000 		lds r31,(OSTCBCur)+1
- 1867 0c08 8585      		ldd r24,Z+13
- 1868 0c0a 8260      		ori r24,lo8(2)
- 1869 0c0c 8587      		std Z+13,r24
- 1870 0c0e 7487      		std Z+12,r23
- 1871 0c10 6387      		std Z+11,r22
- 1872 0c12 C801      		movw r24,r16
- 1873 0c14 0E94 0000 		call OS_EventTaskWait
- 1874               	/* #APP */
- 1875               	 ;  271 "c:/ucos-II/source/os_mbox.c" 1
- 1876 0c18 7894      		sei
- 1877               	 ;  0 "" 2
- 1878               	/* #NOAPP */
- 1879 0c1a 0E94 0000 		call OS_Sched
- 1880               	/* #APP */
- 1881               	 ;  273 "c:/ucos-II/source/os_mbox.c" 1
-GAS LISTING C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s 			page 34
+ 1825 0bd8 1F91      		pop r17
+ 1826 0bda 0F91      		pop r16
+ 1827 0bdc FF90      		pop r15
+ 1828 0bde EF90      		pop r14
+ 1829 0be0 0895      		ret
+ 1830               	.L152:
+ 1831 0be2 1296      		adiw r26,2
+ 1832 0be4 8D91      		ld r24,X+
+ 1833 0be6 9C91      		ld r25,X
+ 1834 0be8 1397      		sbiw r26,2+1
+ 1835 0bea 1996      		adiw r26,8+1
+ 1836 0bec 9C93      		st X,r25
+ 1837 0bee 8E93      		st -X,r24
+ 1838 0bf0 1897      		sbiw r26,8
+ 1839 0bf2 00C0      		rjmp .L148
+ 1840               	.L151:
+ 1841 0bf4 82E0      		ldi r24,lo8(2)
+ 1842 0bf6 FA01      		movw r30,r20
+ 1843 0bf8 8083      		st Z,r24
+ 1844 0bfa C0E0      		ldi r28,lo8(0)
+ 1845 0bfc D0E0      		ldi r29,hi8(0)
+ 1846 0bfe 00C0      		rjmp .L146
+ 1847               	.L149:
+ 1848 0c00 C801      		movw r24,r16
+ 1849 0c02 0E94 0000 		call OS_EventTO
+ 1850               	/* #APP */
+ 1851               	 ;  374 "c:/ucos-II/source/os_q.c" 1
+ 1852 0c06 7894      		sei
+ 1853               	 ;  0 "" 2
+ 1854               	/* #NOAPP */
+ 1855 0c08 8AE0      		ldi r24,lo8(10)
+ 1856 0c0a F701      		movw r30,r14
+ 1857 0c0c 8083      		st Z,r24
+ 1858 0c0e 00C0      		rjmp .L146
+ 1859               		.size	OSQPend, .-OSQPend
+ 1860               	.global	OSMboxPost
+ 1861               		.type	OSMboxPost, @function
+ 1862               	OSMboxPost:
+ 1863               	/* prologue: function */
+ 1864               	/* frame size = 0 */
+ 1865 0c10 FC01      		movw r30,r24
+ 1866               	/* #APP */
+ 1867               	 ;  328 "c:/ucos-II/source/os_mbox.c" 1
+ 1868 0c12 F894      		cli
+ 1869               	 ;  0 "" 2
+ 1870               	/* #NOAPP */
+ 1871 0c14 8181      		ldd r24,Z+1
+ 1872 0c16 8823      		tst r24
+ 1873 0c18 01F4      		brne .L158
+ 1874 0c1a 8481      		ldd r24,Z+4
+ 1875 0c1c 9581      		ldd r25,Z+5
+ 1876 0c1e 892B      		or r24,r25
+ 1877 0c20 01F0      		breq .L156
+ 1878               	/* #APP */
+ 1879               	 ;  336 "c:/ucos-II/source/os_mbox.c" 1
+ 1880 0c22 7894      		sei
+ 1881               	 ;  0 "" 2
+GAS LISTING C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s 			page 34
 
 
- 1882 0c1e F894      		cli
- 1883               	 ;  0 "" 2
- 1884               	/* #NOAPP */
- 1885 0c20 E091 0000 		lds r30,OSTCBCur
- 1886 0c24 F091 0000 		lds r31,(OSTCBCur)+1
- 1887 0c28 C085      		ldd r28,Z+8
- 1888 0c2a D185      		ldd r29,Z+9
- 1889 0c2c 2097      		sbiw r28,0
- 1890 0c2e 01F0      		breq .L155
- 1891 0c30 1186      		std Z+9,__zero_reg__
- 1892 0c32 1086      		std Z+8,__zero_reg__
- 1893 0c34 1586      		std Z+13,__zero_reg__
- 1894 0c36 1782      		std Z+7,__zero_reg__
- 1895 0c38 1682      		std Z+6,__zero_reg__
- 1896               	/* #APP */
- 1897               	 ;  279 "c:/ucos-II/source/os_mbox.c" 1
- 1898 0c3a 7894      		sei
- 1899               	 ;  0 "" 2
- 1900               	/* #NOAPP */
- 1901 0c3c F701      		movw r30,r14
- 1902 0c3e 1082      		st Z,__zero_reg__
- 1903 0c40 00C0      		rjmp .L153
- 1904               	.L157:
- 1905 0c42 82E0      		ldi r24,lo8(2)
- 1906 0c44 FA01      		movw r30,r20
- 1907 0c46 8083      		st Z,r24
- 1908 0c48 C0E0      		ldi r28,lo8(0)
- 1909 0c4a D0E0      		ldi r29,hi8(0)
- 1910 0c4c 00C0      		rjmp .L153
- 1911               	.L155:
- 1912 0c4e C801      		movw r24,r16
- 1913 0c50 0E94 0000 		call OS_EventTO
- 1914               	/* #APP */
- 1915               	 ;  284 "c:/ucos-II/source/os_mbox.c" 1
- 1916 0c54 7894      		sei
- 1917               	 ;  0 "" 2
- 1918               	/* #NOAPP */
- 1919 0c56 8AE0      		ldi r24,lo8(10)
- 1920 0c58 F701      		movw r30,r14
- 1921 0c5a 8083      		st Z,r24
- 1922 0c5c 00C0      		rjmp .L153
- 1923               		.size	OSMboxPend, .-OSMboxPend
- 1924               	.global	OSFlagPost
- 1925               		.type	OSFlagPost, @function
- 1926               	OSFlagPost:
- 1927 0c5e CF92      		push r12
- 1928 0c60 DF92      		push r13
- 1929 0c62 EF92      		push r14
- 1930 0c64 FF92      		push r15
- 1931 0c66 0F93      		push r16
- 1932 0c68 1F93      		push r17
- 1933 0c6a DF93      		push r29
- 1934 0c6c CF93      		push r28
- 1935 0c6e 0F92      		push __tmp_reg__
- 1936 0c70 CDB7      		in r28,__SP_L__
- 1937 0c72 DEB7      		in r29,__SP_H__
- 1938               	/* prologue: function */
-GAS LISTING C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s 			page 35
+ 1882               	/* #NOAPP */
+ 1883 0c24 84E1      		ldi r24,lo8(20)
+ 1884 0c26 0895      		ret
+ 1885               	.L158:
+ 1886 0c28 CF01      		movw r24,r30
+ 1887 0c2a 42E0      		ldi r20,lo8(2)
+ 1888 0c2c 0E94 0000 		call OS_EventTaskRdy
+ 1889               	/* #APP */
+ 1890               	 ;  331 "c:/ucos-II/source/os_mbox.c" 1
+ 1891 0c30 7894      		sei
+ 1892               	 ;  0 "" 2
+ 1893               	/* #NOAPP */
+ 1894 0c32 0E94 0000 		call OS_Sched
+ 1895 0c36 80E0      		ldi r24,lo8(0)
+ 1896 0c38 0895      		ret
+ 1897               	.L156:
+ 1898 0c3a 7583      		std Z+5,r23
+ 1899 0c3c 6483      		std Z+4,r22
+ 1900               	/* #APP */
+ 1901               	 ;  340 "c:/ucos-II/source/os_mbox.c" 1
+ 1902 0c3e 7894      		sei
+ 1903               	 ;  0 "" 2
+ 1904               	/* #NOAPP */
+ 1905 0c40 80E0      		ldi r24,lo8(0)
+ 1906 0c42 0895      		ret
+ 1907               		.size	OSMboxPost, .-OSMboxPost
+ 1908               	.global	OSMboxPend
+ 1909               		.type	OSMboxPend, @function
+ 1910               	OSMboxPend:
+ 1911 0c44 EF92      		push r14
+ 1912 0c46 FF92      		push r15
+ 1913 0c48 0F93      		push r16
+ 1914 0c4a 1F93      		push r17
+ 1915 0c4c CF93      		push r28
+ 1916 0c4e DF93      		push r29
+ 1917               	/* prologue: function */
+ 1918               	/* frame size = 0 */
+ 1919 0c50 8C01      		movw r16,r24
+ 1920 0c52 7A01      		movw r14,r20
+ 1921 0c54 8091 0000 		lds r24,OSIntNesting
+ 1922 0c58 8823      		tst r24
+ 1923 0c5a 01F4      		brne .L165
+ 1924               	/* #APP */
+ 1925               	 ;  260 "c:/ucos-II/source/os_mbox.c" 1
+ 1926 0c5c F894      		cli
+ 1927               	 ;  0 "" 2
+ 1928               	/* #NOAPP */
+ 1929 0c5e F801      		movw r30,r16
+ 1930 0c60 C481      		ldd r28,Z+4
+ 1931 0c62 D581      		ldd r29,Z+5
+ 1932 0c64 2097      		sbiw r28,0
+ 1933 0c66 01F0      		breq .L162
+ 1934 0c68 1582      		std Z+5,__zero_reg__
+ 1935 0c6a 1482      		std Z+4,__zero_reg__
+ 1936               	/* #APP */
+ 1937               	 ;  264 "c:/ucos-II/source/os_mbox.c" 1
+ 1938 0c6c 7894      		sei
+GAS LISTING C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s 			page 35
 
 
- 1939               	/* frame size = 1 */
- 1940 0c74 8C01      		movw r16,r24
- 1941 0c76 7901      		movw r14,r18
- 1942               	/* #APP */
- 1943               	 ;  577 "c:/ucos-II/source/os_flag.c" 1
- 1944 0c78 F894      		cli
- 1945               	 ;  0 "" 2
- 1946               	/* #NOAPP */
- 1947 0c7a 4423      		tst r20
- 1948 0c7c 01F0      		breq .+2
- 1949 0c7e 00C0      		rjmp .L177
- 1950 0c80 6095      		com r22
- 1951 0c82 FC01      		movw r30,r24
- 1952 0c84 8381      		ldd r24,Z+3
- 1953 0c86 8623      		and r24,r22
- 1954 0c88 8383      		std Z+3,r24
- 1955               	.L162:
- 1956 0c8a F801      		movw r30,r16
- 1957 0c8c C180      		ldd r12,Z+1
- 1958 0c8e D280      		ldd r13,Z+2
- 1959 0c90 C114      		cp r12,__zero_reg__
- 1960 0c92 D104      		cpc r13,__zero_reg__
- 1961 0c94 01F4      		brne .+2
- 1962 0c96 00C0      		rjmp .L178
- 1963 0c98 1982      		std Y+1,__zero_reg__
- 1964 0c9a 00C0      		rjmp .L170
- 1965               	.L180:
- 1966 0c9c 8330      		cpi r24,lo8(3)
- 1967 0c9e 01F0      		breq .L179
- 1968               	.L166:
- 1969 0ca0 F601      		movw r30,r12
- 1970 0ca2 8081      		ld r24,Z
- 1971 0ca4 9181      		ldd r25,Z+1
- 1972 0ca6 9C01      		movw r18,r24
- 1973 0ca8 6901      		movw r12,r18
- 1974 0caa 2115      		cp r18,__zero_reg__
- 1975 0cac 3105      		cpc r19,__zero_reg__
- 1976 0cae 01F0      		breq .L165
- 1977               	.L170:
- 1978 0cb0 F601      		movw r30,r12
- 1979 0cb2 8185      		ldd r24,Z+9
- 1980 0cb4 8230      		cpi r24,lo8(2)
- 1981 0cb6 01F4      		brne .L180
- 1982 0cb8 F601      		movw r30,r12
- 1983 0cba 6085      		ldd r22,Z+8
- 1984 0cbc F801      		movw r30,r16
- 1985 0cbe 8381      		ldd r24,Z+3
- 1986 0cc0 8623      		and r24,r22
- 1987 0cc2 6817      		cp r22,r24
- 1988 0cc4 01F4      		brne .L166
- 1989 0cc6 C601      		movw r24,r12
- 1990 0cc8 0E94 0000 		call OS_FlagTaskRdy
- 1991 0ccc 8130      		cpi r24,lo8(1)
- 1992 0cce 01F4      		brne .L166
- 1993               	.L182:
- 1994 0cd0 F1E0      		ldi r31,lo8(1)
- 1995 0cd2 F983      		std Y+1,r31
-GAS LISTING C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s 			page 36
+ 1939               	 ;  0 "" 2
+ 1940               	/* #NOAPP */
+ 1941 0c6e FA01      		movw r30,r20
+ 1942 0c70 1082      		st Z,__zero_reg__
+ 1943               	.L161:
+ 1944 0c72 CE01      		movw r24,r28
+ 1945               	/* epilogue start */
+ 1946 0c74 DF91      		pop r29
+ 1947 0c76 CF91      		pop r28
+ 1948 0c78 1F91      		pop r17
+ 1949 0c7a 0F91      		pop r16
+ 1950 0c7c FF90      		pop r15
+ 1951 0c7e EF90      		pop r14
+ 1952 0c80 0895      		ret
+ 1953               	.L162:
+ 1954 0c82 E091 0000 		lds r30,OSTCBCur
+ 1955 0c86 F091 0000 		lds r31,(OSTCBCur)+1
+ 1956 0c8a 8585      		ldd r24,Z+13
+ 1957 0c8c 8260      		ori r24,lo8(2)
+ 1958 0c8e 8587      		std Z+13,r24
+ 1959 0c90 7487      		std Z+12,r23
+ 1960 0c92 6387      		std Z+11,r22
+ 1961 0c94 C801      		movw r24,r16
+ 1962 0c96 0E94 0000 		call OS_EventTaskWait
+ 1963               	/* #APP */
+ 1964               	 ;  271 "c:/ucos-II/source/os_mbox.c" 1
+ 1965 0c9a 7894      		sei
+ 1966               	 ;  0 "" 2
+ 1967               	/* #NOAPP */
+ 1968 0c9c 0E94 0000 		call OS_Sched
+ 1969               	/* #APP */
+ 1970               	 ;  273 "c:/ucos-II/source/os_mbox.c" 1
+ 1971 0ca0 F894      		cli
+ 1972               	 ;  0 "" 2
+ 1973               	/* #NOAPP */
+ 1974 0ca2 E091 0000 		lds r30,OSTCBCur
+ 1975 0ca6 F091 0000 		lds r31,(OSTCBCur)+1
+ 1976 0caa C085      		ldd r28,Z+8
+ 1977 0cac D185      		ldd r29,Z+9
+ 1978 0cae 2097      		sbiw r28,0
+ 1979 0cb0 01F0      		breq .L163
+ 1980 0cb2 1186      		std Z+9,__zero_reg__
+ 1981 0cb4 1086      		std Z+8,__zero_reg__
+ 1982 0cb6 1586      		std Z+13,__zero_reg__
+ 1983 0cb8 1782      		std Z+7,__zero_reg__
+ 1984 0cba 1682      		std Z+6,__zero_reg__
+ 1985               	/* #APP */
+ 1986               	 ;  279 "c:/ucos-II/source/os_mbox.c" 1
+ 1987 0cbc 7894      		sei
+ 1988               	 ;  0 "" 2
+ 1989               	/* #NOAPP */
+ 1990 0cbe F701      		movw r30,r14
+ 1991 0cc0 1082      		st Z,__zero_reg__
+ 1992 0cc2 00C0      		rjmp .L161
+ 1993               	.L165:
+ 1994 0cc4 82E0      		ldi r24,lo8(2)
+ 1995 0cc6 FA01      		movw r30,r20
+GAS LISTING C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s 			page 36
 
 
- 1996 0cd4 F601      		movw r30,r12
- 1997 0cd6 8081      		ld r24,Z
- 1998 0cd8 9181      		ldd r25,Z+1
- 1999 0cda 9C01      		movw r18,r24
- 2000 0cdc 6901      		movw r12,r18
- 2001 0cde 2115      		cp r18,__zero_reg__
- 2002 0ce0 3105      		cpc r19,__zero_reg__
- 2003 0ce2 01F4      		brne .L170
- 2004               	.L165:
- 2005               	/* #APP */
- 2006               	 ;  636 "c:/ucos-II/source/os_flag.c" 1
- 2007 0ce4 7894      		sei
- 2008               	 ;  0 "" 2
- 2009               	/* #NOAPP */
- 2010 0ce6 F981      		ldd r31,Y+1
- 2011 0ce8 F130      		cpi r31,lo8(1)
- 2012 0cea 01F0      		breq .L181
- 2013               	.L171:
- 2014               	/* #APP */
- 2015               	 ;  640 "c:/ucos-II/source/os_flag.c" 1
- 2016 0cec F894      		cli
- 2017               	 ;  0 "" 2
- 2018               	/* #NOAPP */
- 2019 0cee F801      		movw r30,r16
- 2020 0cf0 8381      		ldd r24,Z+3
- 2021               	/* #APP */
- 2022               	 ;  642 "c:/ucos-II/source/os_flag.c" 1
- 2023 0cf2 7894      		sei
- 2024               	 ;  0 "" 2
- 2025               	/* #NOAPP */
- 2026 0cf4 F701      		movw r30,r14
- 2027 0cf6 1082      		st Z,__zero_reg__
- 2028               	.L163:
- 2029               	/* epilogue start */
- 2030 0cf8 0F90      		pop __tmp_reg__
- 2031 0cfa CF91      		pop r28
- 2032 0cfc DF91      		pop r29
- 2033 0cfe 1F91      		pop r17
- 2034 0d00 0F91      		pop r16
- 2035 0d02 FF90      		pop r15
- 2036 0d04 EF90      		pop r14
- 2037 0d06 DF90      		pop r13
- 2038 0d08 CF90      		pop r12
- 2039 0d0a 0895      		ret
- 2040               	.L179:
- 2041 0d0c F601      		movw r30,r12
- 2042 0d0e 6085      		ldd r22,Z+8
- 2043 0d10 F801      		movw r30,r16
- 2044 0d12 8381      		ldd r24,Z+3
- 2045 0d14 6823      		and r22,r24
- 2046 0d16 01F4      		brne .+2
- 2047 0d18 00C0      		rjmp .L166
- 2048 0d1a C601      		movw r24,r12
- 2049 0d1c 0E94 0000 		call OS_FlagTaskRdy
- 2050 0d20 8130      		cpi r24,lo8(1)
- 2051 0d22 01F0      		breq .+2
- 2052 0d24 00C0      		rjmp .L166
-GAS LISTING C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s 			page 37
+ 1996 0cc8 8083      		st Z,r24
+ 1997 0cca C0E0      		ldi r28,lo8(0)
+ 1998 0ccc D0E0      		ldi r29,hi8(0)
+ 1999 0cce 00C0      		rjmp .L161
+ 2000               	.L163:
+ 2001 0cd0 C801      		movw r24,r16
+ 2002 0cd2 0E94 0000 		call OS_EventTO
+ 2003               	/* #APP */
+ 2004               	 ;  284 "c:/ucos-II/source/os_mbox.c" 1
+ 2005 0cd6 7894      		sei
+ 2006               	 ;  0 "" 2
+ 2007               	/* #NOAPP */
+ 2008 0cd8 8AE0      		ldi r24,lo8(10)
+ 2009 0cda F701      		movw r30,r14
+ 2010 0cdc 8083      		st Z,r24
+ 2011 0cde 00C0      		rjmp .L161
+ 2012               		.size	OSMboxPend, .-OSMboxPend
+ 2013               	.global	OSFlagPost
+ 2014               		.type	OSFlagPost, @function
+ 2015               	OSFlagPost:
+ 2016 0ce0 CF92      		push r12
+ 2017 0ce2 DF92      		push r13
+ 2018 0ce4 EF92      		push r14
+ 2019 0ce6 FF92      		push r15
+ 2020 0ce8 0F93      		push r16
+ 2021 0cea 1F93      		push r17
+ 2022 0cec DF93      		push r29
+ 2023 0cee CF93      		push r28
+ 2024 0cf0 0F92      		push __tmp_reg__
+ 2025 0cf2 CDB7      		in r28,__SP_L__
+ 2026 0cf4 DEB7      		in r29,__SP_H__
+ 2027               	/* prologue: function */
+ 2028               	/* frame size = 1 */
+ 2029 0cf6 8C01      		movw r16,r24
+ 2030 0cf8 7901      		movw r14,r18
+ 2031               	/* #APP */
+ 2032               	 ;  577 "c:/ucos-II/source/os_flag.c" 1
+ 2033 0cfa F894      		cli
+ 2034               	 ;  0 "" 2
+ 2035               	/* #NOAPP */
+ 2036 0cfc 4423      		tst r20
+ 2037 0cfe 01F0      		breq .+2
+ 2038 0d00 00C0      		rjmp .L185
+ 2039 0d02 6095      		com r22
+ 2040 0d04 FC01      		movw r30,r24
+ 2041 0d06 8381      		ldd r24,Z+3
+ 2042 0d08 8623      		and r24,r22
+ 2043 0d0a 8383      		std Z+3,r24
+ 2044               	.L170:
+ 2045 0d0c F801      		movw r30,r16
+ 2046 0d0e C180      		ldd r12,Z+1
+ 2047 0d10 D280      		ldd r13,Z+2
+ 2048 0d12 C114      		cp r12,__zero_reg__
+ 2049 0d14 D104      		cpc r13,__zero_reg__
+ 2050 0d16 01F4      		brne .+2
+ 2051 0d18 00C0      		rjmp .L186
+ 2052 0d1a 1982      		std Y+1,__zero_reg__
+GAS LISTING C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s 			page 37
 
 
- 2053 0d26 00C0      		rjmp .L182
- 2054               	.L177:
- 2055 0d28 4130      		cpi r20,lo8(1)
- 2056 0d2a 01F0      		breq .L183
- 2057               	/* #APP */
- 2058               	 ;  588 "c:/ucos-II/source/os_flag.c" 1
- 2059 0d2c 7894      		sei
- 2060               	 ;  0 "" 2
- 2061               	/* #NOAPP */
- 2062 0d2e 89E9      		ldi r24,lo8(-103)
- 2063 0d30 F901      		movw r30,r18
- 2064 0d32 8083      		st Z,r24
- 2065 0d34 80E0      		ldi r24,lo8(0)
- 2066 0d36 00C0      		rjmp .L163
- 2067               	.L183:
- 2068 0d38 FC01      		movw r30,r24
- 2069 0d3a 8381      		ldd r24,Z+3
- 2070 0d3c 862B      		or r24,r22
- 2071 0d3e 8383      		std Z+3,r24
- 2072 0d40 00C0      		rjmp .L162
- 2073               	.L181:
- 2074 0d42 0E94 0000 		call OS_Sched
- 2075 0d46 00C0      		rjmp .L171
- 2076               	.L178:
- 2077 0d48 1982      		std Y+1,__zero_reg__
- 2078 0d4a 00C0      		rjmp .L165
- 2079               		.size	OSFlagPost, .-OSFlagPost
- 2080               	.global	OSFlagPend
- 2081               		.type	OSFlagPend, @function
- 2082               	OSFlagPend:
- 2083 0d4c 8F92      		push r8
- 2084 0d4e 9F92      		push r9
- 2085 0d50 AF92      		push r10
- 2086 0d52 BF92      		push r11
- 2087 0d54 CF92      		push r12
- 2088 0d56 DF92      		push r13
- 2089 0d58 FF92      		push r15
- 2090 0d5a 0F93      		push r16
- 2091 0d5c 1F93      		push r17
- 2092 0d5e DF93      		push r29
- 2093 0d60 CF93      		push r28
- 2094 0d62 CDB7      		in r28,__SP_L__
- 2095 0d64 DEB7      		in r29,__SP_H__
- 2096 0d66 2B97      		sbiw r28,11
- 2097 0d68 0FB6      		in __tmp_reg__,__SREG__
- 2098 0d6a F894      		cli
- 2099 0d6c DEBF      		out __SP_H__,r29
- 2100 0d6e 0FBE      		out __SREG__,__tmp_reg__
- 2101 0d70 CDBF      		out __SP_L__,r28
- 2102               	/* prologue: function */
- 2103               	/* frame size = 11 */
- 2104 0d72 6C01      		movw r12,r24
- 2105 0d74 562F      		mov r21,r22
- 2106 0d76 F42E      		mov r15,r20
- 2107 0d78 F901      		movw r30,r18
- 2108 0d7a 5801      		movw r10,r16
- 2109 0d7c 8091 0000 		lds r24,OSIntNesting
-GAS LISTING C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s 			page 38
+ 2053 0d1c 00C0      		rjmp .L178
+ 2054               	.L188:
+ 2055 0d1e 8330      		cpi r24,lo8(3)
+ 2056 0d20 01F0      		breq .L187
+ 2057               	.L174:
+ 2058 0d22 F601      		movw r30,r12
+ 2059 0d24 8081      		ld r24,Z
+ 2060 0d26 9181      		ldd r25,Z+1
+ 2061 0d28 9C01      		movw r18,r24
+ 2062 0d2a 6901      		movw r12,r18
+ 2063 0d2c 2115      		cp r18,__zero_reg__
+ 2064 0d2e 3105      		cpc r19,__zero_reg__
+ 2065 0d30 01F0      		breq .L173
+ 2066               	.L178:
+ 2067 0d32 F601      		movw r30,r12
+ 2068 0d34 8185      		ldd r24,Z+9
+ 2069 0d36 8230      		cpi r24,lo8(2)
+ 2070 0d38 01F4      		brne .L188
+ 2071 0d3a F601      		movw r30,r12
+ 2072 0d3c 6085      		ldd r22,Z+8
+ 2073 0d3e F801      		movw r30,r16
+ 2074 0d40 8381      		ldd r24,Z+3
+ 2075 0d42 8623      		and r24,r22
+ 2076 0d44 6817      		cp r22,r24
+ 2077 0d46 01F4      		brne .L174
+ 2078 0d48 C601      		movw r24,r12
+ 2079 0d4a 0E94 0000 		call OS_FlagTaskRdy
+ 2080 0d4e 8130      		cpi r24,lo8(1)
+ 2081 0d50 01F4      		brne .L174
+ 2082               	.L190:
+ 2083 0d52 F1E0      		ldi r31,lo8(1)
+ 2084 0d54 F983      		std Y+1,r31
+ 2085 0d56 F601      		movw r30,r12
+ 2086 0d58 8081      		ld r24,Z
+ 2087 0d5a 9181      		ldd r25,Z+1
+ 2088 0d5c 9C01      		movw r18,r24
+ 2089 0d5e 6901      		movw r12,r18
+ 2090 0d60 2115      		cp r18,__zero_reg__
+ 2091 0d62 3105      		cpc r19,__zero_reg__
+ 2092 0d64 01F4      		brne .L178
+ 2093               	.L173:
+ 2094               	/* #APP */
+ 2095               	 ;  636 "c:/ucos-II/source/os_flag.c" 1
+ 2096 0d66 7894      		sei
+ 2097               	 ;  0 "" 2
+ 2098               	/* #NOAPP */
+ 2099 0d68 F981      		ldd r31,Y+1
+ 2100 0d6a F130      		cpi r31,lo8(1)
+ 2101 0d6c 01F0      		breq .L189
+ 2102               	.L179:
+ 2103               	/* #APP */
+ 2104               	 ;  640 "c:/ucos-II/source/os_flag.c" 1
+ 2105 0d6e F894      		cli
+ 2106               	 ;  0 "" 2
+ 2107               	/* #NOAPP */
+ 2108 0d70 F801      		movw r30,r16
+ 2109 0d72 8381      		ldd r24,Z+3
+GAS LISTING C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s 			page 38
 
 
- 2110 0d80 8823      		tst r24
- 2111 0d82 01F4      		brne .L206
- 2112 0d84 47FD      		sbrc r20,7
- 2113 0d86 00C0      		rjmp .L187
- 2114 0d88 1B86      		std Y+11,__zero_reg__
- 2115               	/* #APP */
- 2116               	 ;  409 "c:/ucos-II/source/os_flag.c" 1
- 2117 0d8a F894      		cli
- 2118               	 ;  0 "" 2
- 2119               	/* #NOAPP */
- 2120 0d8c 82E0      		ldi r24,lo8(2)
- 2121 0d8e F816      		cp r15,r24
- 2122 0d90 01F0      		breq .L190
- 2123               	.L208:
- 2124 0d92 A3E0      		ldi r26,lo8(3)
- 2125 0d94 FA16      		cp r15,r26
- 2126 0d96 01F0      		breq .L207
- 2127               	/* #APP */
- 2128               	 ;  478 "c:/ucos-II/source/os_flag.c" 1
- 2129 0d98 7894      		sei
- 2130               	 ;  0 "" 2
- 2131               	/* #NOAPP */
- 2132 0d9a 87E9      		ldi r24,lo8(-105)
- 2133 0d9c F501      		movw r30,r10
- 2134 0d9e 8083      		st Z,r24
- 2135 0da0 80E0      		ldi r24,lo8(0)
- 2136               	.L186:
- 2137               	/* epilogue start */
- 2138 0da2 2B96      		adiw r28,11
- 2139 0da4 0FB6      		in __tmp_reg__,__SREG__
- 2140 0da6 F894      		cli
- 2141 0da8 DEBF      		out __SP_H__,r29
- 2142 0daa 0FBE      		out __SREG__,__tmp_reg__
- 2143 0dac CDBF      		out __SP_L__,r28
- 2144 0dae CF91      		pop r28
- 2145 0db0 DF91      		pop r29
- 2146 0db2 1F91      		pop r17
- 2147 0db4 0F91      		pop r16
- 2148 0db6 FF90      		pop r15
- 2149 0db8 DF90      		pop r13
- 2150 0dba CF90      		pop r12
- 2151 0dbc BF90      		pop r11
- 2152 0dbe AF90      		pop r10
- 2153 0dc0 9F90      		pop r9
- 2154 0dc2 8F90      		pop r8
- 2155 0dc4 0895      		ret
- 2156               	.L206:
- 2157 0dc6 82E0      		ldi r24,lo8(2)
- 2158 0dc8 D801      		movw r26,r16
- 2159 0dca 8C93      		st X,r24
- 2160 0dcc 80E0      		ldi r24,lo8(0)
- 2161 0dce 00C0      		rjmp .L186
- 2162               	.L187:
- 2163 0dd0 BFE7      		ldi r27,lo8(127)
- 2164 0dd2 FB22      		and r15,r27
- 2165 0dd4 21E0      		ldi r18,lo8(1)
- 2166 0dd6 2B87      		std Y+11,r18
-GAS LISTING C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s 			page 39
+ 2110               	/* #APP */
+ 2111               	 ;  642 "c:/ucos-II/source/os_flag.c" 1
+ 2112 0d74 7894      		sei
+ 2113               	 ;  0 "" 2
+ 2114               	/* #NOAPP */
+ 2115 0d76 F701      		movw r30,r14
+ 2116 0d78 1082      		st Z,__zero_reg__
+ 2117               	.L171:
+ 2118               	/* epilogue start */
+ 2119 0d7a 0F90      		pop __tmp_reg__
+ 2120 0d7c CF91      		pop r28
+ 2121 0d7e DF91      		pop r29
+ 2122 0d80 1F91      		pop r17
+ 2123 0d82 0F91      		pop r16
+ 2124 0d84 FF90      		pop r15
+ 2125 0d86 EF90      		pop r14
+ 2126 0d88 DF90      		pop r13
+ 2127 0d8a CF90      		pop r12
+ 2128 0d8c 0895      		ret
+ 2129               	.L187:
+ 2130 0d8e F601      		movw r30,r12
+ 2131 0d90 6085      		ldd r22,Z+8
+ 2132 0d92 F801      		movw r30,r16
+ 2133 0d94 8381      		ldd r24,Z+3
+ 2134 0d96 6823      		and r22,r24
+ 2135 0d98 01F4      		brne .+2
+ 2136 0d9a 00C0      		rjmp .L174
+ 2137 0d9c C601      		movw r24,r12
+ 2138 0d9e 0E94 0000 		call OS_FlagTaskRdy
+ 2139 0da2 8130      		cpi r24,lo8(1)
+ 2140 0da4 01F0      		breq .+2
+ 2141 0da6 00C0      		rjmp .L174
+ 2142 0da8 00C0      		rjmp .L190
+ 2143               	.L185:
+ 2144 0daa 4130      		cpi r20,lo8(1)
+ 2145 0dac 01F0      		breq .L191
+ 2146               	/* #APP */
+ 2147               	 ;  588 "c:/ucos-II/source/os_flag.c" 1
+ 2148 0dae 7894      		sei
+ 2149               	 ;  0 "" 2
+ 2150               	/* #NOAPP */
+ 2151 0db0 89E9      		ldi r24,lo8(-103)
+ 2152 0db2 F901      		movw r30,r18
+ 2153 0db4 8083      		st Z,r24
+ 2154 0db6 80E0      		ldi r24,lo8(0)
+ 2155 0db8 00C0      		rjmp .L171
+ 2156               	.L191:
+ 2157 0dba FC01      		movw r30,r24
+ 2158 0dbc 8381      		ldd r24,Z+3
+ 2159 0dbe 862B      		or r24,r22
+ 2160 0dc0 8383      		std Z+3,r24
+ 2161 0dc2 00C0      		rjmp .L170
+ 2162               	.L189:
+ 2163 0dc4 0E94 0000 		call OS_Sched
+ 2164 0dc8 00C0      		rjmp .L179
+ 2165               	.L186:
+ 2166 0dca 1982      		std Y+1,__zero_reg__
+GAS LISTING C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s 			page 39
 
 
- 2167               	/* #APP */
- 2168               	 ;  409 "c:/ucos-II/source/os_flag.c" 1
- 2169 0dd8 F894      		cli
- 2170               	 ;  0 "" 2
- 2171               	/* #NOAPP */
- 2172 0dda 82E0      		ldi r24,lo8(2)
- 2173 0ddc F816      		cp r15,r24
- 2174 0dde 01F4      		brne .L208
- 2175               	.L190:
- 2176 0de0 D601      		movw r26,r12
- 2177 0de2 1396      		adiw r26,3
- 2178 0de4 9C91      		ld r25,X
- 2179 0de6 852F      		mov r24,r21
- 2180 0de8 8923      		and r24,r25
- 2181 0dea 8517      		cp r24,r21
- 2182 0dec 01F4      		brne .L192
- 2183 0dee BB85      		ldd r27,Y+11
- 2184 0df0 B130      		cpi r27,lo8(1)
- 2185 0df2 01F4      		brne .L193
- 2186 0df4 852F      		mov r24,r21
- 2187 0df6 8095      		com r24
- 2188 0df8 8923      		and r24,r25
- 2189 0dfa F601      		movw r30,r12
- 2190 0dfc 8383      		std Z+3,r24
- 2191 0dfe 982F      		mov r25,r24
- 2192               	.L193:
- 2193 0e00 892F      		mov r24,r25
- 2194               	/* #APP */
- 2195               	 ;  418 "c:/ucos-II/source/os_flag.c" 1
- 2196 0e02 7894      		sei
- 2197               	 ;  0 "" 2
- 2198               	/* #NOAPP */
- 2199 0e04 D501      		movw r26,r10
- 2200 0e06 1C92      		st X,__zero_reg__
- 2201 0e08 00C0      		rjmp .L186
- 2202               	.L207:
- 2203 0e0a D601      		movw r26,r12
- 2204 0e0c 1396      		adiw r26,3
- 2205 0e0e 9C91      		ld r25,X
- 2206 0e10 852F      		mov r24,r21
- 2207 0e12 8923      		and r24,r25
- 2208 0e14 01F0      		breq .L195
- 2209 0e16 BB85      		ldd r27,Y+11
- 2210 0e18 B130      		cpi r27,lo8(1)
- 2211 0e1a 01F4      		brne .L196
- 2212 0e1c 8095      		com r24
- 2213 0e1e 8923      		and r24,r25
- 2214 0e20 F601      		movw r30,r12
- 2215 0e22 8383      		std Z+3,r24
- 2216 0e24 982F      		mov r25,r24
- 2217               	.L196:
- 2218 0e26 892F      		mov r24,r25
- 2219               	/* #APP */
- 2220               	 ;  434 "c:/ucos-II/source/os_flag.c" 1
- 2221 0e28 7894      		sei
- 2222               	 ;  0 "" 2
- 2223               	/* #NOAPP */
-GAS LISTING C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s 			page 40
+ 2167 0dcc 00C0      		rjmp .L173
+ 2168               		.size	OSFlagPost, .-OSFlagPost
+ 2169               	.global	OSFlagPend
+ 2170               		.type	OSFlagPend, @function
+ 2171               	OSFlagPend:
+ 2172 0dce 8F92      		push r8
+ 2173 0dd0 9F92      		push r9
+ 2174 0dd2 AF92      		push r10
+ 2175 0dd4 BF92      		push r11
+ 2176 0dd6 CF92      		push r12
+ 2177 0dd8 DF92      		push r13
+ 2178 0dda FF92      		push r15
+ 2179 0ddc 0F93      		push r16
+ 2180 0dde 1F93      		push r17
+ 2181 0de0 DF93      		push r29
+ 2182 0de2 CF93      		push r28
+ 2183 0de4 CDB7      		in r28,__SP_L__
+ 2184 0de6 DEB7      		in r29,__SP_H__
+ 2185 0de8 2B97      		sbiw r28,11
+ 2186 0dea 0FB6      		in __tmp_reg__,__SREG__
+ 2187 0dec F894      		cli
+ 2188 0dee DEBF      		out __SP_H__,r29
+ 2189 0df0 0FBE      		out __SREG__,__tmp_reg__
+ 2190 0df2 CDBF      		out __SP_L__,r28
+ 2191               	/* prologue: function */
+ 2192               	/* frame size = 11 */
+ 2193 0df4 6C01      		movw r12,r24
+ 2194 0df6 562F      		mov r21,r22
+ 2195 0df8 F42E      		mov r15,r20
+ 2196 0dfa F901      		movw r30,r18
+ 2197 0dfc 5801      		movw r10,r16
+ 2198 0dfe 8091 0000 		lds r24,OSIntNesting
+ 2199 0e02 8823      		tst r24
+ 2200 0e04 01F4      		brne .L214
+ 2201 0e06 47FD      		sbrc r20,7
+ 2202 0e08 00C0      		rjmp .L195
+ 2203 0e0a 1B86      		std Y+11,__zero_reg__
+ 2204               	/* #APP */
+ 2205               	 ;  409 "c:/ucos-II/source/os_flag.c" 1
+ 2206 0e0c F894      		cli
+ 2207               	 ;  0 "" 2
+ 2208               	/* #NOAPP */
+ 2209 0e0e 82E0      		ldi r24,lo8(2)
+ 2210 0e10 F816      		cp r15,r24
+ 2211 0e12 01F0      		breq .L198
+ 2212               	.L216:
+ 2213 0e14 A3E0      		ldi r26,lo8(3)
+ 2214 0e16 FA16      		cp r15,r26
+ 2215 0e18 01F0      		breq .L215
+ 2216               	/* #APP */
+ 2217               	 ;  478 "c:/ucos-II/source/os_flag.c" 1
+ 2218 0e1a 7894      		sei
+ 2219               	 ;  0 "" 2
+ 2220               	/* #NOAPP */
+ 2221 0e1c 87E9      		ldi r24,lo8(-105)
+ 2222 0e1e F501      		movw r30,r10
+ 2223 0e20 8083      		st Z,r24
+GAS LISTING C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s 			page 40
 
 
- 2224 0e2a D501      		movw r26,r10
- 2225 0e2c 1C92      		st X,__zero_reg__
- 2226 0e2e 00C0      		rjmp .L186
- 2227               	.L192:
- 2228 0e30 C601      		movw r24,r12
- 2229 0e32 4E01      		movw r8,r28
- 2230 0e34 0894      		sec
- 2231 0e36 811C      		adc r8,__zero_reg__
- 2232 0e38 911C      		adc r9,__zero_reg__
- 2233 0e3a B401      		movw r22,r8
- 2234 0e3c 452F      		mov r20,r21
- 2235 0e3e 22E0      		ldi r18,lo8(2)
- 2236 0e40 8F01      		movw r16,r30
- 2237 0e42 0E94 0000 		call OS_FlagBlock
- 2238               	/* #APP */
- 2239               	 ;  423 "c:/ucos-II/source/os_flag.c" 1
- 2240 0e46 7894      		sei
- 2241               	 ;  0 "" 2
- 2242               	/* #NOAPP */
- 2243               	.L194:
- 2244 0e48 0E94 0000 		call OS_Sched
- 2245               	/* #APP */
- 2246               	 ;  484 "c:/ucos-II/source/os_flag.c" 1
- 2247 0e4c F894      		cli
- 2248               	 ;  0 "" 2
- 2249               	/* #NOAPP */
- 2250 0e4e E091 0000 		lds r30,OSTCBCur
- 2251 0e52 F091 0000 		lds r31,(OSTCBCur)+1
- 2252 0e56 8585      		ldd r24,Z+13
- 2253 0e58 85FD      		sbrc r24,5
- 2254 0e5a 00C0      		rjmp .L209
- 2255 0e5c BB85      		ldd r27,Y+11
- 2256 0e5e B130      		cpi r27,lo8(1)
- 2257 0e60 01F0      		breq .L204
- 2258 0e62 F601      		movw r30,r12
- 2259 0e64 9381      		ldd r25,Z+3
- 2260               	.L198:
- 2261 0e66 892F      		mov r24,r25
- 2262               	/* #APP */
- 2263               	 ;  508 "c:/ucos-II/source/os_flag.c" 1
- 2264 0e68 7894      		sei
- 2265               	 ;  0 "" 2
- 2266               	/* #NOAPP */
- 2267 0e6a D501      		movw r26,r10
- 2268 0e6c 1C92      		st X,__zero_reg__
- 2269 0e6e 00C0      		rjmp .L186
- 2270               	.L195:
- 2271 0e70 C601      		movw r24,r12
- 2272 0e72 4E01      		movw r8,r28
- 2273 0e74 0894      		sec
- 2274 0e76 811C      		adc r8,__zero_reg__
- 2275 0e78 911C      		adc r9,__zero_reg__
- 2276 0e7a B401      		movw r22,r8
- 2277 0e7c 452F      		mov r20,r21
- 2278 0e7e 23E0      		ldi r18,lo8(3)
- 2279 0e80 8F01      		movw r16,r30
- 2280 0e82 0E94 0000 		call OS_FlagBlock
-GAS LISTING C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s 			page 41
+ 2224 0e22 80E0      		ldi r24,lo8(0)
+ 2225               	.L194:
+ 2226               	/* epilogue start */
+ 2227 0e24 2B96      		adiw r28,11
+ 2228 0e26 0FB6      		in __tmp_reg__,__SREG__
+ 2229 0e28 F894      		cli
+ 2230 0e2a DEBF      		out __SP_H__,r29
+ 2231 0e2c 0FBE      		out __SREG__,__tmp_reg__
+ 2232 0e2e CDBF      		out __SP_L__,r28
+ 2233 0e30 CF91      		pop r28
+ 2234 0e32 DF91      		pop r29
+ 2235 0e34 1F91      		pop r17
+ 2236 0e36 0F91      		pop r16
+ 2237 0e38 FF90      		pop r15
+ 2238 0e3a DF90      		pop r13
+ 2239 0e3c CF90      		pop r12
+ 2240 0e3e BF90      		pop r11
+ 2241 0e40 AF90      		pop r10
+ 2242 0e42 9F90      		pop r9
+ 2243 0e44 8F90      		pop r8
+ 2244 0e46 0895      		ret
+ 2245               	.L214:
+ 2246 0e48 82E0      		ldi r24,lo8(2)
+ 2247 0e4a D801      		movw r26,r16
+ 2248 0e4c 8C93      		st X,r24
+ 2249 0e4e 80E0      		ldi r24,lo8(0)
+ 2250 0e50 00C0      		rjmp .L194
+ 2251               	.L195:
+ 2252 0e52 BFE7      		ldi r27,lo8(127)
+ 2253 0e54 FB22      		and r15,r27
+ 2254 0e56 21E0      		ldi r18,lo8(1)
+ 2255 0e58 2B87      		std Y+11,r18
+ 2256               	/* #APP */
+ 2257               	 ;  409 "c:/ucos-II/source/os_flag.c" 1
+ 2258 0e5a F894      		cli
+ 2259               	 ;  0 "" 2
+ 2260               	/* #NOAPP */
+ 2261 0e5c 82E0      		ldi r24,lo8(2)
+ 2262 0e5e F816      		cp r15,r24
+ 2263 0e60 01F4      		brne .L216
+ 2264               	.L198:
+ 2265 0e62 D601      		movw r26,r12
+ 2266 0e64 1396      		adiw r26,3
+ 2267 0e66 9C91      		ld r25,X
+ 2268 0e68 852F      		mov r24,r21
+ 2269 0e6a 8923      		and r24,r25
+ 2270 0e6c 8517      		cp r24,r21
+ 2271 0e6e 01F4      		brne .L200
+ 2272 0e70 BB85      		ldd r27,Y+11
+ 2273 0e72 B130      		cpi r27,lo8(1)
+ 2274 0e74 01F4      		brne .L201
+ 2275 0e76 852F      		mov r24,r21
+ 2276 0e78 8095      		com r24
+ 2277 0e7a 8923      		and r24,r25
+ 2278 0e7c F601      		movw r30,r12
+ 2279 0e7e 8383      		std Z+3,r24
+ 2280 0e80 982F      		mov r25,r24
+GAS LISTING C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s 			page 41
 
 
- 2281               	/* #APP */
- 2282               	 ;  439 "c:/ucos-II/source/os_flag.c" 1
- 2283 0e86 7894      		sei
- 2284               	 ;  0 "" 2
- 2285               	/* #NOAPP */
- 2286 0e88 00C0      		rjmp .L194
- 2287               	.L209:
- 2288 0e8a C401      		movw r24,r8
- 2289 0e8c 0E94 0000 		call OS_FlagUnlink
- 2290 0e90 E091 0000 		lds r30,OSTCBCur
- 2291 0e94 F091 0000 		lds r31,(OSTCBCur)+1
- 2292 0e98 1586      		std Z+13,__zero_reg__
- 2293               	/* #APP */
- 2294               	 ;  488 "c:/ucos-II/source/os_flag.c" 1
- 2295 0e9a 7894      		sei
- 2296               	 ;  0 "" 2
- 2297               	/* #NOAPP */
- 2298 0e9c 8AE0      		ldi r24,lo8(10)
- 2299 0e9e D501      		movw r26,r10
- 2300 0ea0 8C93      		st X,r24
- 2301 0ea2 80E0      		ldi r24,lo8(0)
- 2302 0ea4 00C0      		rjmp .L186
- 2303               	.L204:
- 2304 0ea6 2EEF      		ldi r18,lo8(-2)
- 2305 0ea8 F20E      		add r15,r18
- 2306 0eaa 81E0      		ldi r24,lo8(1)
- 2307 0eac 8F15      		cp r24,r15
- 2308 0eae 00F4      		brsh .L205
- 2309 0eb0 D601      		movw r26,r12
- 2310 0eb2 1396      		adiw r26,3
- 2311 0eb4 9C91      		ld r25,X
- 2312 0eb6 00C0      		rjmp .L198
- 2313               	.L205:
- 2314 0eb8 8285      		ldd r24,Z+10
- 2315 0eba 8095      		com r24
- 2316 0ebc F601      		movw r30,r12
- 2317 0ebe 9381      		ldd r25,Z+3
- 2318 0ec0 9823      		and r25,r24
- 2319 0ec2 9383      		std Z+3,r25
- 2320 0ec4 00C0      		rjmp .L198
- 2321               		.size	OSFlagPend, .-OSFlagPend
- 2322               	.global	OSSchedUnlock
- 2323               		.type	OSSchedUnlock, @function
- 2324               	OSSchedUnlock:
- 2325               	/* prologue: function */
- 2326               	/* frame size = 0 */
- 2327 0ec6 8091 0000 		lds r24,OSRunning
- 2328 0eca 8130      		cpi r24,lo8(1)
- 2329 0ecc 01F0      		breq .L215
- 2330 0ece 0895      		ret
- 2331               	.L215:
- 2332               	/* #APP */
- 2333               	 ;  256 "c:/ucos-II/source/os_core.c" 1
- 2334 0ed0 F894      		cli
- 2335               	 ;  0 "" 2
- 2336               	/* #NOAPP */
- 2337 0ed2 8091 0000 		lds r24,OSLockNesting
-GAS LISTING C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s 			page 42
+ 2281               	.L201:
+ 2282 0e82 892F      		mov r24,r25
+ 2283               	/* #APP */
+ 2284               	 ;  418 "c:/ucos-II/source/os_flag.c" 1
+ 2285 0e84 7894      		sei
+ 2286               	 ;  0 "" 2
+ 2287               	/* #NOAPP */
+ 2288 0e86 D501      		movw r26,r10
+ 2289 0e88 1C92      		st X,__zero_reg__
+ 2290 0e8a 00C0      		rjmp .L194
+ 2291               	.L215:
+ 2292 0e8c D601      		movw r26,r12
+ 2293 0e8e 1396      		adiw r26,3
+ 2294 0e90 9C91      		ld r25,X
+ 2295 0e92 852F      		mov r24,r21
+ 2296 0e94 8923      		and r24,r25
+ 2297 0e96 01F0      		breq .L203
+ 2298 0e98 BB85      		ldd r27,Y+11
+ 2299 0e9a B130      		cpi r27,lo8(1)
+ 2300 0e9c 01F4      		brne .L204
+ 2301 0e9e 8095      		com r24
+ 2302 0ea0 8923      		and r24,r25
+ 2303 0ea2 F601      		movw r30,r12
+ 2304 0ea4 8383      		std Z+3,r24
+ 2305 0ea6 982F      		mov r25,r24
+ 2306               	.L204:
+ 2307 0ea8 892F      		mov r24,r25
+ 2308               	/* #APP */
+ 2309               	 ;  434 "c:/ucos-II/source/os_flag.c" 1
+ 2310 0eaa 7894      		sei
+ 2311               	 ;  0 "" 2
+ 2312               	/* #NOAPP */
+ 2313 0eac D501      		movw r26,r10
+ 2314 0eae 1C92      		st X,__zero_reg__
+ 2315 0eb0 00C0      		rjmp .L194
+ 2316               	.L200:
+ 2317 0eb2 C601      		movw r24,r12
+ 2318 0eb4 4E01      		movw r8,r28
+ 2319 0eb6 0894      		sec
+ 2320 0eb8 811C      		adc r8,__zero_reg__
+ 2321 0eba 911C      		adc r9,__zero_reg__
+ 2322 0ebc B401      		movw r22,r8
+ 2323 0ebe 452F      		mov r20,r21
+ 2324 0ec0 22E0      		ldi r18,lo8(2)
+ 2325 0ec2 8F01      		movw r16,r30
+ 2326 0ec4 0E94 0000 		call OS_FlagBlock
+ 2327               	/* #APP */
+ 2328               	 ;  423 "c:/ucos-II/source/os_flag.c" 1
+ 2329 0ec8 7894      		sei
+ 2330               	 ;  0 "" 2
+ 2331               	/* #NOAPP */
+ 2332               	.L202:
+ 2333 0eca 0E94 0000 		call OS_Sched
+ 2334               	/* #APP */
+ 2335               	 ;  484 "c:/ucos-II/source/os_flag.c" 1
+ 2336 0ece F894      		cli
+ 2337               	 ;  0 "" 2
+GAS LISTING C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s 			page 42
 
 
- 2338 0ed6 8823      		tst r24
- 2339 0ed8 01F0      		breq .L212
- 2340 0eda 8150      		subi r24,lo8(-(-1))
- 2341 0edc 8093 0000 		sts OSLockNesting,r24
- 2342 0ee0 8823      		tst r24
- 2343 0ee2 01F4      		brne .L213
- 2344 0ee4 8091 0000 		lds r24,OSIntNesting
- 2345 0ee8 8823      		tst r24
- 2346 0eea 01F0      		breq .L216
- 2347               	.L213:
- 2348               	/* #APP */
- 2349               	 ;  263 "c:/ucos-II/source/os_core.c" 1
- 2350 0eec 7894      		sei
- 2351               	 ;  0 "" 2
- 2352               	/* #NOAPP */
- 2353 0eee 0895      		ret
- 2354               	.L212:
- 2355               	/* #APP */
- 2356               	 ;  266 "c:/ucos-II/source/os_core.c" 1
- 2357 0ef0 7894      		sei
- 2358               	 ;  0 "" 2
- 2359               	/* #NOAPP */
- 2360 0ef2 0895      		ret
- 2361               	.L216:
- 2362               	/* #APP */
- 2363               	 ;  260 "c:/ucos-II/source/os_core.c" 1
- 2364 0ef4 7894      		sei
- 2365               	 ;  0 "" 2
- 2366               	/* #NOAPP */
- 2367 0ef6 0E94 0000 		call OS_Sched
- 2368 0efa 0895      		ret
- 2369               		.size	OSSchedUnlock, .-OSSchedUnlock
- 2370               	.global	OSTimeTick
- 2371               		.type	OSTimeTick, @function
- 2372               	OSTimeTick:
- 2373               	/* prologue: function */
- 2374               	/* frame size = 0 */
- 2375 0efc 0E94 0000 		call OSTimeTickHook
- 2376 0f00 8091 0000 		lds r24,OSRunning
- 2377 0f04 8130      		cpi r24,lo8(1)
- 2378 0f06 01F0      		breq .L224
- 2379               	.L222:
- 2380 0f08 0895      		ret
- 2381               	.L224:
- 2382 0f0a A091 0000 		lds r26,OSTCBList
- 2383 0f0e B091 0000 		lds r27,(OSTCBList)+1
- 2384 0f12 1E96      		adiw r26,14
- 2385 0f14 8C91      		ld r24,X
- 2386 0f16 1E97      		sbiw r26,14
- 2387 0f18 8C30      		cpi r24,lo8(12)
- 2388 0f1a 01F0      		breq .L222
- 2389 0f1c 2091 0000 		lds r18,OSRdyGrp
- 2390 0f20 41E0      		ldi r20,lo8(1)
- 2391 0f22 50E0      		ldi r21,hi8(1)
- 2392 0f24 00C0      		rjmp .L221
- 2393               	.L226:
- 2394 0f26 5296      		adiw r26,18
-GAS LISTING C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s 			page 43
+ 2338               	/* #NOAPP */
+ 2339 0ed0 E091 0000 		lds r30,OSTCBCur
+ 2340 0ed4 F091 0000 		lds r31,(OSTCBCur)+1
+ 2341 0ed8 8585      		ldd r24,Z+13
+ 2342 0eda 85FD      		sbrc r24,5
+ 2343 0edc 00C0      		rjmp .L217
+ 2344 0ede BB85      		ldd r27,Y+11
+ 2345 0ee0 B130      		cpi r27,lo8(1)
+ 2346 0ee2 01F0      		breq .L212
+ 2347 0ee4 F601      		movw r30,r12
+ 2348 0ee6 9381      		ldd r25,Z+3
+ 2349               	.L206:
+ 2350 0ee8 892F      		mov r24,r25
+ 2351               	/* #APP */
+ 2352               	 ;  508 "c:/ucos-II/source/os_flag.c" 1
+ 2353 0eea 7894      		sei
+ 2354               	 ;  0 "" 2
+ 2355               	/* #NOAPP */
+ 2356 0eec D501      		movw r26,r10
+ 2357 0eee 1C92      		st X,__zero_reg__
+ 2358 0ef0 00C0      		rjmp .L194
+ 2359               	.L203:
+ 2360 0ef2 C601      		movw r24,r12
+ 2361 0ef4 4E01      		movw r8,r28
+ 2362 0ef6 0894      		sec
+ 2363 0ef8 811C      		adc r8,__zero_reg__
+ 2364 0efa 911C      		adc r9,__zero_reg__
+ 2365 0efc B401      		movw r22,r8
+ 2366 0efe 452F      		mov r20,r21
+ 2367 0f00 23E0      		ldi r18,lo8(3)
+ 2368 0f02 8F01      		movw r16,r30
+ 2369 0f04 0E94 0000 		call OS_FlagBlock
+ 2370               	/* #APP */
+ 2371               	 ;  439 "c:/ucos-II/source/os_flag.c" 1
+ 2372 0f08 7894      		sei
+ 2373               	 ;  0 "" 2
+ 2374               	/* #NOAPP */
+ 2375 0f0a 00C0      		rjmp .L202
+ 2376               	.L217:
+ 2377 0f0c C401      		movw r24,r8
+ 2378 0f0e 0E94 0000 		call OS_FlagUnlink
+ 2379 0f12 E091 0000 		lds r30,OSTCBCur
+ 2380 0f16 F091 0000 		lds r31,(OSTCBCur)+1
+ 2381 0f1a 1586      		std Z+13,__zero_reg__
+ 2382               	/* #APP */
+ 2383               	 ;  488 "c:/ucos-II/source/os_flag.c" 1
+ 2384 0f1c 7894      		sei
+ 2385               	 ;  0 "" 2
+ 2386               	/* #NOAPP */
+ 2387 0f1e 8AE0      		ldi r24,lo8(10)
+ 2388 0f20 D501      		movw r26,r10
+ 2389 0f22 8C93      		st X,r24
+ 2390 0f24 80E0      		ldi r24,lo8(0)
+ 2391 0f26 00C0      		rjmp .L194
+ 2392               	.L212:
+ 2393 0f28 2EEF      		ldi r18,lo8(-2)
+ 2394 0f2a F20E      		add r15,r18
+GAS LISTING C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s 			page 43
 
 
- 2395 0f28 8C91      		ld r24,X
- 2396 0f2a 5297      		sbiw r26,18
- 2397 0f2c 282B      		or r18,r24
- 2398 0f2e 5096      		adiw r26,16
- 2399 0f30 EC91      		ld r30,X
- 2400 0f32 5097      		sbiw r26,16
- 2401 0f34 F0E0      		ldi r31,lo8(0)
- 2402 0f36 E050      		subi r30,lo8(-(OSRdyTbl))
- 2403 0f38 F040      		sbci r31,hi8(-(OSRdyTbl))
- 2404 0f3a 8081      		ld r24,Z
- 2405 0f3c 5196      		adiw r26,17
- 2406 0f3e 9C91      		ld r25,X
- 2407 0f40 5197      		sbiw r26,17
- 2408 0f42 892B      		or r24,r25
- 2409 0f44 8083      		st Z,r24
- 2410               	.L219:
- 2411 0f46 1296      		adiw r26,2
- 2412 0f48 0D90      		ld __tmp_reg__,X+
- 2413 0f4a BC91      		ld r27,X
- 2414 0f4c A02D      		mov r26,__tmp_reg__
- 2415               	/* #APP */
- 2416               	 ;  393 "c:/ucos-II/source/os_core.c" 1
- 2417 0f4e 7894      		sei
- 2418               	 ;  0 "" 2
- 2419               	/* #NOAPP */
- 2420 0f50 1E96      		adiw r26,14
- 2421 0f52 8C91      		ld r24,X
- 2422 0f54 1E97      		sbiw r26,14
- 2423 0f56 8C30      		cpi r24,lo8(12)
- 2424 0f58 01F0      		breq .L225
- 2425               	.L221:
- 2426               	/* #APP */
- 2427               	 ;  381 "c:/ucos-II/source/os_core.c" 1
- 2428 0f5a F894      		cli
- 2429               	 ;  0 "" 2
- 2430               	/* #NOAPP */
- 2431 0f5c 1B96      		adiw r26,11
- 2432 0f5e 8D91      		ld r24,X+
- 2433 0f60 9C91      		ld r25,X
- 2434 0f62 1C97      		sbiw r26,11+1
- 2435 0f64 0097      		sbiw r24,0
- 2436 0f66 01F0      		breq .L219
- 2437 0f68 0197      		sbiw r24,1
- 2438 0f6a 1C96      		adiw r26,11+1
- 2439 0f6c 9C93      		st X,r25
- 2440 0f6e 8E93      		st -X,r24
- 2441 0f70 1B97      		sbiw r26,11
- 2442 0f72 892B      		or r24,r25
- 2443 0f74 01F4      		brne .L219
- 2444 0f76 1D96      		adiw r26,13
- 2445 0f78 8C91      		ld r24,X
- 2446 0f7a 1D97      		sbiw r26,13
- 2447 0f7c 83FF      		sbrs r24,3
- 2448 0f7e 00C0      		rjmp .L226
- 2449 0f80 1C96      		adiw r26,11+1
- 2450 0f82 5C93      		st X,r21
- 2451 0f84 4E93      		st -X,r20
-GAS LISTING C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s 			page 44
+ 2395 0f2c 81E0      		ldi r24,lo8(1)
+ 2396 0f2e 8F15      		cp r24,r15
+ 2397 0f30 00F4      		brsh .L213
+ 2398 0f32 D601      		movw r26,r12
+ 2399 0f34 1396      		adiw r26,3
+ 2400 0f36 9C91      		ld r25,X
+ 2401 0f38 00C0      		rjmp .L206
+ 2402               	.L213:
+ 2403 0f3a 8285      		ldd r24,Z+10
+ 2404 0f3c 8095      		com r24
+ 2405 0f3e F601      		movw r30,r12
+ 2406 0f40 9381      		ldd r25,Z+3
+ 2407 0f42 9823      		and r25,r24
+ 2408 0f44 9383      		std Z+3,r25
+ 2409 0f46 00C0      		rjmp .L206
+ 2410               		.size	OSFlagPend, .-OSFlagPend
+ 2411               	.global	OSSchedUnlock
+ 2412               		.type	OSSchedUnlock, @function
+ 2413               	OSSchedUnlock:
+ 2414               	/* prologue: function */
+ 2415               	/* frame size = 0 */
+ 2416 0f48 8091 0000 		lds r24,OSRunning
+ 2417 0f4c 8130      		cpi r24,lo8(1)
+ 2418 0f4e 01F0      		breq .L223
+ 2419 0f50 0895      		ret
+ 2420               	.L223:
+ 2421               	/* #APP */
+ 2422               	 ;  256 "c:/ucos-II/source/os_core.c" 1
+ 2423 0f52 F894      		cli
+ 2424               	 ;  0 "" 2
+ 2425               	/* #NOAPP */
+ 2426 0f54 8091 0000 		lds r24,OSLockNesting
+ 2427 0f58 8823      		tst r24
+ 2428 0f5a 01F0      		breq .L220
+ 2429 0f5c 8150      		subi r24,lo8(-(-1))
+ 2430 0f5e 8093 0000 		sts OSLockNesting,r24
+ 2431 0f62 8823      		tst r24
+ 2432 0f64 01F4      		brne .L221
+ 2433 0f66 8091 0000 		lds r24,OSIntNesting
+ 2434 0f6a 8823      		tst r24
+ 2435 0f6c 01F0      		breq .L224
+ 2436               	.L221:
+ 2437               	/* #APP */
+ 2438               	 ;  263 "c:/ucos-II/source/os_core.c" 1
+ 2439 0f6e 7894      		sei
+ 2440               	 ;  0 "" 2
+ 2441               	/* #NOAPP */
+ 2442 0f70 0895      		ret
+ 2443               	.L220:
+ 2444               	/* #APP */
+ 2445               	 ;  266 "c:/ucos-II/source/os_core.c" 1
+ 2446 0f72 7894      		sei
+ 2447               	 ;  0 "" 2
+ 2448               	/* #NOAPP */
+ 2449 0f74 0895      		ret
+ 2450               	.L224:
+ 2451               	/* #APP */
+GAS LISTING C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s 			page 44
 
 
- 2452 0f86 1B97      		sbiw r26,11
- 2453 0f88 00C0      		rjmp .L219
- 2454               	.L225:
- 2455 0f8a 2093 0000 		sts OSRdyGrp,r18
- 2456 0f8e 0895      		ret
- 2457               		.size	OSTimeTick, .-OSTimeTick
- 2458               	.global	OSStart
- 2459               		.type	OSStart, @function
- 2460               	OSStart:
- 2461               	/* prologue: function */
- 2462               	/* frame size = 0 */
- 2463 0f90 8091 0000 		lds r24,OSRunning
- 2464 0f94 8111      		cpse r24,__zero_reg__
- 2465 0f96 0895      		ret
- 2466               	.L230:
- 2467 0f98 E091 0000 		lds r30,OSRdyGrp
- 2468 0f9c F0E0      		ldi r31,lo8(0)
- 2469 0f9e E050      		subi r30,lo8(-(OSUnMapTbl))
- 2470 0fa0 F040      		sbci r31,hi8(-(OSUnMapTbl))
- 2471 0fa2 A081      		ld r26,Z
- 2472 0fa4 EA2F      		mov r30,r26
- 2473 0fa6 F0E0      		ldi r31,lo8(0)
- 2474 0fa8 E050      		subi r30,lo8(-(OSRdyTbl))
- 2475 0faa F040      		sbci r31,hi8(-(OSRdyTbl))
- 2476 0fac E081      		ld r30,Z
- 2477 0fae F0E0      		ldi r31,lo8(0)
- 2478 0fb0 E050      		subi r30,lo8(-(OSUnMapTbl))
- 2479 0fb2 F040      		sbci r31,hi8(-(OSUnMapTbl))
- 2480 0fb4 AA0F      		lsl r26
- 2481 0fb6 AA0F      		lsl r26
- 2482 0fb8 AA0F      		lsl r26
- 2483 0fba 8081      		ld r24,Z
- 2484 0fbc A80F      		add r26,r24
- 2485 0fbe A093 0000 		sts OSPrioHighRdy,r26
- 2486 0fc2 A093 0000 		sts OSPrioCur,r26
- 2487 0fc6 B0E0      		ldi r27,lo8(0)
- 2488 0fc8 AA0F      		lsl r26
- 2489 0fca BB1F      		rol r27
- 2490 0fcc A050      		subi r26,lo8(-(OSTCBPrioTbl))
- 2491 0fce B040      		sbci r27,hi8(-(OSTCBPrioTbl))
- 2492 0fd0 8D91      		ld r24,X+
- 2493 0fd2 9C91      		ld r25,X
- 2494 0fd4 9093 0000 		sts (OSTCBHighRdy)+1,r25
- 2495 0fd8 8093 0000 		sts OSTCBHighRdy,r24
- 2496 0fdc 9093 0000 		sts (OSTCBCur)+1,r25
- 2497 0fe0 8093 0000 		sts OSTCBCur,r24
- 2498 0fe4 0E94 0000 		call OSStartHighRdy
- 2499 0fe8 0895      		ret
- 2500               		.size	OSStart, .-OSStart
- 2501               	.global	OSIntExit
- 2502               		.type	OSIntExit, @function
- 2503               	OSIntExit:
- 2504               	/* prologue: function */
- 2505               	/* frame size = 0 */
- 2506 0fea 8091 0000 		lds r24,OSRunning
- 2507 0fee 8130      		cpi r24,lo8(1)
- 2508 0ff0 01F0      		breq .L236
-GAS LISTING C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s 			page 45
+ 2452               	 ;  260 "c:/ucos-II/source/os_core.c" 1
+ 2453 0f76 7894      		sei
+ 2454               	 ;  0 "" 2
+ 2455               	/* #NOAPP */
+ 2456 0f78 0E94 0000 		call OS_Sched
+ 2457 0f7c 0895      		ret
+ 2458               		.size	OSSchedUnlock, .-OSSchedUnlock
+ 2459               	.global	OSTimeTick
+ 2460               		.type	OSTimeTick, @function
+ 2461               	OSTimeTick:
+ 2462               	/* prologue: function */
+ 2463               	/* frame size = 0 */
+ 2464 0f7e 0E94 0000 		call OSTimeTickHook
+ 2465 0f82 8091 0000 		lds r24,OSRunning
+ 2466 0f86 8130      		cpi r24,lo8(1)
+ 2467 0f88 01F0      		breq .L232
+ 2468               	.L230:
+ 2469 0f8a 0895      		ret
+ 2470               	.L232:
+ 2471 0f8c A091 0000 		lds r26,OSTCBList
+ 2472 0f90 B091 0000 		lds r27,(OSTCBList)+1
+ 2473 0f94 1E96      		adiw r26,14
+ 2474 0f96 8C91      		ld r24,X
+ 2475 0f98 1E97      		sbiw r26,14
+ 2476 0f9a 8C30      		cpi r24,lo8(12)
+ 2477 0f9c 01F0      		breq .L230
+ 2478 0f9e 2091 0000 		lds r18,OSRdyGrp
+ 2479 0fa2 41E0      		ldi r20,lo8(1)
+ 2480 0fa4 50E0      		ldi r21,hi8(1)
+ 2481 0fa6 00C0      		rjmp .L229
+ 2482               	.L234:
+ 2483 0fa8 5296      		adiw r26,18
+ 2484 0faa 8C91      		ld r24,X
+ 2485 0fac 5297      		sbiw r26,18
+ 2486 0fae 282B      		or r18,r24
+ 2487 0fb0 5096      		adiw r26,16
+ 2488 0fb2 EC91      		ld r30,X
+ 2489 0fb4 5097      		sbiw r26,16
+ 2490 0fb6 F0E0      		ldi r31,lo8(0)
+ 2491 0fb8 E050      		subi r30,lo8(-(OSRdyTbl))
+ 2492 0fba F040      		sbci r31,hi8(-(OSRdyTbl))
+ 2493 0fbc 8081      		ld r24,Z
+ 2494 0fbe 5196      		adiw r26,17
+ 2495 0fc0 9C91      		ld r25,X
+ 2496 0fc2 5197      		sbiw r26,17
+ 2497 0fc4 892B      		or r24,r25
+ 2498 0fc6 8083      		st Z,r24
+ 2499               	.L227:
+ 2500 0fc8 1296      		adiw r26,2
+ 2501 0fca 0D90      		ld __tmp_reg__,X+
+ 2502 0fcc BC91      		ld r27,X
+ 2503 0fce A02D      		mov r26,__tmp_reg__
+ 2504               	/* #APP */
+ 2505               	 ;  393 "c:/ucos-II/source/os_core.c" 1
+ 2506 0fd0 7894      		sei
+ 2507               	 ;  0 "" 2
+ 2508               	/* #NOAPP */
+GAS LISTING C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s 			page 45
 
 
- 2509 0ff2 0895      		ret
- 2510               	.L236:
- 2511               	/* #APP */
- 2512               	 ;  180 "c:/ucos-II/source/os_core.c" 1
- 2513 0ff4 F894      		cli
- 2514               	 ;  0 "" 2
- 2515               	/* #NOAPP */
- 2516 0ff6 8091 0000 		lds r24,OSIntNesting
- 2517 0ffa 8823      		tst r24
- 2518 0ffc 01F0      		breq .L233
- 2519 0ffe 8150      		subi r24,lo8(-(-1))
- 2520 1000 8093 0000 		sts OSIntNesting,r24
- 2521 1004 8823      		tst r24
- 2522 1006 01F0      		breq .L233
- 2523               	.L234:
- 2524               	/* #APP */
- 2525               	 ;  193 "c:/ucos-II/source/os_core.c" 1
- 2526 1008 7894      		sei
- 2527               	 ;  0 "" 2
- 2528               	/* #NOAPP */
- 2529 100a 0895      		ret
- 2530               	.L233:
- 2531 100c 8091 0000 		lds r24,OSLockNesting
- 2532 1010 8823      		tst r24
- 2533 1012 01F4      		brne .L234
- 2534 1014 E091 0000 		lds r30,OSRdyGrp
- 2535 1018 F0E0      		ldi r31,lo8(0)
- 2536 101a E050      		subi r30,lo8(-(OSUnMapTbl))
- 2537 101c F040      		sbci r31,hi8(-(OSUnMapTbl))
- 2538 101e 8081      		ld r24,Z
- 2539 1020 8093 0000 		sts OSIntExitY,r24
- 2540 1024 E82F      		mov r30,r24
- 2541 1026 F0E0      		ldi r31,lo8(0)
- 2542 1028 E050      		subi r30,lo8(-(OSRdyTbl))
- 2543 102a F040      		sbci r31,hi8(-(OSRdyTbl))
- 2544 102c E081      		ld r30,Z
- 2545 102e F0E0      		ldi r31,lo8(0)
- 2546 1030 E050      		subi r30,lo8(-(OSUnMapTbl))
- 2547 1032 F040      		sbci r31,hi8(-(OSUnMapTbl))
- 2548 1034 982F      		mov r25,r24
- 2549 1036 990F      		lsl r25
- 2550 1038 990F      		lsl r25
- 2551 103a 990F      		lsl r25
- 2552 103c 8081      		ld r24,Z
- 2553 103e 980F      		add r25,r24
- 2554 1040 9093 0000 		sts OSPrioHighRdy,r25
- 2555 1044 8091 0000 		lds r24,OSPrioCur
- 2556 1048 9817      		cp r25,r24
- 2557 104a 01F0      		breq .L234
- 2558 104c E92F      		mov r30,r25
- 2559 104e F0E0      		ldi r31,lo8(0)
- 2560 1050 EE0F      		lsl r30
- 2561 1052 FF1F      		rol r31
- 2562 1054 E050      		subi r30,lo8(-(OSTCBPrioTbl))
- 2563 1056 F040      		sbci r31,hi8(-(OSTCBPrioTbl))
- 2564 1058 8081      		ld r24,Z
- 2565 105a 9181      		ldd r25,Z+1
-GAS LISTING C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s 			page 46
+ 2509 0fd2 1E96      		adiw r26,14
+ 2510 0fd4 8C91      		ld r24,X
+ 2511 0fd6 1E97      		sbiw r26,14
+ 2512 0fd8 8C30      		cpi r24,lo8(12)
+ 2513 0fda 01F0      		breq .L233
+ 2514               	.L229:
+ 2515               	/* #APP */
+ 2516               	 ;  381 "c:/ucos-II/source/os_core.c" 1
+ 2517 0fdc F894      		cli
+ 2518               	 ;  0 "" 2
+ 2519               	/* #NOAPP */
+ 2520 0fde 1B96      		adiw r26,11
+ 2521 0fe0 8D91      		ld r24,X+
+ 2522 0fe2 9C91      		ld r25,X
+ 2523 0fe4 1C97      		sbiw r26,11+1
+ 2524 0fe6 0097      		sbiw r24,0
+ 2525 0fe8 01F0      		breq .L227
+ 2526 0fea 0197      		sbiw r24,1
+ 2527 0fec 1C96      		adiw r26,11+1
+ 2528 0fee 9C93      		st X,r25
+ 2529 0ff0 8E93      		st -X,r24
+ 2530 0ff2 1B97      		sbiw r26,11
+ 2531 0ff4 892B      		or r24,r25
+ 2532 0ff6 01F4      		brne .L227
+ 2533 0ff8 1D96      		adiw r26,13
+ 2534 0ffa 8C91      		ld r24,X
+ 2535 0ffc 1D97      		sbiw r26,13
+ 2536 0ffe 83FF      		sbrs r24,3
+ 2537 1000 00C0      		rjmp .L234
+ 2538 1002 1C96      		adiw r26,11+1
+ 2539 1004 5C93      		st X,r21
+ 2540 1006 4E93      		st -X,r20
+ 2541 1008 1B97      		sbiw r26,11
+ 2542 100a 00C0      		rjmp .L227
+ 2543               	.L233:
+ 2544 100c 2093 0000 		sts OSRdyGrp,r18
+ 2545 1010 0895      		ret
+ 2546               		.size	OSTimeTick, .-OSTimeTick
+ 2547               	.global	OSStart
+ 2548               		.type	OSStart, @function
+ 2549               	OSStart:
+ 2550               	/* prologue: function */
+ 2551               	/* frame size = 0 */
+ 2552 1012 8091 0000 		lds r24,OSRunning
+ 2553 1016 8111      		cpse r24,__zero_reg__
+ 2554 1018 0895      		ret
+ 2555               	.L238:
+ 2556 101a E091 0000 		lds r30,OSRdyGrp
+ 2557 101e F0E0      		ldi r31,lo8(0)
+ 2558 1020 E050      		subi r30,lo8(-(OSUnMapTbl))
+ 2559 1022 F040      		sbci r31,hi8(-(OSUnMapTbl))
+ 2560 1024 A081      		ld r26,Z
+ 2561 1026 EA2F      		mov r30,r26
+ 2562 1028 F0E0      		ldi r31,lo8(0)
+ 2563 102a E050      		subi r30,lo8(-(OSRdyTbl))
+ 2564 102c F040      		sbci r31,hi8(-(OSRdyTbl))
+ 2565 102e E081      		ld r30,Z
+GAS LISTING C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s 			page 46
 
 
- 2566 105c 9093 0000 		sts (OSTCBHighRdy)+1,r25
- 2567 1060 8093 0000 		sts OSTCBHighRdy,r24
- 2568 1064 8091 0000 		lds r24,OSCtxSwCtr
- 2569 1068 9091 0000 		lds r25,(OSCtxSwCtr)+1
- 2570 106c A091 0000 		lds r26,(OSCtxSwCtr)+2
- 2571 1070 B091 0000 		lds r27,(OSCtxSwCtr)+3
- 2572 1074 0196      		adiw r24,1
- 2573 1076 A11D      		adc r26,__zero_reg__
- 2574 1078 B11D      		adc r27,__zero_reg__
- 2575 107a 8093 0000 		sts OSCtxSwCtr,r24
- 2576 107e 9093 0000 		sts (OSCtxSwCtr)+1,r25
- 2577 1082 A093 0000 		sts (OSCtxSwCtr)+2,r26
- 2578 1086 B093 0000 		sts (OSCtxSwCtr)+3,r27
- 2579 108a 0E94 0000 		call OSIntCtxSw
- 2580 108e 00C0      		rjmp .L234
- 2581               		.size	OSIntExit, .-OSIntExit
- 2582               	.global	OSInit
- 2583               		.type	OSInit, @function
- 2584               	OSInit:
- 2585               	/* prologue: function */
- 2586               	/* frame size = 0 */
- 2587 1090 0E94 0000 		call OSInitHookBegin
- 2588 1094 1092 0000 		sts OSIntNesting,__zero_reg__
- 2589 1098 1092 0000 		sts OSLockNesting,__zero_reg__
- 2590 109c 1092 0000 		sts OSTaskCtr,__zero_reg__
- 2591 10a0 1092 0000 		sts OSRunning,__zero_reg__
- 2592 10a4 1092 0000 		sts OSCtxSwCtr,__zero_reg__
- 2593 10a8 1092 0000 		sts (OSCtxSwCtr)+1,__zero_reg__
- 2594 10ac 1092 0000 		sts (OSCtxSwCtr)+2,__zero_reg__
- 2595 10b0 1092 0000 		sts (OSCtxSwCtr)+3,__zero_reg__
- 2596 10b4 1092 0000 		sts OSIdleCtr,__zero_reg__
- 2597 10b8 1092 0000 		sts (OSIdleCtr)+1,__zero_reg__
- 2598 10bc 1092 0000 		sts (OSIdleCtr)+2,__zero_reg__
- 2599 10c0 1092 0000 		sts (OSIdleCtr)+3,__zero_reg__
- 2600 10c4 1092 0000 		sts OSRdyGrp,__zero_reg__
- 2601 10c8 1092 0000 		sts OSRdyTbl,__zero_reg__
- 2602 10cc 1092 0000 		sts OSRdyTbl+1,__zero_reg__
- 2603 10d0 1092 0000 		sts OSPrioCur,__zero_reg__
- 2604 10d4 1092 0000 		sts OSPrioHighRdy,__zero_reg__
- 2605 10d8 1092 0000 		sts (OSTCBHighRdy)+1,__zero_reg__
- 2606 10dc 1092 0000 		sts OSTCBHighRdy,__zero_reg__
- 2607 10e0 1092 0000 		sts (OSTCBCur)+1,__zero_reg__
- 2608 10e4 1092 0000 		sts OSTCBCur,__zero_reg__
- 2609 10e8 1092 0000 		sts (OSTCBList)+1,__zero_reg__
- 2610 10ec 1092 0000 		sts OSTCBList,__zero_reg__
- 2611 10f0 E0E0      		ldi r30,lo8(OSTCBPrioTbl)
- 2612 10f2 F0E0      		ldi r31,hi8(OSTCBPrioTbl)
- 2613               	.L238:
- 2614 10f4 1192      		st Z+,__zero_reg__
- 2615 10f6 1192      		st Z+,__zero_reg__
- 2616 10f8 20E0      		ldi r18,hi8(OSTCBPrioTbl+26)
- 2617 10fa E030      		cpi r30,lo8(OSTCBPrioTbl+26)
- 2618 10fc F207      		cpc r31,r18
- 2619 10fe 01F4      		brne .L238
- 2620 1100 80E0      		ldi r24,lo8(OSTCBTbl+19)
- 2621 1102 90E0      		ldi r25,hi8(OSTCBTbl+19)
- 2622               	.L239:
-GAS LISTING C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s 			page 47
+ 2566 1030 F0E0      		ldi r31,lo8(0)
+ 2567 1032 E050      		subi r30,lo8(-(OSUnMapTbl))
+ 2568 1034 F040      		sbci r31,hi8(-(OSUnMapTbl))
+ 2569 1036 AA0F      		lsl r26
+ 2570 1038 AA0F      		lsl r26
+ 2571 103a AA0F      		lsl r26
+ 2572 103c 8081      		ld r24,Z
+ 2573 103e A80F      		add r26,r24
+ 2574 1040 A093 0000 		sts OSPrioHighRdy,r26
+ 2575 1044 A093 0000 		sts OSPrioCur,r26
+ 2576 1048 B0E0      		ldi r27,lo8(0)
+ 2577 104a AA0F      		lsl r26
+ 2578 104c BB1F      		rol r27
+ 2579 104e A050      		subi r26,lo8(-(OSTCBPrioTbl))
+ 2580 1050 B040      		sbci r27,hi8(-(OSTCBPrioTbl))
+ 2581 1052 8D91      		ld r24,X+
+ 2582 1054 9C91      		ld r25,X
+ 2583 1056 9093 0000 		sts (OSTCBHighRdy)+1,r25
+ 2584 105a 8093 0000 		sts OSTCBHighRdy,r24
+ 2585 105e 9093 0000 		sts (OSTCBCur)+1,r25
+ 2586 1062 8093 0000 		sts OSTCBCur,r24
+ 2587 1066 0E94 0000 		call OSStartHighRdy
+ 2588 106a 0895      		ret
+ 2589               		.size	OSStart, .-OSStart
+ 2590               	.global	OSIntExit
+ 2591               		.type	OSIntExit, @function
+ 2592               	OSIntExit:
+ 2593               	/* prologue: function */
+ 2594               	/* frame size = 0 */
+ 2595 106c 8091 0000 		lds r24,OSRunning
+ 2596 1070 8130      		cpi r24,lo8(1)
+ 2597 1072 01F0      		breq .L244
+ 2598 1074 0895      		ret
+ 2599               	.L244:
+ 2600               	/* #APP */
+ 2601               	 ;  180 "c:/ucos-II/source/os_core.c" 1
+ 2602 1076 F894      		cli
+ 2603               	 ;  0 "" 2
+ 2604               	/* #NOAPP */
+ 2605 1078 8091 0000 		lds r24,OSIntNesting
+ 2606 107c 8823      		tst r24
+ 2607 107e 01F0      		breq .L241
+ 2608 1080 8150      		subi r24,lo8(-(-1))
+ 2609 1082 8093 0000 		sts OSIntNesting,r24
+ 2610 1086 8823      		tst r24
+ 2611 1088 01F0      		breq .L241
+ 2612               	.L242:
+ 2613               	/* #APP */
+ 2614               	 ;  193 "c:/ucos-II/source/os_core.c" 1
+ 2615 108a 7894      		sei
+ 2616               	 ;  0 "" 2
+ 2617               	/* #NOAPP */
+ 2618 108c 0895      		ret
+ 2619               	.L241:
+ 2620 108e 8091 0000 		lds r24,OSLockNesting
+ 2621 1092 8823      		tst r24
+ 2622 1094 01F4      		brne .L242
+GAS LISTING C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s 			page 47
 
 
- 2623 1104 FC01      		movw r30,r24
- 2624 1106 7197      		sbiw r30,17
- 2625 1108 9183      		std Z+1,r25
- 2626 110a 8083      		st Z,r24
- 2627 110c 4396      		adiw r24,19
- 2628 110e 20E0      		ldi r18,hi8(OSTCBTbl+1235)
- 2629 1110 8030      		cpi r24,lo8(OSTCBTbl+1235)
- 2630 1112 9207      		cpc r25,r18
- 2631 1114 01F4      		brne .L239
- 2632 1116 1092 0000 		sts (OSTCBTbl+1218)+1,__zero_reg__
- 2633 111a 1092 0000 		sts OSTCBTbl+1218,__zero_reg__
- 2634 111e 80E0      		ldi r24,lo8(OSTCBTbl)
- 2635 1120 90E0      		ldi r25,hi8(OSTCBTbl)
- 2636 1122 9093 0000 		sts (OSTCBFreeList)+1,r25
- 2637 1126 8093 0000 		sts OSTCBFreeList,r24
- 2638 112a 20E0      		ldi r18,lo8(OSEventTbl)
- 2639 112c 30E0      		ldi r19,hi8(OSEventTbl)
- 2640 112e F901      		movw r30,r18
- 2641               	.L240:
- 2642 1130 CF01      		movw r24,r30
- 2643 1132 0896      		adiw r24,8
- 2644 1134 1082      		st Z,__zero_reg__
- 2645 1136 9583      		std Z+5,r25
- 2646 1138 8483      		std Z+4,r24
- 2647 113a FC01      		movw r30,r24
- 2648 113c 80E0      		ldi r24,hi8(OSEventTbl+232)
- 2649 113e E030      		cpi r30,lo8(OSEventTbl+232)
- 2650 1140 F807      		cpc r31,r24
- 2651 1142 01F4      		brne .L240
- 2652 1144 1082      		st Z,__zero_reg__
- 2653 1146 1582      		std Z+5,__zero_reg__
- 2654 1148 1482      		std Z+4,__zero_reg__
- 2655 114a 3093 0000 		sts (OSEventFreeList)+1,r19
- 2656 114e 2093 0000 		sts OSEventFreeList,r18
- 2657 1152 0E94 0000 		call OS_FlagInit
- 2658 1156 0E94 0000 		call OS_QInit
- 2659 115a 80E0      		ldi r24,lo8(gs(OS_TaskIdle))
- 2660 115c 90E0      		ldi r25,hi8(gs(OS_TaskIdle))
- 2661 115e 60E0      		ldi r22,lo8(0)
- 2662 1160 70E0      		ldi r23,hi8(0)
- 2663 1162 40E0      		ldi r20,lo8(OSTaskIdleStk+127)
- 2664 1164 50E0      		ldi r21,hi8(OSTaskIdleStk+127)
- 2665 1166 2CE0      		ldi r18,lo8(12)
- 2666 1168 0E94 0000 		call OSTaskCreate
- 2667 116c 80E0      		ldi r24,lo8(gs(OS_TaskStat))
- 2668 116e 90E0      		ldi r25,hi8(gs(OS_TaskStat))
- 2669 1170 60E0      		ldi r22,lo8(0)
- 2670 1172 70E0      		ldi r23,hi8(0)
- 2671 1174 40E0      		ldi r20,lo8(OSTaskStatStk+127)
- 2672 1176 50E0      		ldi r21,hi8(OSTaskStatStk+127)
- 2673 1178 2BE0      		ldi r18,lo8(11)
- 2674 117a 0E94 0000 		call OSTaskCreate
- 2675 117e 0E94 0000 		call OSInitHookEnd
- 2676               	/* epilogue start */
- 2677 1182 0895      		ret
- 2678               		.size	OSInit, .-OSInit
- 2679               	.global	OSMapTbl
-GAS LISTING C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s 			page 48
+ 2623 1096 E091 0000 		lds r30,OSRdyGrp
+ 2624 109a F0E0      		ldi r31,lo8(0)
+ 2625 109c E050      		subi r30,lo8(-(OSUnMapTbl))
+ 2626 109e F040      		sbci r31,hi8(-(OSUnMapTbl))
+ 2627 10a0 8081      		ld r24,Z
+ 2628 10a2 8093 0000 		sts OSIntExitY,r24
+ 2629 10a6 E82F      		mov r30,r24
+ 2630 10a8 F0E0      		ldi r31,lo8(0)
+ 2631 10aa E050      		subi r30,lo8(-(OSRdyTbl))
+ 2632 10ac F040      		sbci r31,hi8(-(OSRdyTbl))
+ 2633 10ae E081      		ld r30,Z
+ 2634 10b0 F0E0      		ldi r31,lo8(0)
+ 2635 10b2 E050      		subi r30,lo8(-(OSUnMapTbl))
+ 2636 10b4 F040      		sbci r31,hi8(-(OSUnMapTbl))
+ 2637 10b6 982F      		mov r25,r24
+ 2638 10b8 990F      		lsl r25
+ 2639 10ba 990F      		lsl r25
+ 2640 10bc 990F      		lsl r25
+ 2641 10be 8081      		ld r24,Z
+ 2642 10c0 980F      		add r25,r24
+ 2643 10c2 9093 0000 		sts OSPrioHighRdy,r25
+ 2644 10c6 8091 0000 		lds r24,OSPrioCur
+ 2645 10ca 9817      		cp r25,r24
+ 2646 10cc 01F0      		breq .L242
+ 2647 10ce E92F      		mov r30,r25
+ 2648 10d0 F0E0      		ldi r31,lo8(0)
+ 2649 10d2 EE0F      		lsl r30
+ 2650 10d4 FF1F      		rol r31
+ 2651 10d6 E050      		subi r30,lo8(-(OSTCBPrioTbl))
+ 2652 10d8 F040      		sbci r31,hi8(-(OSTCBPrioTbl))
+ 2653 10da 8081      		ld r24,Z
+ 2654 10dc 9181      		ldd r25,Z+1
+ 2655 10de 9093 0000 		sts (OSTCBHighRdy)+1,r25
+ 2656 10e2 8093 0000 		sts OSTCBHighRdy,r24
+ 2657 10e6 8091 0000 		lds r24,OSCtxSwCtr
+ 2658 10ea 9091 0000 		lds r25,(OSCtxSwCtr)+1
+ 2659 10ee A091 0000 		lds r26,(OSCtxSwCtr)+2
+ 2660 10f2 B091 0000 		lds r27,(OSCtxSwCtr)+3
+ 2661 10f6 0196      		adiw r24,1
+ 2662 10f8 A11D      		adc r26,__zero_reg__
+ 2663 10fa B11D      		adc r27,__zero_reg__
+ 2664 10fc 8093 0000 		sts OSCtxSwCtr,r24
+ 2665 1100 9093 0000 		sts (OSCtxSwCtr)+1,r25
+ 2666 1104 A093 0000 		sts (OSCtxSwCtr)+2,r26
+ 2667 1108 B093 0000 		sts (OSCtxSwCtr)+3,r27
+ 2668 110c 0E94 0000 		call OSIntCtxSw
+ 2669 1110 00C0      		rjmp .L242
+ 2670               		.size	OSIntExit, .-OSIntExit
+ 2671               	.global	OSInit
+ 2672               		.type	OSInit, @function
+ 2673               	OSInit:
+ 2674               	/* prologue: function */
+ 2675               	/* frame size = 0 */
+ 2676 1112 0E94 0000 		call OSInitHookBegin
+ 2677 1116 1092 0000 		sts OSIntNesting,__zero_reg__
+ 2678 111a 1092 0000 		sts OSLockNesting,__zero_reg__
+ 2679 111e 1092 0000 		sts OSTaskCtr,__zero_reg__
+GAS LISTING C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s 			page 48
 
 
- 2680               		.data
- 2681               		.type	OSMapTbl, @object
- 2682               		.size	OSMapTbl, 8
- 2683               	OSMapTbl:
- 2684 0000 01        		.byte	1
- 2685 0001 02        		.byte	2
- 2686 0002 04        		.byte	4
- 2687 0003 08        		.byte	8
- 2688 0004 10        		.byte	16
- 2689 0005 20        		.byte	32
- 2690 0006 40        		.byte	64
- 2691 0007 80        		.byte	-128
- 2692               	.global	OSUnMapTbl
- 2693               		.type	OSUnMapTbl, @object
- 2694               		.size	OSUnMapTbl, 256
- 2695               	OSUnMapTbl:
- 2696 0008 00        		.byte	0
- 2697 0009 00        		.byte	0
- 2698 000a 01        		.byte	1
- 2699 000b 00        		.byte	0
- 2700 000c 02        		.byte	2
- 2701 000d 00        		.byte	0
- 2702 000e 01        		.byte	1
- 2703 000f 00        		.byte	0
- 2704 0010 03        		.byte	3
- 2705 0011 00        		.byte	0
- 2706 0012 01        		.byte	1
- 2707 0013 00        		.byte	0
- 2708 0014 02        		.byte	2
- 2709 0015 00        		.byte	0
- 2710 0016 01        		.byte	1
- 2711 0017 00        		.byte	0
- 2712 0018 04        		.byte	4
- 2713 0019 00        		.byte	0
- 2714 001a 01        		.byte	1
- 2715 001b 00        		.byte	0
- 2716 001c 02        		.byte	2
- 2717 001d 00        		.byte	0
- 2718 001e 01        		.byte	1
- 2719 001f 00        		.byte	0
- 2720 0020 03        		.byte	3
- 2721 0021 00        		.byte	0
- 2722 0022 01        		.byte	1
- 2723 0023 00        		.byte	0
- 2724 0024 02        		.byte	2
- 2725 0025 00        		.byte	0
- 2726 0026 01        		.byte	1
- 2727 0027 00        		.byte	0
- 2728 0028 05        		.byte	5
- 2729 0029 00        		.byte	0
- 2730 002a 01        		.byte	1
- 2731 002b 00        		.byte	0
- 2732 002c 02        		.byte	2
- 2733 002d 00        		.byte	0
- 2734 002e 01        		.byte	1
- 2735 002f 00        		.byte	0
- 2736 0030 03        		.byte	3
-GAS LISTING C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s 			page 49
+ 2680 1122 1092 0000 		sts OSRunning,__zero_reg__
+ 2681 1126 1092 0000 		sts OSCtxSwCtr,__zero_reg__
+ 2682 112a 1092 0000 		sts (OSCtxSwCtr)+1,__zero_reg__
+ 2683 112e 1092 0000 		sts (OSCtxSwCtr)+2,__zero_reg__
+ 2684 1132 1092 0000 		sts (OSCtxSwCtr)+3,__zero_reg__
+ 2685 1136 1092 0000 		sts OSIdleCtr,__zero_reg__
+ 2686 113a 1092 0000 		sts (OSIdleCtr)+1,__zero_reg__
+ 2687 113e 1092 0000 		sts (OSIdleCtr)+2,__zero_reg__
+ 2688 1142 1092 0000 		sts (OSIdleCtr)+3,__zero_reg__
+ 2689 1146 1092 0000 		sts OSRdyGrp,__zero_reg__
+ 2690 114a 1092 0000 		sts OSRdyTbl,__zero_reg__
+ 2691 114e 1092 0000 		sts OSRdyTbl+1,__zero_reg__
+ 2692 1152 1092 0000 		sts OSPrioCur,__zero_reg__
+ 2693 1156 1092 0000 		sts OSPrioHighRdy,__zero_reg__
+ 2694 115a 1092 0000 		sts (OSTCBHighRdy)+1,__zero_reg__
+ 2695 115e 1092 0000 		sts OSTCBHighRdy,__zero_reg__
+ 2696 1162 1092 0000 		sts (OSTCBCur)+1,__zero_reg__
+ 2697 1166 1092 0000 		sts OSTCBCur,__zero_reg__
+ 2698 116a 1092 0000 		sts (OSTCBList)+1,__zero_reg__
+ 2699 116e 1092 0000 		sts OSTCBList,__zero_reg__
+ 2700 1172 E0E0      		ldi r30,lo8(OSTCBPrioTbl)
+ 2701 1174 F0E0      		ldi r31,hi8(OSTCBPrioTbl)
+ 2702               	.L246:
+ 2703 1176 1192      		st Z+,__zero_reg__
+ 2704 1178 1192      		st Z+,__zero_reg__
+ 2705 117a 20E0      		ldi r18,hi8(OSTCBPrioTbl+26)
+ 2706 117c E030      		cpi r30,lo8(OSTCBPrioTbl+26)
+ 2707 117e F207      		cpc r31,r18
+ 2708 1180 01F4      		brne .L246
+ 2709 1182 80E0      		ldi r24,lo8(OSTCBTbl+19)
+ 2710 1184 90E0      		ldi r25,hi8(OSTCBTbl+19)
+ 2711               	.L247:
+ 2712 1186 FC01      		movw r30,r24
+ 2713 1188 7197      		sbiw r30,17
+ 2714 118a 9183      		std Z+1,r25
+ 2715 118c 8083      		st Z,r24
+ 2716 118e 4396      		adiw r24,19
+ 2717 1190 20E0      		ldi r18,hi8(OSTCBTbl+1235)
+ 2718 1192 8030      		cpi r24,lo8(OSTCBTbl+1235)
+ 2719 1194 9207      		cpc r25,r18
+ 2720 1196 01F4      		brne .L247
+ 2721 1198 1092 0000 		sts (OSTCBTbl+1218)+1,__zero_reg__
+ 2722 119c 1092 0000 		sts OSTCBTbl+1218,__zero_reg__
+ 2723 11a0 80E0      		ldi r24,lo8(OSTCBTbl)
+ 2724 11a2 90E0      		ldi r25,hi8(OSTCBTbl)
+ 2725 11a4 9093 0000 		sts (OSTCBFreeList)+1,r25
+ 2726 11a8 8093 0000 		sts OSTCBFreeList,r24
+ 2727 11ac 20E0      		ldi r18,lo8(OSEventTbl)
+ 2728 11ae 30E0      		ldi r19,hi8(OSEventTbl)
+ 2729 11b0 F901      		movw r30,r18
+ 2730               	.L248:
+ 2731 11b2 CF01      		movw r24,r30
+ 2732 11b4 0896      		adiw r24,8
+ 2733 11b6 1082      		st Z,__zero_reg__
+ 2734 11b8 9583      		std Z+5,r25
+ 2735 11ba 8483      		std Z+4,r24
+ 2736 11bc FC01      		movw r30,r24
+GAS LISTING C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s 			page 49
 
 
- 2737 0031 00        		.byte	0
- 2738 0032 01        		.byte	1
- 2739 0033 00        		.byte	0
- 2740 0034 02        		.byte	2
- 2741 0035 00        		.byte	0
- 2742 0036 01        		.byte	1
- 2743 0037 00        		.byte	0
- 2744 0038 04        		.byte	4
- 2745 0039 00        		.byte	0
- 2746 003a 01        		.byte	1
- 2747 003b 00        		.byte	0
- 2748 003c 02        		.byte	2
- 2749 003d 00        		.byte	0
- 2750 003e 01        		.byte	1
- 2751 003f 00        		.byte	0
- 2752 0040 03        		.byte	3
- 2753 0041 00        		.byte	0
- 2754 0042 01        		.byte	1
- 2755 0043 00        		.byte	0
- 2756 0044 02        		.byte	2
- 2757 0045 00        		.byte	0
- 2758 0046 01        		.byte	1
- 2759 0047 00        		.byte	0
- 2760 0048 06        		.byte	6
- 2761 0049 00        		.byte	0
- 2762 004a 01        		.byte	1
- 2763 004b 00        		.byte	0
- 2764 004c 02        		.byte	2
- 2765 004d 00        		.byte	0
- 2766 004e 01        		.byte	1
- 2767 004f 00        		.byte	0
- 2768 0050 03        		.byte	3
- 2769 0051 00        		.byte	0
- 2770 0052 01        		.byte	1
- 2771 0053 00        		.byte	0
- 2772 0054 02        		.byte	2
- 2773 0055 00        		.byte	0
- 2774 0056 01        		.byte	1
- 2775 0057 00        		.byte	0
- 2776 0058 04        		.byte	4
- 2777 0059 00        		.byte	0
- 2778 005a 01        		.byte	1
- 2779 005b 00        		.byte	0
- 2780 005c 02        		.byte	2
- 2781 005d 00        		.byte	0
- 2782 005e 01        		.byte	1
- 2783 005f 00        		.byte	0
- 2784 0060 03        		.byte	3
- 2785 0061 00        		.byte	0
- 2786 0062 01        		.byte	1
- 2787 0063 00        		.byte	0
- 2788 0064 02        		.byte	2
- 2789 0065 00        		.byte	0
- 2790 0066 01        		.byte	1
- 2791 0067 00        		.byte	0
- 2792 0068 05        		.byte	5
- 2793 0069 00        		.byte	0
-GAS LISTING C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s 			page 50
+ 2737 11be 80E0      		ldi r24,hi8(OSEventTbl+232)
+ 2738 11c0 E030      		cpi r30,lo8(OSEventTbl+232)
+ 2739 11c2 F807      		cpc r31,r24
+ 2740 11c4 01F4      		brne .L248
+ 2741 11c6 1082      		st Z,__zero_reg__
+ 2742 11c8 1582      		std Z+5,__zero_reg__
+ 2743 11ca 1482      		std Z+4,__zero_reg__
+ 2744 11cc 3093 0000 		sts (OSEventFreeList)+1,r19
+ 2745 11d0 2093 0000 		sts OSEventFreeList,r18
+ 2746 11d4 0E94 0000 		call OS_FlagInit
+ 2747 11d8 0E94 0000 		call OS_QInit
+ 2748 11dc 80E0      		ldi r24,lo8(gs(OS_TaskIdle))
+ 2749 11de 90E0      		ldi r25,hi8(gs(OS_TaskIdle))
+ 2750 11e0 60E0      		ldi r22,lo8(0)
+ 2751 11e2 70E0      		ldi r23,hi8(0)
+ 2752 11e4 40E0      		ldi r20,lo8(OSTaskIdleStk+127)
+ 2753 11e6 50E0      		ldi r21,hi8(OSTaskIdleStk+127)
+ 2754 11e8 2CE0      		ldi r18,lo8(12)
+ 2755 11ea 0E94 0000 		call OSTaskCreate
+ 2756 11ee 80E0      		ldi r24,lo8(gs(OS_TaskStat))
+ 2757 11f0 90E0      		ldi r25,hi8(gs(OS_TaskStat))
+ 2758 11f2 60E0      		ldi r22,lo8(0)
+ 2759 11f4 70E0      		ldi r23,hi8(0)
+ 2760 11f6 40E0      		ldi r20,lo8(OSTaskStatStk+127)
+ 2761 11f8 50E0      		ldi r21,hi8(OSTaskStatStk+127)
+ 2762 11fa 2BE0      		ldi r18,lo8(11)
+ 2763 11fc 0E94 0000 		call OSTaskCreate
+ 2764 1200 0E94 0000 		call OSInitHookEnd
+ 2765               	/* epilogue start */
+ 2766 1204 0895      		ret
+ 2767               		.size	OSInit, .-OSInit
+ 2768               	.global	OSMapTbl
+ 2769               		.data
+ 2770               		.type	OSMapTbl, @object
+ 2771               		.size	OSMapTbl, 8
+ 2772               	OSMapTbl:
+ 2773 0000 01        		.byte	1
+ 2774 0001 02        		.byte	2
+ 2775 0002 04        		.byte	4
+ 2776 0003 08        		.byte	8
+ 2777 0004 10        		.byte	16
+ 2778 0005 20        		.byte	32
+ 2779 0006 40        		.byte	64
+ 2780 0007 80        		.byte	-128
+ 2781               	.global	OSUnMapTbl
+ 2782               		.type	OSUnMapTbl, @object
+ 2783               		.size	OSUnMapTbl, 256
+ 2784               	OSUnMapTbl:
+ 2785 0008 00        		.byte	0
+ 2786 0009 00        		.byte	0
+ 2787 000a 01        		.byte	1
+ 2788 000b 00        		.byte	0
+ 2789 000c 02        		.byte	2
+ 2790 000d 00        		.byte	0
+ 2791 000e 01        		.byte	1
+ 2792 000f 00        		.byte	0
+ 2793 0010 03        		.byte	3
+GAS LISTING C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s 			page 50
 
 
- 2794 006a 01        		.byte	1
- 2795 006b 00        		.byte	0
- 2796 006c 02        		.byte	2
- 2797 006d 00        		.byte	0
- 2798 006e 01        		.byte	1
- 2799 006f 00        		.byte	0
- 2800 0070 03        		.byte	3
- 2801 0071 00        		.byte	0
- 2802 0072 01        		.byte	1
- 2803 0073 00        		.byte	0
- 2804 0074 02        		.byte	2
- 2805 0075 00        		.byte	0
- 2806 0076 01        		.byte	1
- 2807 0077 00        		.byte	0
- 2808 0078 04        		.byte	4
- 2809 0079 00        		.byte	0
- 2810 007a 01        		.byte	1
- 2811 007b 00        		.byte	0
- 2812 007c 02        		.byte	2
- 2813 007d 00        		.byte	0
- 2814 007e 01        		.byte	1
- 2815 007f 00        		.byte	0
- 2816 0080 03        		.byte	3
- 2817 0081 00        		.byte	0
- 2818 0082 01        		.byte	1
- 2819 0083 00        		.byte	0
- 2820 0084 02        		.byte	2
- 2821 0085 00        		.byte	0
- 2822 0086 01        		.byte	1
- 2823 0087 00        		.byte	0
- 2824 0088 07        		.byte	7
- 2825 0089 00        		.byte	0
- 2826 008a 01        		.byte	1
- 2827 008b 00        		.byte	0
- 2828 008c 02        		.byte	2
- 2829 008d 00        		.byte	0
- 2830 008e 01        		.byte	1
- 2831 008f 00        		.byte	0
- 2832 0090 03        		.byte	3
- 2833 0091 00        		.byte	0
- 2834 0092 01        		.byte	1
- 2835 0093 00        		.byte	0
- 2836 0094 02        		.byte	2
- 2837 0095 00        		.byte	0
- 2838 0096 01        		.byte	1
- 2839 0097 00        		.byte	0
- 2840 0098 04        		.byte	4
- 2841 0099 00        		.byte	0
- 2842 009a 01        		.byte	1
- 2843 009b 00        		.byte	0
- 2844 009c 02        		.byte	2
- 2845 009d 00        		.byte	0
- 2846 009e 01        		.byte	1
- 2847 009f 00        		.byte	0
- 2848 00a0 03        		.byte	3
- 2849 00a1 00        		.byte	0
- 2850 00a2 01        		.byte	1
-GAS LISTING C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s 			page 51
+ 2794 0011 00        		.byte	0
+ 2795 0012 01        		.byte	1
+ 2796 0013 00        		.byte	0
+ 2797 0014 02        		.byte	2
+ 2798 0015 00        		.byte	0
+ 2799 0016 01        		.byte	1
+ 2800 0017 00        		.byte	0
+ 2801 0018 04        		.byte	4
+ 2802 0019 00        		.byte	0
+ 2803 001a 01        		.byte	1
+ 2804 001b 00        		.byte	0
+ 2805 001c 02        		.byte	2
+ 2806 001d 00        		.byte	0
+ 2807 001e 01        		.byte	1
+ 2808 001f 00        		.byte	0
+ 2809 0020 03        		.byte	3
+ 2810 0021 00        		.byte	0
+ 2811 0022 01        		.byte	1
+ 2812 0023 00        		.byte	0
+ 2813 0024 02        		.byte	2
+ 2814 0025 00        		.byte	0
+ 2815 0026 01        		.byte	1
+ 2816 0027 00        		.byte	0
+ 2817 0028 05        		.byte	5
+ 2818 0029 00        		.byte	0
+ 2819 002a 01        		.byte	1
+ 2820 002b 00        		.byte	0
+ 2821 002c 02        		.byte	2
+ 2822 002d 00        		.byte	0
+ 2823 002e 01        		.byte	1
+ 2824 002f 00        		.byte	0
+ 2825 0030 03        		.byte	3
+ 2826 0031 00        		.byte	0
+ 2827 0032 01        		.byte	1
+ 2828 0033 00        		.byte	0
+ 2829 0034 02        		.byte	2
+ 2830 0035 00        		.byte	0
+ 2831 0036 01        		.byte	1
+ 2832 0037 00        		.byte	0
+ 2833 0038 04        		.byte	4
+ 2834 0039 00        		.byte	0
+ 2835 003a 01        		.byte	1
+ 2836 003b 00        		.byte	0
+ 2837 003c 02        		.byte	2
+ 2838 003d 00        		.byte	0
+ 2839 003e 01        		.byte	1
+ 2840 003f 00        		.byte	0
+ 2841 0040 03        		.byte	3
+ 2842 0041 00        		.byte	0
+ 2843 0042 01        		.byte	1
+ 2844 0043 00        		.byte	0
+ 2845 0044 02        		.byte	2
+ 2846 0045 00        		.byte	0
+ 2847 0046 01        		.byte	1
+ 2848 0047 00        		.byte	0
+ 2849 0048 06        		.byte	6
+ 2850 0049 00        		.byte	0
+GAS LISTING C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s 			page 51
 
 
- 2851 00a3 00        		.byte	0
- 2852 00a4 02        		.byte	2
- 2853 00a5 00        		.byte	0
- 2854 00a6 01        		.byte	1
- 2855 00a7 00        		.byte	0
- 2856 00a8 05        		.byte	5
- 2857 00a9 00        		.byte	0
- 2858 00aa 01        		.byte	1
- 2859 00ab 00        		.byte	0
- 2860 00ac 02        		.byte	2
- 2861 00ad 00        		.byte	0
- 2862 00ae 01        		.byte	1
- 2863 00af 00        		.byte	0
- 2864 00b0 03        		.byte	3
- 2865 00b1 00        		.byte	0
- 2866 00b2 01        		.byte	1
- 2867 00b3 00        		.byte	0
- 2868 00b4 02        		.byte	2
- 2869 00b5 00        		.byte	0
- 2870 00b6 01        		.byte	1
- 2871 00b7 00        		.byte	0
- 2872 00b8 04        		.byte	4
- 2873 00b9 00        		.byte	0
- 2874 00ba 01        		.byte	1
- 2875 00bb 00        		.byte	0
- 2876 00bc 02        		.byte	2
- 2877 00bd 00        		.byte	0
- 2878 00be 01        		.byte	1
- 2879 00bf 00        		.byte	0
- 2880 00c0 03        		.byte	3
- 2881 00c1 00        		.byte	0
- 2882 00c2 01        		.byte	1
- 2883 00c3 00        		.byte	0
- 2884 00c4 02        		.byte	2
- 2885 00c5 00        		.byte	0
- 2886 00c6 01        		.byte	1
- 2887 00c7 00        		.byte	0
- 2888 00c8 06        		.byte	6
- 2889 00c9 00        		.byte	0
- 2890 00ca 01        		.byte	1
- 2891 00cb 00        		.byte	0
- 2892 00cc 02        		.byte	2
- 2893 00cd 00        		.byte	0
- 2894 00ce 01        		.byte	1
- 2895 00cf 00        		.byte	0
- 2896 00d0 03        		.byte	3
- 2897 00d1 00        		.byte	0
- 2898 00d2 01        		.byte	1
- 2899 00d3 00        		.byte	0
- 2900 00d4 02        		.byte	2
- 2901 00d5 00        		.byte	0
- 2902 00d6 01        		.byte	1
- 2903 00d7 00        		.byte	0
- 2904 00d8 04        		.byte	4
- 2905 00d9 00        		.byte	0
- 2906 00da 01        		.byte	1
- 2907 00db 00        		.byte	0
-GAS LISTING C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s 			page 52
+ 2851 004a 01        		.byte	1
+ 2852 004b 00        		.byte	0
+ 2853 004c 02        		.byte	2
+ 2854 004d 00        		.byte	0
+ 2855 004e 01        		.byte	1
+ 2856 004f 00        		.byte	0
+ 2857 0050 03        		.byte	3
+ 2858 0051 00        		.byte	0
+ 2859 0052 01        		.byte	1
+ 2860 0053 00        		.byte	0
+ 2861 0054 02        		.byte	2
+ 2862 0055 00        		.byte	0
+ 2863 0056 01        		.byte	1
+ 2864 0057 00        		.byte	0
+ 2865 0058 04        		.byte	4
+ 2866 0059 00        		.byte	0
+ 2867 005a 01        		.byte	1
+ 2868 005b 00        		.byte	0
+ 2869 005c 02        		.byte	2
+ 2870 005d 00        		.byte	0
+ 2871 005e 01        		.byte	1
+ 2872 005f 00        		.byte	0
+ 2873 0060 03        		.byte	3
+ 2874 0061 00        		.byte	0
+ 2875 0062 01        		.byte	1
+ 2876 0063 00        		.byte	0
+ 2877 0064 02        		.byte	2
+ 2878 0065 00        		.byte	0
+ 2879 0066 01        		.byte	1
+ 2880 0067 00        		.byte	0
+ 2881 0068 05        		.byte	5
+ 2882 0069 00        		.byte	0
+ 2883 006a 01        		.byte	1
+ 2884 006b 00        		.byte	0
+ 2885 006c 02        		.byte	2
+ 2886 006d 00        		.byte	0
+ 2887 006e 01        		.byte	1
+ 2888 006f 00        		.byte	0
+ 2889 0070 03        		.byte	3
+ 2890 0071 00        		.byte	0
+ 2891 0072 01        		.byte	1
+ 2892 0073 00        		.byte	0
+ 2893 0074 02        		.byte	2
+ 2894 0075 00        		.byte	0
+ 2895 0076 01        		.byte	1
+ 2896 0077 00        		.byte	0
+ 2897 0078 04        		.byte	4
+ 2898 0079 00        		.byte	0
+ 2899 007a 01        		.byte	1
+ 2900 007b 00        		.byte	0
+ 2901 007c 02        		.byte	2
+ 2902 007d 00        		.byte	0
+ 2903 007e 01        		.byte	1
+ 2904 007f 00        		.byte	0
+ 2905 0080 03        		.byte	3
+ 2906 0081 00        		.byte	0
+ 2907 0082 01        		.byte	1
+GAS LISTING C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s 			page 52
 
 
- 2908 00dc 02        		.byte	2
- 2909 00dd 00        		.byte	0
- 2910 00de 01        		.byte	1
- 2911 00df 00        		.byte	0
- 2912 00e0 03        		.byte	3
- 2913 00e1 00        		.byte	0
- 2914 00e2 01        		.byte	1
- 2915 00e3 00        		.byte	0
- 2916 00e4 02        		.byte	2
- 2917 00e5 00        		.byte	0
- 2918 00e6 01        		.byte	1
- 2919 00e7 00        		.byte	0
- 2920 00e8 05        		.byte	5
- 2921 00e9 00        		.byte	0
- 2922 00ea 01        		.byte	1
- 2923 00eb 00        		.byte	0
- 2924 00ec 02        		.byte	2
- 2925 00ed 00        		.byte	0
- 2926 00ee 01        		.byte	1
- 2927 00ef 00        		.byte	0
- 2928 00f0 03        		.byte	3
- 2929 00f1 00        		.byte	0
- 2930 00f2 01        		.byte	1
- 2931 00f3 00        		.byte	0
- 2932 00f4 02        		.byte	2
- 2933 00f5 00        		.byte	0
- 2934 00f6 01        		.byte	1
- 2935 00f7 00        		.byte	0
- 2936 00f8 04        		.byte	4
- 2937 00f9 00        		.byte	0
- 2938 00fa 01        		.byte	1
- 2939 00fb 00        		.byte	0
- 2940 00fc 02        		.byte	2
- 2941 00fd 00        		.byte	0
- 2942 00fe 01        		.byte	1
- 2943 00ff 00        		.byte	0
- 2944 0100 03        		.byte	3
- 2945 0101 00        		.byte	0
- 2946 0102 01        		.byte	1
- 2947 0103 00        		.byte	0
- 2948 0104 02        		.byte	2
- 2949 0105 00        		.byte	0
- 2950 0106 01        		.byte	1
- 2951 0107 00        		.byte	0
- 2952               		.comm OSCtxSwCtr,4,1
- 2953               		.comm OSEventFreeList,2,1
- 2954               		.comm OSEventTbl,240,1
- 2955               		.comm OSFlagTbl,40,1
- 2956               		.comm OSFlagFreeList,2,1
- 2957               		.comm OSCPUUsage,1,1
- 2958               		.comm OSIdleCtrMax,4,1
- 2959               		.comm OSIdleCtrRun,4,1
- 2960               		.comm OSStatRdy,1,1
- 2961               		.comm OSTaskStatStk,128,1
- 2962               		.comm OSIntNesting,1,1
- 2963               		.comm OSIntExitY,1,1
- 2964               		.comm OSLockNesting,1,1
-GAS LISTING C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s 			page 53
+ 2908 0083 00        		.byte	0
+ 2909 0084 02        		.byte	2
+ 2910 0085 00        		.byte	0
+ 2911 0086 01        		.byte	1
+ 2912 0087 00        		.byte	0
+ 2913 0088 07        		.byte	7
+ 2914 0089 00        		.byte	0
+ 2915 008a 01        		.byte	1
+ 2916 008b 00        		.byte	0
+ 2917 008c 02        		.byte	2
+ 2918 008d 00        		.byte	0
+ 2919 008e 01        		.byte	1
+ 2920 008f 00        		.byte	0
+ 2921 0090 03        		.byte	3
+ 2922 0091 00        		.byte	0
+ 2923 0092 01        		.byte	1
+ 2924 0093 00        		.byte	0
+ 2925 0094 02        		.byte	2
+ 2926 0095 00        		.byte	0
+ 2927 0096 01        		.byte	1
+ 2928 0097 00        		.byte	0
+ 2929 0098 04        		.byte	4
+ 2930 0099 00        		.byte	0
+ 2931 009a 01        		.byte	1
+ 2932 009b 00        		.byte	0
+ 2933 009c 02        		.byte	2
+ 2934 009d 00        		.byte	0
+ 2935 009e 01        		.byte	1
+ 2936 009f 00        		.byte	0
+ 2937 00a0 03        		.byte	3
+ 2938 00a1 00        		.byte	0
+ 2939 00a2 01        		.byte	1
+ 2940 00a3 00        		.byte	0
+ 2941 00a4 02        		.byte	2
+ 2942 00a5 00        		.byte	0
+ 2943 00a6 01        		.byte	1
+ 2944 00a7 00        		.byte	0
+ 2945 00a8 05        		.byte	5
+ 2946 00a9 00        		.byte	0
+ 2947 00aa 01        		.byte	1
+ 2948 00ab 00        		.byte	0
+ 2949 00ac 02        		.byte	2
+ 2950 00ad 00        		.byte	0
+ 2951 00ae 01        		.byte	1
+ 2952 00af 00        		.byte	0
+ 2953 00b0 03        		.byte	3
+ 2954 00b1 00        		.byte	0
+ 2955 00b2 01        		.byte	1
+ 2956 00b3 00        		.byte	0
+ 2957 00b4 02        		.byte	2
+ 2958 00b5 00        		.byte	0
+ 2959 00b6 01        		.byte	1
+ 2960 00b7 00        		.byte	0
+ 2961 00b8 04        		.byte	4
+ 2962 00b9 00        		.byte	0
+ 2963 00ba 01        		.byte	1
+ 2964 00bb 00        		.byte	0
+GAS LISTING C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s 			page 53
 
 
- 2965               		.comm OSPrioCur,1,1
- 2966               		.comm OSPrioHighRdy,1,1
- 2967               		.comm OSRdyGrp,1,1
- 2968               		.comm OSRdyTbl,2,1
- 2969               		.comm OSRunning,1,1
- 2970               		.comm OSTaskCtr,1,1
- 2971               		.comm OSIdleCtr,4,1
- 2972               		.comm OSTaskIdleStk,128,1
- 2973               		.comm OSTCBCur,2,1
- 2974               		.comm OSTCBFreeList,2,1
- 2975               		.comm OSTCBHighRdy,2,1
- 2976               		.comm OSTCBList,2,1
- 2977               		.comm OSTCBPrioTbl,26,1
- 2978               		.comm OSTCBTbl,1235,1
- 2979               		.comm OSQFreeList,2,1
- 2980               		.comm OSQTbl,280,1
- 2981               	.global __do_copy_data
- 2982               	.global __do_clear_bss
-GAS LISTING C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s 			page 54
+ 2965 00bc 02        		.byte	2
+ 2966 00bd 00        		.byte	0
+ 2967 00be 01        		.byte	1
+ 2968 00bf 00        		.byte	0
+ 2969 00c0 03        		.byte	3
+ 2970 00c1 00        		.byte	0
+ 2971 00c2 01        		.byte	1
+ 2972 00c3 00        		.byte	0
+ 2973 00c4 02        		.byte	2
+ 2974 00c5 00        		.byte	0
+ 2975 00c6 01        		.byte	1
+ 2976 00c7 00        		.byte	0
+ 2977 00c8 06        		.byte	6
+ 2978 00c9 00        		.byte	0
+ 2979 00ca 01        		.byte	1
+ 2980 00cb 00        		.byte	0
+ 2981 00cc 02        		.byte	2
+ 2982 00cd 00        		.byte	0
+ 2983 00ce 01        		.byte	1
+ 2984 00cf 00        		.byte	0
+ 2985 00d0 03        		.byte	3
+ 2986 00d1 00        		.byte	0
+ 2987 00d2 01        		.byte	1
+ 2988 00d3 00        		.byte	0
+ 2989 00d4 02        		.byte	2
+ 2990 00d5 00        		.byte	0
+ 2991 00d6 01        		.byte	1
+ 2992 00d7 00        		.byte	0
+ 2993 00d8 04        		.byte	4
+ 2994 00d9 00        		.byte	0
+ 2995 00da 01        		.byte	1
+ 2996 00db 00        		.byte	0
+ 2997 00dc 02        		.byte	2
+ 2998 00dd 00        		.byte	0
+ 2999 00de 01        		.byte	1
+ 3000 00df 00        		.byte	0
+ 3001 00e0 03        		.byte	3
+ 3002 00e1 00        		.byte	0
+ 3003 00e2 01        		.byte	1
+ 3004 00e3 00        		.byte	0
+ 3005 00e4 02        		.byte	2
+ 3006 00e5 00        		.byte	0
+ 3007 00e6 01        		.byte	1
+ 3008 00e7 00        		.byte	0
+ 3009 00e8 05        		.byte	5
+ 3010 00e9 00        		.byte	0
+ 3011 00ea 01        		.byte	1
+ 3012 00eb 00        		.byte	0
+ 3013 00ec 02        		.byte	2
+ 3014 00ed 00        		.byte	0
+ 3015 00ee 01        		.byte	1
+ 3016 00ef 00        		.byte	0
+ 3017 00f0 03        		.byte	3
+ 3018 00f1 00        		.byte	0
+ 3019 00f2 01        		.byte	1
+ 3020 00f3 00        		.byte	0
+ 3021 00f4 02        		.byte	2
+GAS LISTING C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s 			page 54
+
+
+ 3022 00f5 00        		.byte	0
+ 3023 00f6 01        		.byte	1
+ 3024 00f7 00        		.byte	0
+ 3025 00f8 04        		.byte	4
+ 3026 00f9 00        		.byte	0
+ 3027 00fa 01        		.byte	1
+ 3028 00fb 00        		.byte	0
+ 3029 00fc 02        		.byte	2
+ 3030 00fd 00        		.byte	0
+ 3031 00fe 01        		.byte	1
+ 3032 00ff 00        		.byte	0
+ 3033 0100 03        		.byte	3
+ 3034 0101 00        		.byte	0
+ 3035 0102 01        		.byte	1
+ 3036 0103 00        		.byte	0
+ 3037 0104 02        		.byte	2
+ 3038 0105 00        		.byte	0
+ 3039 0106 01        		.byte	1
+ 3040 0107 00        		.byte	0
+ 3041               		.comm OSCtxSwCtr,4,1
+ 3042               		.comm OSEventFreeList,2,1
+ 3043               		.comm OSEventTbl,240,1
+ 3044               		.comm OSFlagTbl,40,1
+ 3045               		.comm OSFlagFreeList,2,1
+ 3046               		.comm OSCPUUsage,1,1
+ 3047               		.comm OSIdleCtrMax,4,1
+ 3048               		.comm OSIdleCtrRun,4,1
+ 3049               		.comm OSStatRdy,1,1
+ 3050               		.comm OSTaskStatStk,128,1
+ 3051               		.comm OSIntNesting,1,1
+ 3052               		.comm OSIntExitY,1,1
+ 3053               		.comm OSLockNesting,1,1
+ 3054               		.comm OSPrioCur,1,1
+ 3055               		.comm OSPrioHighRdy,1,1
+ 3056               		.comm OSRdyGrp,1,1
+ 3057               		.comm OSRdyTbl,2,1
+ 3058               		.comm OSRunning,1,1
+ 3059               		.comm OSTaskCtr,1,1
+ 3060               		.comm OSIdleCtr,4,1
+ 3061               		.comm OSTaskIdleStk,128,1
+ 3062               		.comm OSTCBCur,2,1
+ 3063               		.comm OSTCBFreeList,2,1
+ 3064               		.comm OSTCBHighRdy,2,1
+ 3065               		.comm OSTCBList,2,1
+ 3066               		.comm OSTCBPrioTbl,26,1
+ 3067               		.comm OSTCBTbl,1235,1
+ 3068               		.comm OSQFreeList,2,1
+ 3069               		.comm OSQTbl,280,1
+ 3070               	.global __do_copy_data
+ 3071               	.global __do_clear_bss
+GAS LISTING C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s 			page 55
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 ucos_ii.c
-C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s:2      *ABS*:0000003f __SREG__
-C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s:3      *ABS*:0000003e __SP_H__
-C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s:4      *ABS*:0000003d __SP_L__
-C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s:5      *ABS*:00000034 __CCP__
-C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s:6      *ABS*:00000000 __tmp_reg__
-C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s:7      *ABS*:00000001 __zero_reg__
-C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s:11     .text:00000000 OSIntEnter
+C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s:2      *ABS*:0000003f __SREG__
+C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s:3      *ABS*:0000003e __SP_H__
+C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s:4      *ABS*:0000003d __SP_L__
+C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s:5      *ABS*:00000034 __CCP__
+C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s:6      *ABS*:00000000 __tmp_reg__
+C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s:7      *ABS*:00000001 __zero_reg__
+C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s:11     .text:00000000 OSIntEnter
                             *COM*:00000001 OSRunning
                             *COM*:00000001 OSIntNesting
-C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s:29     .text:0000001a OSSchedLock
+C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s:29     .text:0000001a OSSchedLock
                             *COM*:00000001 OSLockNesting
-C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s:57     .text:00000038 OSVersion
-C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s:67     .text:0000003e OS_EventTaskRdy
-C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s:2695   .data:00000008 OSUnMapTbl
-C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s:2683   .data:00000000 OSMapTbl
+C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s:57     .text:00000038 OSVersion
+C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s:67     .text:0000003e OS_EventTaskRdy
+C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s:2784   .data:00000008 OSUnMapTbl
+C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s:2772   .data:00000000 OSMapTbl
                             *COM*:0000001a OSTCBPrioTbl
                             *COM*:00000001 OSRdyGrp
                             *COM*:00000002 OSRdyTbl
-C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s:165    .text:000000f4 OS_EventTaskWait
+C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s:165    .text:000000f4 OS_EventTaskWait
                             *COM*:00000002 OSTCBCur
-C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s:223    .text:0000015e OS_EventTO
-C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s:268    .text:000001ac OS_EventWaitListInit
-C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s:280    .text:000001b6 OSFlagCreate
+C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s:223    .text:0000015e OS_EventTO
+C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s:268    .text:000001ac OS_EventWaitListInit
+C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s:280    .text:000001b6 OSFlagCreate
                             *COM*:00000002 OSFlagFreeList
-C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s:334    .text:00000202 OS_FlagBlock
-C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s:415    .text:0000029a OS_FlagInit
+C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s:334    .text:00000202 OS_FlagBlock
+C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s:415    .text:0000029a OS_FlagInit
                             *COM*:00000028 OSFlagTbl
-C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s:441    .text:000002c2 OS_FlagUnlink
-C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s:480    .text:00000300 OS_FlagTaskRdy
-C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s:543    .text:00000376 OSMboxCreate
+C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s:441    .text:000002c2 OS_FlagUnlink
+C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s:480    .text:00000300 OS_FlagTaskRdy
+C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s:543    .text:00000376 OSMboxCreate
                             *COM*:00000002 OSEventFreeList
-C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s:592    .text:000003be OSQCreate
+C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s:592    .text:000003be OSQCreate
                             *COM*:00000002 OSQFreeList
-C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s:702    .text:00000476 OS_QInit
+C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s:702    .text:00000476 OS_QInit
                             *COM*:00000118 OSQTbl
-C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s:728    .text:000004a2 OSSemCreate
-C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s:777    .text:000004ea OS_TCBInit
+C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s:728    .text:000004a2 OSSemCreate
+C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s:777    .text:000004ea OS_TCBInit
                             *COM*:00000002 OSTCBFreeList
                             *COM*:00000002 OSTCBList
-C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s:898    .text:000005ba OS_TaskIdle
+C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s:898    .text:000005ba OS_TaskIdle
                             *COM*:00000004 OSIdleCtr
-C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s:928    .text:000005ea OS_Sched
+C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s:928    .text:000005ea OS_Sched
                             *COM*:00000001 OSPrioHighRdy
                             *COM*:00000001 OSPrioCur
                             *COM*:00000002 OSTCBHighRdy
                             *COM*:00000004 OSCtxSwCtr
-C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s:999    .text:00000678 OSTimeDly
-C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s:1050   .text:000006c8 OSTimeDlyHMSM
-C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s:1204   .text:000007ea OS_TaskStat
+C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s:999    .text:00000678 OSTimeDly
+C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s:1050   .text:000006c8 OSTimeDlyHMSM
+C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s:1204   .text:000007ea OS_TaskStat
                             *COM*:00000001 OSStatRdy
                             *COM*:00000004 OSIdleCtrMax
                             *COM*:00000001 OSCPUUsage
                             *COM*:00000004 OSIdleCtrRun
-C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s:1306   .text:000008d4 OSStatInit
-C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s:1354   .text:00000924 OSTaskCreate
-GAS LISTING C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s 			page 55
+C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s:1306   .text:000008d4 OSStatInit
+C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s:1354   .text:00000924 OSTaskCreate
+GAS LISTING C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s 			page 56
 
 
                             *COM*:00000001 OSTaskCtr
-C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s:1470   .text:000009cc OSSemPost
-C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s:1523   .text:00000a0a OSSemPend
-C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s:1625   .text:00000aa0 OSQPend
-C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s:1773   .text:00000b8e OSMboxPost
-C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s:1821   .text:00000bc2 OSMboxPend
-C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s:1926   .text:00000c5e OSFlagPost
-C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s:2082   .text:00000d4c OSFlagPend
-C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s:2324   .text:00000ec6 OSSchedUnlock
-C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s:2372   .text:00000efc OSTimeTick
-C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s:2460   .text:00000f90 OSStart
-C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s:2503   .text:00000fea OSIntExit
+C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s:1470   .text:000009cc OSSemPost
+C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s:1523   .text:00000a0a OSSemPend
+C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s:1625   .text:00000aa0 OSQPost
+C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s:1714   .text:00000b22 OSQPend
+C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s:1862   .text:00000c10 OSMboxPost
+C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s:1910   .text:00000c44 OSMboxPend
+C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s:2015   .text:00000ce0 OSFlagPost
+C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s:2171   .text:00000dce OSFlagPend
+C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s:2413   .text:00000f48 OSSchedUnlock
+C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s:2461   .text:00000f7e OSTimeTick
+C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s:2549   .text:00001012 OSStart
+C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s:2592   .text:0000106c OSIntExit
                             *COM*:00000001 OSIntExitY
-C:\Users\82104\AppData\Local\Temp/ccdwsuyz.s:2584   .text:00001090 OSInit
+C:\Users\82104\AppData\Local\Temp/ccyZmJxU.s:2673   .text:00001112 OSInit
                             *COM*:000004d3 OSTCBTbl
                             *COM*:000000f0 OSEventTbl
                             *COM*:00000080 OSTaskIdleStk
